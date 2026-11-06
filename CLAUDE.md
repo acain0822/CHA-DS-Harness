@@ -23,6 +23,10 @@ This repo is the source of truth for design across our products. Code is built f
 - After building, run `npm run harness:check`. Commit `design-system/reports/harness-log.jsonl` and `harness-log.md` with the work.
 - `contextEnforcement` in `harness.config.json` is `warn` until Figma access is sorted out, then `block`. Only change it when asked.
 
+## Test page
+
+`src/pages/ServicePage/` is a throwaway sandbox for whatever the current user needs. It isn't part of the design system or any product, and its content is sample text. Add to it or change it freely: it needs no manifest entry, visual baseline or sign-off. Don't treat it as a pattern to copy. Anything reusable that starts there still goes through the harness and into `src/components/`.
+
 ## Conventions
 
 - React + TypeScript + Vite, Storybook 10, plain CSS per component. Components use only the CSS variables in `src/tokens/tokens.css`, which is generated: edit `design-system/tokens.figma.json` and run `npm run tokens`.

@@ -376,7 +376,9 @@ function record([type, component, ...rest]) {
   const id = idFor(`${safe}|${component}|${message}`);
   const known = state().get(id);
   if (!known || known.status === 'resolved') {
-    append([openEvent({ id, type: safe, severity: 'error', component, message })]);
+    // Failed tests are errors; notes logged by hand shouldn't fail pull requests.
+    const severity = safe === 'manual' ? 'warn' : 'error';
+    append([openEvent({ id, type: safe, severity, component, message })]);
     writeReport(manifest(), config());
   }
   console.log(`Logged [${id}] ${safe} ${component}.`);

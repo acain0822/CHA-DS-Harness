@@ -1,0 +1,77 @@
+/* Test page layout. Tokens only, except the content width below. */
+.service-page {
+  --_title-size: var(--small-screen-h2-heading-font-size);
+  --_title-line: var(--small-screen-h2-heading-line-height);
+  --_heading-size: var(--small-screen-h3-heading-font-size);
+  --_heading-line: var(--small-screen-h3-heading-line-height);
+
+  font-family: var(--font-body);
+  font-size: var(--type-body-md-size);
+  line-height: var(--type-body-md-line);
+  letter-spacing: var(--type-body-md-tracking);
+  color: var(--text-text-primary);
+}
+
+@media (min-width: 768px) {
+  .service-page {
+    --_title-size: var(--large-screen-h2-heading-font-size);
+    --_title-line: var(--large-screen-h2-heading-line-height);
+    --_heading-size: var(--large-screen-h3-heading-font-size);
+    --_heading-line: var(--large-screen-h3-heading-line-height);
+  }
+}
+
+.service-page__inner {
+  box-sizing: border-box;
+  /* token audit: no variable. Figma has no layout or content-width tokens. */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-spacing-md) var(--spacing-spacing-sm);
+}
+
+.service-page__intro {
+  background: var(--backgrounds-background-secondary);
+  color: var(--text-text-secondary);
+}
+
+.service-page__title,
+.service-page__heading {
+  margin: 0 0 var(--spacing-spacing-xs);
+  font-family: var(--font-heading);
+  letter-spacing: normal;
+}
+
+.service-page__title {
+  font-size: var(--_title-size);
+  line-height: var(--_title-line);
+  font-weight: var(--large-screen-h2-heading-font-weight);
+}
+
+.service-page__heading {
+  font-size: var(--_heading-size);
+  line-height: var(--_heading-line);
+  font-weight: var(--large-screen-h3-heading-font-weight);
+}
+
+.service-page__lede,
+.service-page__body {
+  margin: 0 0 var(--spacing-spacing-sm);
+}
+
+.service-page__lede {
+  margin-bottom: 0;
+}
+
+.service-page__list {
+  margin: 0 0 var(--spacing-spacing-sm);
+  padding-left: var(--spacing-spacing-sm);
+}
+
+.service-page__cta {
+  background: var(--colors-chattanooga-blues-sky-20);
+}
+
+.service-page__status {
+  min-height: var(--type-body-md-line);
+  margin: var(--spacing-spacing-xs) 0 0;
+}

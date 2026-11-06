@@ -24,6 +24,7 @@ If `fetch:figma-assets` reports expired links, export these from the Figma Icons
 | `src/styles/responsive.css` | Large/Small Screen type styles switched at a breakpoint |
 | `src/components/*` | Components, their CSS and their stories |
 | `src/foundations/` | Colors, Typography, Spacing & Radius, Elevation pages |
+| `src/pages/ServicePage/` | Sandbox test page for trying things out. Not part of the design system; change it freely |
 | `tests/visual/` | Screenshot tests and their baselines |
 
 Every component story links to its Figma node in the **Design** panel. Each component has an **All Variants** story that mirrors the Figma component set, which is the quickest way to compare code with design.
