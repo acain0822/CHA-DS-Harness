@@ -1,0 +1,44 @@
+/*
+ * Responsive typography aliases.
+ *
+ * Figma defines every text style twice ("Large Screen/…" and "Small Screen/…")
+ * and every form component has a Screen = Desktop | Mobile variant. In code that
+ * is a breakpoint, not a prop: components use the --type-* aliases below and
+ * get the right size automatically.
+ *
+ * The breakpoint (768px) is an assumption: Figma's S/M/L/XL/XXL sizes have no
+ * defined widths yet. Change it here once the design team sets them.
+ */
+:root {
+  --type-body-md-size: var(--small-screen-medium-body-text-font-size);
+  --type-body-md-line: var(--small-screen-medium-body-text-line-height);
+  --type-body-md-tracking: var(--small-screen-medium-body-text-letter-spacing);
+
+  --type-body-sm-size: var(--small-screen-small-body-text-font-size);
+  --type-body-sm-line: var(--small-screen-small-body-text-line-height);
+  --type-body-sm-tracking: var(--small-screen-small-body-text-letter-spacing);
+
+  --type-button-size: var(--small-screen-button-link-font-size);
+
+  --font-body: var(--large-screen-medium-body-text-font-family);
+  --font-heading: var(--large-screen-button-text-font-family);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --type-body-md-size: var(--large-screen-medium-body-text-font-size);
+    --type-body-md-line: var(--large-screen-medium-body-text-line-height);
+    --type-body-md-tracking: var(--large-screen-medium-body-text-letter-spacing);
+
+    --type-body-sm-size: var(--large-screen-small-body-text-font-size);
+    --type-body-sm-line: var(--large-screen-small-body-text-line-height);
+    --type-body-sm-tracking: var(--large-screen-small-body-text-letter-spacing);
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-text-primary);
+  background: var(--backgrounds-background-primary);
+  margin: 0;
+}

@@ -1,0 +1,62 @@
+/* Text Link — Figma "Text Links" (Components page, node 1:6451). */
+.cha-link {
+  --_fg: var(--text-text-link-h1);
+  display: inline-block;
+  padding: var(--spacing-spacing-3xs);
+  font-family: var(--large-screen-large-text-link-font-family);
+  font-size: var(--large-screen-large-text-link-font-size);
+  font-weight: var(--large-screen-large-text-link-font-weight);
+  line-height: var(--large-screen-large-text-link-line-height);
+  letter-spacing: var(--large-screen-large-text-link-letter-spacing);
+  color: var(--_fg);
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-radius: 0;
+}
+
+.cha-link--light {
+  --_fg: var(--text-text-secondary);
+}
+.cha-link--dark {
+  --_fg: var(--text-text-primary);
+}
+
+/* Hover / Active: underline removed */
+.cha-link:hover,
+.cha-link:active {
+  text-decoration: none;
+}
+
+/* Focus (Default): ADA fill, white text, white inner border, ADA outer border */
+.cha-link:focus-visible {
+  outline: none;
+  text-decoration: none;
+  color: var(--text-text-secondary);
+  background: var(--colors-secondary-colors-ada);
+  box-shadow:
+    inset 0 0 0 1px var(--colors-neutral-colors-white),
+    0 0 0 2px var(--colors-neutral-colors-white),
+    0 0 0 3px var(--colors-secondary-colors-ada);
+}
+.cha-link--dark:focus-visible {
+  background: var(--colors-neutral-colors-black);
+  color: var(--text-text-secondary);
+  box-shadow: 0 0 0 2px var(--colors-neutral-colors-white), 0 0 0 3px var(--colors-neutral-colors-black);
+}
+.cha-link--light:focus-visible {
+  background: var(--colors-neutral-colors-white);
+  color: var(--text-text-primary);
+  box-shadow: 0 0 0 2px var(--colors-neutral-colors-black), 0 0 0 3px var(--colors-neutral-colors-white);
+}
+
+/* Disabled */
+.cha-link[aria-disabled='true'] {
+  --_fg: var(--colors-neutral-colors-dark-grey);
+  text-decoration: underline;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.cha-link--light[aria-disabled='true'] {
+  --_fg: var(--colors-neutral-colors-medium-grey);
+}
