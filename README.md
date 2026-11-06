@@ -50,6 +50,8 @@ docker run --rm -v "$PWD":/work -w /work mcr.microsoft.com/playwright:v1.63.0-no
   sh -c "npm ci && npm run test:visual:update"
 ```
 
+Without Docker, run **Update visual baselines** from the repo's Actions tab instead. It uses the same image and commits the screenshots to the branch you pick.
+
 Commit the images in `tests/visual/__screenshots__`. On pull requests, `.github/workflows/visual.yml` fails if any story changed visually and uploads the expected, actual and diff images. If the change is intended, update the baselines and commit them, which puts the visual change in the PR for review.
 
 To leave a story out of screenshots, add `tags: ['!vr']` to it.

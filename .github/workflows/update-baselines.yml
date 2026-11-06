@@ -1,0 +1,31 @@
+name: Update visual baselines
+
+# Run by hand from the Actions tab, on the branch whose baselines need updating.
+# Uses the same image as visual.yml, because font rendering differs between
+# operating systems, then commits the screenshots back to that branch.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.63.0-noble
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test:visual:update
+      - name: Commit baselines
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tests/visual/__screenshots__
+          git diff --cached --quiet || git commit -m "Update visual baselines"
+          git push
