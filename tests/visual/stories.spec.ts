@@ -20,6 +20,11 @@ for (const story of stories) {
     await page.addStyleTag({
       content: '*,*::before,*::after{transition:none!important;animation:none!important}',
     });
+    // Wide matrices can exceed the viewport; grow the root so nothing is clipped.
+    await page.evaluate(() => {
+      const root = document.querySelector<HTMLElement>('#storybook-root')!;
+      if (root.scrollWidth > root.clientWidth) root.style.width = 'max-content';
+    });
     await expect(page.locator('#storybook-root')).toHaveScreenshot(`${story.id}.png`);
   });
 }

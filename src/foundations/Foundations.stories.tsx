@@ -85,13 +85,15 @@ export const Typography: Story = {
         .map(([k, v]) => {
           const n = cssVar(k);
           return (
-            <div key={k} style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: 24, alignItems: 'baseline' }}>
-              <div>
+            <div key={k} style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 24px', alignItems: 'baseline' }}>
+              <div style={{ flex: '0 0 260px', maxWidth: '100%' }}>
                 <div style={label}>{k}</div>
                 <div style={mono}>{describeFont(v)}</div>
               </div>
               <div
                 style={{
+                  flex: '1 1 300px',
+                  minWidth: 0,
                   fontFamily: `var(${n}-font-family)`,
                   fontSize: `var(${n}-font-size)`,
                   fontWeight: `var(${n}-font-weight)` as never,
@@ -119,14 +121,16 @@ export const SpacingAndRadius: Story = {
         {rows.map(([k, v]) => {
           const radius = /radius/i.test(k);
           return (
-            <div key={k} style={{ display: 'grid', gridTemplateColumns: '240px 60px 1fr', gap: 16, alignItems: 'center' }}>
-              <span style={label}>{k}</span>
-              <span style={mono}>{v}px</span>
-              {radius ? (
-                <div style={{ width: 96, height: 48, background: 'var(--colors-chattanooga-blues-sky-20)', borderRadius: `var(${cssVar(k)})` }} />
-              ) : (
-                <div style={{ width: `var(${cssVar(k)})`, minWidth: 1, height: 16, background: 'var(--border-button-button-primary)' }} />
-              )}
+            <div key={k} style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', alignItems: 'center' }}>
+              <span style={{ ...label, flex: '0 0 240px', maxWidth: '100%', overflowWrap: 'anywhere' }}>{k}</span>
+              <span style={{ ...mono, flex: '0 0 60px' }}>{v}px</span>
+              <div style={{ flex: '1 1 200px', minWidth: 0 }}>
+                {radius ? (
+                  <div style={{ width: 96, height: 48, background: 'var(--colors-chattanooga-blues-sky-20)', borderRadius: `var(${cssVar(k)})` }} />
+                ) : (
+                  <div style={{ width: `var(${cssVar(k)})`, minWidth: 1, height: 16, background: 'var(--border-button-button-primary)' }} />
+                )}
+              </div>
             </div>
           );
         })}

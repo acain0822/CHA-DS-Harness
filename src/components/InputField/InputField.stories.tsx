@@ -18,7 +18,9 @@ const meta = {
     },
   },
   args: { label: 'Label', placeholder: 'Enter Name', isRequired: true },
-  decorators: [(S) => <div style={{ width: 440, maxWidth: '100%' }}><S /></div>],
+  decorators: [
+    (S, { parameters }) => (parameters.matrix ? <S /> : <div style={{ width: 440, maxWidth: '100%' }}><S /></div>),
+  ],
 } satisfies Meta<typeof InputField>;
 
 export default meta;
@@ -46,8 +48,8 @@ const CELLS = [
 
 export const AllVariants: Story = {
   tags: ['!autodocs'],
-  decorators: [],
   parameters: {
+    matrix: true,
     controls: { disable: true },
     pseudo: {
       hover: ['.pseudo-hover input'],
