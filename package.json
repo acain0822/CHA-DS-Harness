@@ -13,7 +13,9 @@
     "test:visual:update": "npm run build-storybook && playwright test --update-snapshots",
     "typecheck": "tsc --noEmit",
     "figma:sync": "python3 scripts/figma_sync.py snapshot --metadata design-system/figma/metadata --variables design-system/tokens.figma.json --set-variables design-system/figma/variables --screens design-system/figma/screens --context design-system/figma/context --carry design-system/figma-snapshot.json --out design-system/figma-snapshot.new.json && python3 scripts/figma_sync.py diff design-system/figma-snapshot.json design-system/figma-snapshot.new.json --manifest design-system/manifest.json --out design-system/reports/figma-changes --apply || test $? -eq 2",
-    "figma:audit": "python3 scripts/token_audit.py --context design-system/figma/context --variables design-system/tokens.figma.json --metadata design-system/figma/metadata --file-url https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy- --manifest design-system/manifest.json --out design-system/reports/token-audit"
+    "figma:audit": "python3 scripts/token_audit.py --context design-system/figma/context --variables design-system/tokens.figma.json --metadata design-system/figma/metadata --file-url https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy- --manifest design-system/manifest.json --out design-system/reports/token-audit",
+    "harness": "node scripts/harness.mjs",
+    "harness:check": "node scripts/harness.mjs check"
   },
   "dependencies": {
     "react": "^19.0.0",

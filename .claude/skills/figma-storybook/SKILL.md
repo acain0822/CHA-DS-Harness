@@ -149,6 +149,18 @@ If the user wants code snippets to appear in Figma's Dev Mode, use `get_code_con
 - **Units.** In Figma's `Font(...)` strings, `letterSpacing` is a percent of font size (→ `em`), and `lineHeight: 100` means 100% (→ `normal`); other line heights are px. `tokens_to_css.py` handles this.
 - **Verifying without Storybook.** If Storybook can't be installed in the session, bundle the stories' `AllVariants` render functions with esbuild into a plain page, rewrite `:hover` / `:focus-visible` / `:active` in the CSS to `.pseudo-*` classes, and screenshot it with Playwright. This checks the real story code.
 
+## Design harness
+
+Every component change goes through `scripts/harness.mjs`, configured in `design-system/harness.config.json`:
+
+- **Before:** `npm run harness -- context <Component>` prints the Figma link, properties, saved context, tokens, notes and open log items. A PreToolUse hook checks the same thing on each edit in `src/components/`, and in `block` mode refuses the edit until the context is saved.
+- **Context is complete** when all three outputs from step 4 exist: `figma/context/<Component>.tsx` (with its `// figma-node:` line), `figma/screens/<node-id>.png` and `figma/variables/<node-id>.json`.
+- **After:** `npm run harness:check` logs failures to `design-system/reports/harness-log.jsonl` and rewrites `harness-log.md`, which the Design QA page in Storybook shows.
+- **People's decisions:** `npm run harness -- review <id|Component> approved|rejected --by <name> --note <text>`. Approving a finding records an accepted exception. Rejecting keeps it open.
+- **Other tools:** `npm run harness -- record <a11y|visual|manual> <Component> <message>`.
+
+If `figmaSync` is `paused`, skip step 0, make no Figma calls, and say so once.
+
 ## Finishing a run
 
 Make sure `design-system/figma-snapshot.json` reflects what was just read, and the reports are current.

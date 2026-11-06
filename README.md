@@ -69,6 +69,29 @@ npm run figma:audit   # list unbound values in saved design context
 
 Both scripts read the saved files; Claude refreshes those from Figma.
 
+## Design harness
+
+This repo is the source of truth for design across our products, for designers and engineers. The harness keeps Figma context attached to the work and logs anything that fails or isn't approved.
+
+```bash
+npm run harness -- context Button    # everything known about a component
+npm run harness:check                # run the checks, update the log
+npm run harness -- review 434f1a3a approved --by "Name" --note "Why"
+npm run harness -- review Button rejected --by "Name" --note "What to change"
+npm run harness -- record a11y Button "What failed"
+```
+
+The log is in `design-system/reports/`, and the **Design QA** page in Storybook shows what's open. `harness-log.jsonl` is the permanent history; `harness-log.md` is generated from it.
+
+`design-system/harness.config.json` holds the shared settings:
+
+| Setting | Values | Meaning |
+|---|---|---|
+| `contextEnforcement` | `warn`, `block` | What happens when a component has no saved Figma context. `block` stops Claude Code editing it and fails pull requests |
+| `figmaSync` | `paused`, `active` | Whether sessions run the Figma sync check |
+
+Design context comes from the Figma MCP's `get_design_context`. It's saved in `design-system/figma/` along with a screenshot and variables for each component.
+
 ## Status
 
 Batch 1 (verified against Figma): Foundations, Button, Checkbox, Input Field, Text Link.

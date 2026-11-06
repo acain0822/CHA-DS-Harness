@@ -1,0 +1,9 @@
+{
+  "contextEnforcement": "warn",
+  "figmaSync": "paused",
+  "figmaSyncNote": "Starter plan MCP call limit reached. Resume when the project-owned Figma account is ready.",
+  "internalComponents": ["Icon"],
+  "severity": {
+    "token": "warn"
+  }
+}

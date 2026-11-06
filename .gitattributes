@@ -1,3 +1,4 @@
 # Keep LF everywhere so Windows and the Linux CI image see identical text.
 * text=auto eol=lf
 *.png binary
+design-system/reports/harness-log.jsonl merge=union

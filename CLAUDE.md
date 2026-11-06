@@ -12,6 +12,17 @@ Use the `figma-storybook` skill for any work on this project. Start with its syn
 
 Run the token audit whenever design context is read from Figma. Unbound values are reported for the design team to fix in Figma, never silently changed in code.
 
+If `figmaSync` in `design-system/harness.config.json` is `paused`, skip the sync check, make no Figma calls, and say once that Storybook reflects the last snapshot.
+
+## Design harness
+
+This repo is the source of truth for design across our products. Code is built from Figma design context, read with the Figma MCP's `get_design_context` and saved in `design-system/figma/`.
+
+- Before touching a component, run `npm run harness -- context <Component>`. A Claude Code hook also checks this on every edit in `src/components/`.
+- Never invent design details when context is missing. Flag the gap in the manifest notes.
+- After building, run `npm run harness:check`. Commit `design-system/reports/harness-log.jsonl` and `harness-log.md` with the work.
+- `contextEnforcement` in `harness.config.json` is `warn` until Figma access is sorted out, then `block`. Only change it when asked.
+
 ## Conventions
 
 - React + TypeScript + Vite, Storybook 10, plain CSS per component. Components use only the CSS variables in `src/tokens/tokens.css`, which is generated: edit `design-system/tokens.figma.json` and run `npm run tokens`.

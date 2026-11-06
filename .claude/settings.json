@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/harness.mjs\" hook",
+            "timeout": 15,
+            "statusMessage": "Checking design context"
+          }
+        ]
+      }
+    ]
+  }
+}
