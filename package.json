@@ -1,0 +1,36 @@
+{
+  "name": "cha-design-system",
+  "private": true,
+  "version": "0.1.0",
+  "description": "City of Chattanooga design system: Storybook docs and visual regression tests, generated from the CHA Design System Figma file.",
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "tokens": "python3 scripts/tokens_to_css.py design-system/tokens.figma.json --out src/tokens",
+    "fetch:figma-assets": "node scripts/fetch-figma-assets.mjs",
+    "test:visual": "npm run build-storybook && playwright test",
+    "test:visual:update": "npm run build-storybook && playwright test --update-snapshots",
+    "typecheck": "tsc --noEmit",
+    "figma:sync": "python3 scripts/figma_sync.py snapshot --metadata design-system/figma/metadata --variables design-system/tokens.figma.json --set-variables design-system/figma/variables --screens design-system/figma/screens --context design-system/figma/context --carry design-system/figma-snapshot.json --out design-system/figma-snapshot.new.json && python3 scripts/figma_sync.py diff design-system/figma-snapshot.json design-system/figma-snapshot.new.json --manifest design-system/manifest.json --out design-system/reports/figma-changes --apply || test $? -eq 2",
+    "figma:audit": "python3 scripts/token_audit.py --context design-system/figma/context --variables design-system/tokens.figma.json --metadata design-system/figma/metadata --file-url https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy- --manifest design-system/manifest.json --out design-system/reports/token-audit"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@storybook/addon-a11y": "^10.4.0",
+    "@storybook/addon-designs": "latest",
+    "@storybook/addon-docs": "^10.4.0",
+    "@storybook/react-vite": "^10.4.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "http-server": "latest",
+    "storybook": "^10.4.0",
+    "storybook-addon-pseudo-states": "latest",
+    "typescript": "^5.6.0",
+    "vite": "latest"
+  }
+}

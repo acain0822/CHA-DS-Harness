@@ -1,0 +1,26 @@
+name: Visual regression
+
+on:
+  pull_request:
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    # Baselines must be generated in this same image as @playwright/test in package.json (see README), because
+    # font rendering differs between macOS, Windows and Linux.
+    container: mcr.microsoft.com/playwright:v1.63.0-noble
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test:visual
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-diffs
+          path: |
+            test-results
+            playwright-report

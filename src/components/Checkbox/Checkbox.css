@@ -1,0 +1,105 @@
+/* Checkbox — Figma "check boxes" (Forms page, node 168:11272). */
+.cha-checkbox {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+}
+
+.cha-checkbox__row {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cha-checkbox__control {
+  position: relative;
+  display: inline-flex;
+  padding: var(--spacing-spacing-2xs);
+}
+
+/* The real input sits on top of the drawn box: keyboard, form and screen reader behaviour stay native. */
+.cha-checkbox__input {
+  position: absolute;
+  inset: var(--spacing-spacing-2xs);
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.cha-checkbox__box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--backgrounds-background-secondary);
+  border-radius: 2px;
+  background: var(--backgrounds-background-primary);
+  color: var(--white);
+  transition: box-shadow 120ms;
+}
+
+.cha-checkbox__check {
+  visibility: hidden;
+}
+
+.cha-checkbox__label {
+  font-size: var(--type-body-md-size);
+  line-height: var(--type-body-md-line);
+  letter-spacing: var(--type-body-md-tracking);
+  color: var(--text-text-primary);
+}
+
+.cha-checkbox__help {
+  margin: 0;
+  padding: 0 var(--spacing-spacing-2xs) 0 var(--spacing-spacing-md);
+  font-size: var(--type-body-sm-size);
+  line-height: 26px;
+  letter-spacing: var(--type-body-sm-tracking);
+  color: var(--text-text-tertiary);
+}
+
+/* Checked */
+.cha-checkbox__input:checked + .cha-checkbox__box {
+  background: var(--backgrounds-background-secondary);
+}
+.cha-checkbox__input:checked + .cha-checkbox__box .cha-checkbox__check {
+  visibility: visible;
+}
+
+/* Hover (Figma only designs it unchecked): Sky-20 halo */
+.cha-checkbox__row:hover .cha-checkbox__input:not(:checked):not(:disabled) + .cha-checkbox__box {
+  box-shadow: 0 0 0 5px var(--colors-chattanooga-blues-sky-20);
+}
+
+/* Focus: 1px ADA ring, 2px out from the box */
+.cha-checkbox__input:focus-visible + .cha-checkbox__box {
+  outline: 1px solid var(--colors-secondary-colors-ada);
+  outline-offset: 1px;
+}
+
+/* Disabled */
+.cha-checkbox__input:disabled + .cha-checkbox__box {
+  border-color: var(--buttons-primary-typography-icon-disabled);
+}
+.cha-checkbox__input:disabled:checked + .cha-checkbox__box {
+  background: var(--buttons-primary-typography-icon-disabled);
+}
+.cha-checkbox__row:has(:disabled) {
+  cursor: not-allowed;
+}
+.cha-checkbox__row:has(:disabled) .cha-checkbox__label {
+  color: var(--buttons-primary-typography-disabled);
+}
+
+.cha-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

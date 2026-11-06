@@ -1,0 +1,149 @@
+/*
+ * Button — Figma "Button - Refactored" (Buttons page, node 150:10522).
+ * Strokes in Figma sit inside the frame, so they're drawn with inset
+ * box-shadows here to keep sizes identical to the design.
+ * Tinted fills (6% blue, 10% green, 10% grey) have no Figma variable; they're
+ * expressed with color-mix() on the nearest token so they follow token changes.
+ */
+.cha-button {
+  --_bg: transparent;
+  --_fg: var(--buttons-primary-typography-default);
+  --_stroke: transparent;
+  --_stroke-w: 0px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--scale-padding-p-sm);
+  border: 0;
+  border-radius: var(--scale-radius-rad-lg);
+  background: var(--_bg);
+  color: var(--_fg);
+  box-shadow: inset 0 0 0 var(--_stroke-w) var(--_stroke);
+  font-family: var(--large-screen-button-text-font-family);
+  font-size: var(--large-screen-button-text-font-size);
+  font-weight: var(--large-screen-button-text-font-weight);
+  line-height: var(--large-screen-button-text-line-height);
+  letter-spacing: var(--large-screen-button-text-letter-spacing);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 120ms, color 120ms, box-shadow 120ms;
+}
+
+.cha-button:disabled {
+  cursor: not-allowed;
+}
+
+.cha-button:focus-visible {
+  outline: none;
+}
+
+/* Sizes */
+.cha-button--large {
+  padding: var(--scale-padding-p-md) var(--scale-padding-p-lg);
+}
+.cha-button--small {
+  padding: var(--scale-padding-p-sm) var(--scale-padding-p-md);
+}
+
+/* ---- Primary ---- */
+.cha-button--primary {
+  --_bg: var(--border-button-button-primary);
+}
+.cha-button--primary:hover {
+  --_bg: var(--white);
+  --_stroke: var(--border-button-button-primary);
+  --_stroke-w: 2px;
+  --_fg: var(--text-button-text-color);
+}
+.cha-button--primary:focus-visible {
+  --_bg: var(--ada);
+  --_fg: var(--white);
+  --_stroke-w: 0px;
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--ada);
+}
+.cha-button--primary:active {
+  --_bg: var(--chattanooga-green);
+  --_stroke: var(--chattanooga-green);
+  --_stroke-w: 1px;
+  --_fg: var(--white);
+}
+.cha-button--primary:disabled {
+  --_bg: var(--neutral-50);
+  --_stroke: var(--border-border-disabled);
+  --_stroke-w: 1px;
+  --_fg: var(--neutral-800);
+}
+
+/* ---- Outline ---- */
+.cha-button--outline {
+  --_stroke: var(--border-button-button-primary);
+  --_stroke-w: 2px;
+}
+.cha-button--outline:hover {
+  --_bg: var(--border-button-button-primary);
+}
+.cha-button--outline:focus-visible {
+  --_bg: color-mix(in srgb, var(--ada) 6%, transparent);
+  --_stroke: var(--ada);
+  --_fg: var(--ada);
+  box-shadow: inset 0 0 0 2px var(--ada), 0 0 0 2px var(--white), 0 0 0 3px var(--ada);
+}
+.cha-button--outline:active {
+  --_bg: color-mix(in srgb, var(--chattanooga-green) 10%, transparent);
+  --_stroke: var(--chattanooga-green);
+  --_fg: var(--chattanooga-green-800);
+}
+.cha-button--outline:disabled {
+  --_bg: color-mix(in srgb, var(--colors-neutral-colors-medium-grey) 10%, transparent);
+  --_stroke: var(--border-border-disabled);
+  --_fg: var(--neutral-700);
+}
+
+/* ---- Outline on dark ---- (Figma only designs Default, Hover, Active) */
+.cha-button--outline-on-dark {
+  --_stroke: var(--border-button-button-primary);
+  --_stroke-w: 2px;
+  --_fg: var(--white);
+}
+.cha-button--outline-on-dark:hover {
+  --_bg: var(--border-button-button-primary);
+  --_fg: var(--buttons-primary-typography-default);
+}
+.cha-button--outline-on-dark:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--white), 0 0 0 2px var(--ada);
+}
+.cha-button--outline-on-dark:active {
+  --_bg: var(--chattanooga-green);
+  --_stroke: var(--chattanooga-green);
+  --_fg: var(--white);
+}
+.cha-button--outline-on-dark:disabled {
+  --_stroke: var(--neutral-700);
+  --_fg: var(--colors-neutral-colors-medium-grey);
+}
+
+/* ---- Ghost ---- (Figma only designs Large) */
+.cha-button--ghost {
+  --_fg: var(--text-text-link-h1);
+  padding: var(--scale-padding-p-xs) var(--scale-padding-p-sm);
+}
+.cha-button--ghost:hover {
+  --_fg: var(--text-button-text-color);
+}
+.cha-button--ghost:focus-visible {
+  --_bg: color-mix(in srgb, var(--ada) 6%, transparent);
+  --_stroke: var(--ada);
+  --_stroke-w: 2px;
+  --_fg: var(--ada);
+}
+.cha-button--ghost:active {
+  --_bg: color-mix(in srgb, var(--chattanooga-green) 10%, transparent);
+  --_fg: var(--chattanooga-green-800);
+}
+.cha-button--ghost:disabled {
+  --_bg: color-mix(in srgb, var(--colors-neutral-colors-medium-grey) 10%, transparent);
+  --_stroke: var(--border-border-disabled);
+  --_stroke-w: 1px;
+  --_fg: var(--neutral-700);
+}

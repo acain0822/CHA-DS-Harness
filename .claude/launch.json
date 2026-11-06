@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "storybook",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": ["node_modules/storybook/dist/bin/dispatcher.js", "dev", "-p", "6006", "--no-open"],
+      "port": 6006
+    }
+  ]
+}

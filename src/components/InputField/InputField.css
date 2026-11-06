@@ -1,0 +1,109 @@
+/* Input Field — Figma "input fields" (Forms page, node 168:10459). */
+.cha-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-spacing-2xs);
+  width: 100%;
+  max-width: 440px;
+  font-family: var(--font-body);
+}
+
+.cha-input__label {
+  display: flex;
+  gap: 2px;
+  font-size: var(--type-body-md-size);
+  line-height: var(--type-body-md-line);
+  letter-spacing: var(--type-body-md-tracking);
+  color: var(--text-text-primary);
+}
+
+.cha-input__required {
+  color: var(--brick-red-500);
+}
+
+/* The frame carries the Focus ring: in Figma it's a 1px ADA border 4px outside the field. */
+.cha-input__frame {
+  border-radius: var(--radius-radius-minimal);
+  padding: var(--spacing-spacing-3xs);
+  margin: calc(-1 * var(--spacing-spacing-3xs) - 1px);
+  border: 1px solid transparent;
+}
+
+.cha-input__control {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 16px;
+  border: 1px solid var(--borders-border-primary);
+  /* Figma uses a raw 6px here, not a radius variable; the Focus state uses 4px. */
+  border-radius: 6px;
+  background: var(--backgrounds-background-primary);
+  font: inherit;
+  font-size: var(--type-body-md-size);
+  line-height: var(--type-body-md-line);
+  letter-spacing: var(--type-body-md-tracking);
+  color: var(--text-text-primary);
+}
+
+.cha-input__control::placeholder {
+  color: var(--text-text-tertiary);
+  opacity: 1;
+}
+
+/* Active (Figma) = hover */
+.cha-input__control:hover:not(:disabled) {
+  border-color: var(--backgrounds-background-secondary);
+}
+
+/* Focus */
+.cha-input__frame:focus-within {
+  border-color: var(--colors-secondary-colors-ada);
+}
+.cha-input__control:focus {
+  outline: none;
+  border-color: var(--backgrounds-background-secondary);
+  border-radius: var(--radius-radius-minimal);
+}
+
+/* Disabled */
+.cha-input__control:disabled {
+  background: var(--buttons-primary-typography-icon-disabled);
+  border-color: var(--buttons-primary-typography-icon-disabled);
+  color: var(--buttons-primary-typography-disabled);
+  cursor: not-allowed;
+}
+.cha-input__control:disabled::placeholder {
+  color: var(--buttons-primary-typography-disabled);
+}
+
+/* Error */
+.cha-input--error .cha-input__control {
+  border-color: var(--colors-secondary-colors-error);
+}
+
+.cha-input__messages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-spacing-3xs);
+}
+.cha-input__help,
+.cha-input__error {
+  margin: 0;
+  font-size: var(--type-body-sm-size);
+  line-height: var(--type-body-sm-line);
+  letter-spacing: var(--type-body-sm-tracking);
+}
+.cha-input__help {
+  color: var(--text-text-tertiary);
+}
+.cha-input__error {
+  color: var(--colors-secondary-colors-error);
+}
+
+.cha-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

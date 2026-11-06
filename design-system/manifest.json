@@ -1,0 +1,2657 @@
+{
+  "figma": {
+    "fileUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-",
+    "fileKey": "nMenOGxGYRL0pyDAc0ZmFF",
+    "note": "Working from a duplicate in Tony's drafts; the original (a1l2Mpc7tG1Qdm8PZvDr57) isn't editable by the connected account.",
+    "lastInventoried": "2026-11-06",
+    "lastSyncCheck": "2026-11-06",
+    "syncBlocked": "2026-11-06: sync check could not run, Figma Starter plan MCP call limit reached on the first get_metadata call. Nothing re-read from Figma; component statuses unchanged. Re-run when calls are available.",
+    "syncBaseline": "Partial: Components page metadata and all known variables. Next run adds the Buttons, Forms, Cards and Slots pages, plus per-component variables, screenshots and design context for built components."
+  },
+  "settings": {
+    "framework": "react-ts",
+    "vrTool": "playwright",
+    "themes": [
+      "light"
+    ],
+    "viewports": [
+      375,
+      1280
+    ],
+    "breakpoints": "S/M/L/XL/XXL used throughout; values not yet defined as variables"
+  },
+  "foundations": {
+    "colors": "verified",
+    "typography": "verified",
+    "spacing": "verified",
+    "radius": "verified",
+    "shadow": "verified",
+    "icons": "not-started",
+    "layout": "not-started",
+    "transitions": "not-started"
+  },
+  "fileWideNotes": [
+    "Colors page is typed text, not variables, and disagrees with the variables in places (e.g. Chattanooga Green: page #00874E / #008E52, variable 'Chattanooga Green' #127E4A and 'Colors/Chattanooga Greens/Chattanooga Green' #00874E).",
+    "Two variable naming schemes coexist: older (Spacing/spacing-xs, Radius/radius-rounded, Colors/...) and newer on the refactored Button (Scale/Padding/p-md, Scale/Radius/rad-lg, Neutral/800, Border/...). Pick one before tokens are published.",
+    "Stray variable 'Primary/Color' #7749F8 appears on input fields (looks like a UI-kit default).",
+    "Several components are duplicated between the Components page and the dedicated Buttons/Forms pages.",
+    "No dark theme variable mode found; 'Dark/Light/On Dark' are variants on individual components.",
+    "Variable 'Buttons/Primary/Fill/Default' is #FFFFFF while the primary button's visible fill is Border/Button/button-primary #FFB949; button variables look stale or mis-assigned.",
+    "Icons render as empty boxes until `npm run fetch:figma-assets` is run (Figma asset links issued 2026-11-06, expire after 7 days).",
+    "Responsive breakpoint assumed at 768px (src/styles/responsive.css) until S/M/L/XL/XXL widths are defined.",
+    "Token audit not yet run on saved design context: batch 1 design context wasn't saved to disk (the checks were added after). The next sync check re-reads it for built components."
+  ],
+  "components": [
+    {
+      "name": "Button",
+      "category": "Buttons",
+      "figmaPage": "Buttons",
+      "figmaNodeId": "150:10522",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=150-10522",
+      "variantCount": 28,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Active",
+            "Disabled",
+            "Focus",
+            "Hover"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Primary",
+            "Outline",
+            "Outline - On Dark",
+            "Ghost"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "verified",
+      "notes": [
+        "Built from 'Button - Refactored' (Buttons page)",
+        "Outline on dark has no Focus or Disabled design; code uses an ADA ring and grey stroke, needs design review",
+        "Ghost has no Small size in Figma",
+        "Tinted fills (6% ADA, 10% green, 10% grey) are raw rgba in Figma, not variables; code derives them from tokens with color-mix()",
+        "Label font Gabarito; button text stays 16px at both sizes in this set (the older Button Master uses 14px 'Small Screen/Button Link')"
+      ],
+      "batch": 1,
+      "codePath": "src/components/Button",
+      "source": "generated"
+    },
+    {
+      "name": "FAB Button",
+      "category": "Buttons",
+      "figmaPage": "Buttons",
+      "figmaNodeId": "362:96491",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=362-96491",
+      "variantCount": 10,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Active",
+            "Focus",
+            "Disabled"
+          ]
+        },
+        "Theme": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Dark"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Input Field",
+      "category": "Forms",
+      "figmaPage": "Forms",
+      "figmaNodeId": "168:10459",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=168-10459",
+      "variantCount": 10,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Active",
+            "Focus",
+            "Disabled",
+            "Error"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "verified",
+      "notes": [
+        "Field radius is a raw 6px in Figma (Focus state uses 4px radius-minimal); kept as designed, needs a token",
+        "Focus in Figma grows the field by 8px (ring inside the layout); code draws the ring outside to avoid layout shift \u2014 intentional deviation",
+        "Required asterisk uses 'Brick Red/500' #DB4240, a variable outside the documented palette",
+        "'Active' state treated as hover",
+        "'Screen' encodes desktop/mobile; implement as responsive CSS, not a prop"
+      ],
+      "batch": 1,
+      "codePath": "src/components/InputField",
+      "source": "generated"
+    },
+    {
+      "name": "Textarea",
+      "category": "Forms",
+      "figmaPage": "Forms",
+      "figmaNodeId": "168:10402",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=168-10402",
+      "variantCount": 10,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover-active",
+            "Focus",
+            "Disabled",
+            "Error"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen' encodes desktop/mobile; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Radio Button",
+      "category": "Forms",
+      "figmaPage": "Forms",
+      "figmaNodeId": "168:10561",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=168-10561",
+      "variantCount": 14,
+      "properties": {
+        "variant": {
+          "type": "VARIANT",
+          "values": [
+            "default",
+            "hover",
+            "active",
+            "focus",
+            "disabled"
+          ]
+        },
+        "checked": {
+          "type": "VARIANT",
+          "values": [
+            "false",
+            "true"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen' encodes desktop/mobile; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Radio Button Question",
+      "category": "Forms",
+      "figmaPage": "Forms",
+      "figmaNodeId": "168:10675",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=168-10675",
+      "variantCount": 2,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Checkbox",
+      "category": "Forms",
+      "figmaPage": "Forms",
+      "figmaNodeId": "168:11272",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=168-11272",
+      "variantCount": 14,
+      "properties": {
+        "variant": {
+          "type": "VARIANT",
+          "values": [
+            "default",
+            "Hover",
+            "Active",
+            "Focus",
+            "Disabled"
+          ]
+        },
+        "Checked": {
+          "type": "VARIANT",
+          "values": [
+            "False",
+            "True"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "verified",
+      "notes": [
+        "Figma 'Active' state only exists checked; treated as the pressed state",
+        "Hover only designed unchecked",
+        "Label Inter body text switches 18px/16px at the 768px breakpoint (assumed)",
+        "'Screen' encodes desktop/mobile; implement as responsive CSS, not a prop"
+      ],
+      "batch": 1,
+      "codePath": "src/components/Checkbox",
+      "source": "generated"
+    },
+    {
+      "name": "Dropdown",
+      "category": "Forms",
+      "figmaPage": "Forms",
+      "figmaNodeId": "168:10716",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=168-10716",
+      "variantCount": 15,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus",
+            "Disabled",
+            "Error"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small",
+            "-"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen' encodes desktop/mobile; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Slot Card",
+      "category": "Cards",
+      "figmaPage": "Slots",
+      "figmaNodeId": "41:11079",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=41-11079",
+      "variantCount": 1,
+      "properties": {},
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Table Cell",
+      "category": "Table",
+      "figmaPage": "Slots",
+      "figmaNodeId": "344:12641",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=344-12641",
+      "variantCount": 6,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Button Master",
+      "category": "Buttons",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:5628",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-5628",
+      "variantCount": 90,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Disabled",
+            "Hover",
+            "Active",
+            "Focus"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Primary",
+            "Tertiary",
+            "Secondary"
+          ]
+        },
+        "Variation": {
+          "type": "VARIANT",
+          "values": [
+            "Light",
+            "Dark",
+            "Default"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Button' on its dedicated page"
+      ]
+    },
+    {
+      "name": "Buttons Icons",
+      "category": "Buttons",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:5877",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-5877",
+      "variantCount": 15,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Focus",
+            "Disabled",
+            "Hover",
+            "Active"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Primary",
+            "Dark",
+            "Light"
+          ]
+        },
+        "Style": {
+          "type": "VARIANT",
+          "values": [
+            "Standard"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Btn",
+      "category": "Buttons",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:5923",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-5923",
+      "variantCount": 3,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Primary",
+            "Secondary",
+            "Tertiary"
+          ]
+        },
+        "Variation": {
+          "type": "VARIANT",
+          "values": [
+            "Default"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Text Links",
+      "category": "Links",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:6451",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-6451",
+      "variantCount": 15,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Disabled",
+            "Hover",
+            "Active",
+            "Focus"
+          ]
+        },
+        "Variation": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "status": "verified",
+      "notes": [
+        "Only one size (Large text link, 20px) designed; no small-screen size",
+        "Disabled links render as aria-disabled with no href"
+      ],
+      "batch": 1,
+      "codePath": "src/components/TextLink",
+      "source": "generated"
+    },
+    {
+      "name": "Search",
+      "category": "Search",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:7565",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-7565",
+      "variantCount": 7,
+      "properties": {
+        "Navbar": {
+          "type": "VARIANT",
+          "values": [
+            "S - Search (Active)",
+            "S - Search",
+            "M - Search",
+            "L - Search",
+            "XL - Search",
+            "XXL - Search (Active)",
+            "XXL - Search"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Image",
+      "category": "Image",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:7732",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-7732",
+      "variantCount": 7,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Full Width",
+            "Logos"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small",
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Nav Links",
+      "category": "Navbars",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:8341",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-8341",
+      "variantCount": 17,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Focus",
+            "Hover",
+            "Active",
+            "Dropdown"
+          ]
+        },
+        "Screen Size": {
+          "type": "VARIANT",
+          "values": [
+            "L",
+            "S"
+          ]
+        },
+        "Mode": {
+          "type": "VARIANT",
+          "values": [
+            "Dark",
+            "Light"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Text",
+            "Combo"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Navbar",
+      "category": "Navbars",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:8415",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-8415",
+      "variantCount": 6,
+      "properties": {
+        "Navbar": {
+          "type": "VARIANT",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "Dropdown"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Navbar' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Breadcrumbs",
+      "category": "Breadcrumb",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:8592",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-8592",
+      "variantCount": 15,
+      "properties": {
+        "Layout": {
+          "type": "VARIANT",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Light",
+            "Dark"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Layout' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Text block",
+      "category": "Text Block",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:10735",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-10735",
+      "variantCount": 5,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "XXLText Block",
+            "XLText Block",
+            "L Text Block",
+            "M Text Block",
+            "S Text Block"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Paragraph",
+      "category": "Text Block",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:10822",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-10822",
+      "variantCount": 4,
+      "properties": {
+        "Large": {
+          "type": "VARIANT",
+          "values": [
+            "Large screen",
+            "Small screen"
+          ]
+        },
+        "Font size": {
+          "type": "VARIANT",
+          "values": [
+            "18px",
+            "16px",
+            "14px"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "List Block",
+      "category": "Text Block",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:10834",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-10834",
+      "variantCount": 5,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "'Property 1' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Column",
+      "category": "Text Block",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:10910",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-10910",
+      "variantCount": 2,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Full Page Gallery",
+      "category": "Image Gallery",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:10946",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-10946",
+      "variantCount": 8,
+      "properties": {
+        "Gallery Type": {
+          "type": "VARIANT",
+          "values": [
+            "Active - Lightbox",
+            "Gallery Max Mobile",
+            "Mobile",
+            "Default",
+            "Hover",
+            "Focus",
+            "Image within Set Ratio",
+            "Gallery Max"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Small Screen Accordions",
+      "category": "Accordion",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:11086",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-11086",
+      "variantCount": 9,
+      "properties": {
+        "Tier": {
+          "type": "VARIANT",
+          "values": [
+            "Secondary",
+            "Primary"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Active",
+            "Default",
+            "Beginner",
+            "Hover",
+            "Focus"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Large Screen Accordions",
+      "category": "Accordion",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:11194",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-11194",
+      "variantCount": 9,
+      "properties": {
+        "Tier": {
+          "type": "VARIANT",
+          "values": [
+            "Primary",
+            "Secondary"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus",
+            "Active",
+            "Beginner"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Icon + Text_Icon",
+      "category": "Image & Text",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:11342",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-11342",
+      "variantCount": 4,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Icon"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL XL",
+            "L",
+            "M",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Small Card Collections",
+      "category": "Card Collection",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:11474",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-11474",
+      "variantCount": 12,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S",
+            "Large"
+          ]
+        },
+        "Card Type": {
+          "type": "VARIANT",
+          "values": [
+            "Subject",
+            "Event",
+            "League/Lesson"
+          ]
+        },
+        "Layout": {
+          "type": "VARIANT",
+          "values": [
+            "Full Screen",
+            "Right Rail"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Contact Information",
+      "category": "Contact Information",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:11750",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-11750",
+      "variantCount": 2,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Article Contact",
+      "category": "Contact Information",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12014",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12014",
+      "variantCount": 3,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "XXL-L",
+            "Medium",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Location",
+      "category": "Location",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12233",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12233",
+      "variantCount": 2,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "CTA",
+      "category": "CTA",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12342",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12342",
+      "variantCount": 3,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "L-XXL",
+            "Medium",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Right Rail / Contact Container",
+      "category": "Right Rail",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12413",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12413",
+      "variantCount": 2,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Right Rail"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Schedule",
+      "category": "Schedule",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12457",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12457",
+      "variantCount": 7,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Right Rail"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "D XXL",
+            "D XL L",
+            "D Sm",
+            "D Medium",
+            "RR XXL XL L",
+            "RR Small",
+            "RR Medium"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Anchor Group",
+      "category": "Anchor Links",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12671",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12671",
+      "variantCount": 3,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Medium",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Message with Title",
+      "category": "Messages",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12750",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12750",
+      "variantCount": 8,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Success",
+            "Error",
+            "Infromation",
+            "Information",
+            "Alert"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "Typo or placeholder values in 'Property 1': ['Infromation']"
+      ]
+    },
+    {
+      "name": "Simple Message",
+      "category": "Messages",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12863",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12863",
+      "variantCount": 8,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Success",
+            "Error",
+            "Infromation",
+            "Information",
+            "Alert"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "blocked",
+      "notes": [
+        "Not built in batch 1: Figma Starter-plan tool-call limit reached before its design context was read",
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "Typo or placeholder values in 'Property 1': ['Infromation']"
+      ],
+      "batch": 1
+    },
+    {
+      "name": "Dismiss Message",
+      "category": "Messages",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:12976",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-12976",
+      "variantCount": 8,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Success",
+            "Error",
+            "Information",
+            "Alert"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Modal",
+      "category": "Modal Dialogs",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:13156",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-13156",
+      "variantCount": 6,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Bio"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small",
+            "Medium"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "311 Banners",
+      "category": "Banners",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:13333",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-13333",
+      "variantCount": 10,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Right Rail",
+            "Full Width"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "911 Emergency",
+      "category": "Banners",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:13836",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-13836",
+      "variantCount": 4,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "XXL XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "'Property 1' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "ChattaData Banners",
+      "category": "Banners",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:13909",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-13909",
+      "variantCount": 6,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S",
+            "Variant6"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "Typo or placeholder values in 'Property 1': ['Variant6']",
+        "'Property 1' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Footer",
+      "category": "Footer",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:14343",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-14343",
+      "variantCount": 5,
+      "properties": {
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Type' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Tertiary Heros - SM",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:14793",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-14793",
+      "variantCount": 3,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Amenities",
+            "Split (Amenities)"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Tertiary Heros - LG",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:14842",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-14842",
+      "variantCount": 4,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Project/Intiative",
+            "Amenities",
+            "Wrapped amenities"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Landing Page Heros",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:14904",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-14904",
+      "variantCount": 6,
+      "properties": {
+        "Screen Size": {
+          "type": "VARIANT",
+          "values": [
+            "Wrapping",
+            "S Screen",
+            "M Screen",
+            "L Screen",
+            "XL Screen",
+            "XXL Screen"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Secondary Heros - Desktop",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:14947",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-14947",
+      "variantCount": 4,
+      "properties": {
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Title + Blurb",
+            "Type4",
+            "Title + Blurb + Button",
+            "Only Title"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'Type': ['Type4']"
+      ]
+    },
+    {
+      "name": "Secondary Heros - Mobile",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:14968",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-14968",
+      "variantCount": 4,
+      "properties": {
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Title + Blurb + Button",
+            "Type4",
+            "Only Title"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'Type': ['Type4']"
+      ]
+    },
+    {
+      "name": "Secondary Heros - LG",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:14989",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-14989",
+      "variantCount": 1,
+      "properties": {
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Title + Blurb + Button"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Homepage Hero",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:15008",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-15008",
+      "variantCount": 5,
+      "properties": {
+        "Screen Size": {
+          "type": "VARIANT",
+          "values": [
+            "M",
+            "S",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Article Heros",
+      "category": "Hero",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:15111",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-15111",
+      "variantCount": 5,
+      "properties": {
+        "Screen Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Desktop Mega Menu",
+      "category": "Mega Menu",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:15154",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-15154",
+      "variantCount": 4,
+      "properties": {
+        "Navbar": {
+          "type": "VARIANT",
+          "values": [
+            "XXL Desktop",
+            "XL Desktop"
+          ]
+        },
+        "Columns": {
+          "type": "VARIANT",
+          "values": [
+            "4",
+            "2"
+          ]
+        },
+        "Tab": {
+          "type": "VARIANT",
+          "values": [
+            "Explore Services",
+            "Pay & Apply"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "S Mobile Mega Menu",
+      "category": "Mega Menu",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:15300",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-15300",
+      "variantCount": 2,
+      "properties": {
+        "Menu": {
+          "type": "VARIANT",
+          "values": [
+            "Menu6",
+            "Menu5"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'Menu': ['Menu6', 'Menu5']"
+      ]
+    },
+    {
+      "name": "L Mobile Mega Menu",
+      "category": "Mega Menu",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:15359",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-15359",
+      "variantCount": 2,
+      "properties": {
+        "Menu": {
+          "type": "VARIANT",
+          "values": [
+            "Menu6",
+            "Menu5"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'Menu': ['Menu6', 'Menu5']"
+      ]
+    },
+    {
+      "name": "textarea",
+      "category": "Input Fields",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:20767",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-20767",
+      "variantCount": 10,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Error",
+            "Hover-active",
+            "Disabled",
+            "Focus"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Textarea' on its dedicated page"
+      ]
+    },
+    {
+      "name": "input fields",
+      "category": "Input Fields",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:20824",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-20824",
+      "variantCount": 10,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Error",
+            "Disabled",
+            "Active",
+            "Focus"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Input Field' on its dedicated page"
+      ]
+    },
+    {
+      "name": "radio buttons",
+      "category": "Radio Buttons",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:20925",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-20925",
+      "variantCount": 14,
+      "properties": {
+        "variant": {
+          "type": "VARIANT",
+          "values": [
+            "disabled",
+            "focus",
+            "active",
+            "hover",
+            "default"
+          ]
+        },
+        "checked": {
+          "type": "VARIANT",
+          "values": [
+            "true",
+            "false"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Radio Button' on its dedicated page"
+      ]
+    },
+    {
+      "name": "Radio Button Question",
+      "category": "Radio Buttons",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:21039",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-21039",
+      "variantCount": 2,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Mobile",
+            "Desktop"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Radio Button Question' on its dedicated page"
+      ]
+    },
+    {
+      "name": "Dropdowns",
+      "category": "Dropdown Menu",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:21080",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-21080",
+      "variantCount": 15,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Disabled",
+            "Error",
+            "Hover",
+            "Focus"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small",
+            "-"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Dropdown' on its dedicated page"
+      ]
+    },
+    {
+      "name": "Primary Buttons Dropdown",
+      "category": "Dropdown Menu",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:21180",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-21180",
+      "variantCount": 16,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Disabled",
+            "Focus",
+            "Hover"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Closed",
+            "Open"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Open Dropdowns",
+      "category": "Dropdown Menu",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:21399",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-21399",
+      "variantCount": 12,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus",
+            "Disabled",
+            "Focu"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small",
+            "-"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'State': ['Focu']"
+      ]
+    },
+    {
+      "name": "check boxes",
+      "category": "Checkboxes",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:21636",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-21636",
+      "variantCount": 14,
+      "properties": {
+        "variant": {
+          "type": "VARIANT",
+          "values": [
+            "Disabled",
+            "Focus",
+            "Active",
+            "Hover",
+            "default"
+          ]
+        },
+        "Checked": {
+          "type": "VARIANT",
+          "values": [
+            "True",
+            "False"
+          ]
+        },
+        "Screen": {
+          "type": "VARIANT",
+          "values": [
+            "Desktop",
+            "Mobile"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Checkbox' on its dedicated page"
+      ]
+    },
+    {
+      "name": "Event Card",
+      "category": "Cards",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:22356",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-22356",
+      "variantCount": 15,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Focus",
+            "Hover"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Subject Cards",
+      "category": "Cards",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:22610",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-22610",
+      "variantCount": 30,
+      "properties": {
+        "Card type": {
+          "type": "VARIANT",
+          "values": [
+            "Icon",
+            "Simple"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Focus",
+            "Hover",
+            "Focu"
+          ]
+        },
+        "Screen Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'State': ['Focu']",
+        "'Screen Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Large Cards",
+      "category": "Cards",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:22907",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-22907",
+      "variantCount": 15,
+      "properties": {
+        "Card type": {
+          "type": "VARIANT",
+          "values": [
+            "Image"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Focus",
+            "Hover"
+          ]
+        },
+        "Screen Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "League/Lesson Cards",
+      "category": "Cards",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:23120",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-23120",
+      "variantCount": 15,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Focus",
+            "Hover"
+          ]
+        },
+        "Screen Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Screen Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Form Layouts",
+      "category": "Form",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:23584",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-23584",
+      "variantCount": 6,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Small",
+            "Large",
+            "Smal"
+          ]
+        },
+        "Form Type": {
+          "type": "VARIANT",
+          "values": [
+            "Basic",
+            "Text",
+            "Multi-step"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'Size': ['Smal']"
+      ]
+    },
+    {
+      "name": "Feedback Form",
+      "category": "Form",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:23806",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-23806",
+      "variantCount": 9,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "No",
+            "Yes"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Medium",
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Procedures",
+      "category": "Procedure/Instructions",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:23884",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-23884",
+      "variantCount": 4,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "values": [
+            "Guideline",
+            "Instructions"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Facility",
+      "category": "Facility Name",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:24032",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-24032",
+      "variantCount": 2,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Pagination_Buttons",
+      "category": "Pagination",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:25445",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-25445",
+      "variantCount": 12,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Overflow",
+            "Hover",
+            "Active",
+            "Disabled",
+            "Focus"
+          ]
+        },
+        "Property 2": {
+          "type": "VARIANT",
+          "values": [
+            "L",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Pagination_Prev_Button",
+      "category": "Pagination",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:25470",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-25470",
+      "variantCount": 10,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Active",
+            "Disabled",
+            "Focus"
+          ]
+        },
+        "Property 2": {
+          "type": "VARIANT",
+          "values": [
+            "L",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Pagination_Next_Button",
+      "category": "Pagination",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:25491",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-25491",
+      "variantCount": 10,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Active",
+            "Disabled",
+            "Focus"
+          ]
+        },
+        "Property 2": {
+          "type": "VARIANT",
+          "values": [
+            "L",
+            "S"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "category": "Pagination",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:25517",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-25517",
+      "variantCount": 2,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Badges",
+      "category": "Badge",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:25559",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-25559",
+      "variantCount": 8,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        },
+        "Color": {
+          "type": "VARIANT",
+          "values": [
+            "Dark Blue"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Active",
+            "Focu",
+            "Focus"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Typo or placeholder values in 'State': ['Focu']"
+      ]
+    },
+    {
+      "name": "Share",
+      "category": "Share on Social Media",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26080",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26080",
+      "variantCount": 2,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Small",
+            "Large"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Facebook",
+      "category": "Share on Social Media",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26091",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26091",
+      "variantCount": 4,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Active",
+            "Focus"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "X",
+      "category": "Share on Social Media",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26104",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26104",
+      "variantCount": 4,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Active",
+            "Hover",
+            "Focus"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Latest News",
+      "category": "Latest News",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26138",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26138",
+      "variantCount": 5,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Table_Row",
+      "category": "Table",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26475",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26475",
+      "variantCount": 6,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus"
+          ]
+        },
+        "Property 2": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "superseded",
+      "notes": [
+        "Older copy; canonical version is 'Table Cell' on its dedicated page",
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Table_Header",
+      "category": "Table",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26494",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26494",
+      "variantCount": 10,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "AtoZ",
+            "ZtoA",
+            "Focus"
+          ]
+        },
+        "Property 2": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Table",
+      "category": "Table",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26535",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26535",
+      "variantCount": 2,
+      "properties": {
+        "Large": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Bio wModal Card",
+      "category": "Bio",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26720",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26720",
+      "variantCount": 15,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        },
+        "Property 2": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "'Property 1' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Bio Simple",
+      "category": "Bio",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26821",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26821",
+      "variantCount": 5,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        },
+        "Property 2": {
+          "type": "VARIANT",
+          "values": [
+            "Default"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props",
+        "'Property 1' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Bio Collection",
+      "category": "Bio",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26901",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26901",
+      "variantCount": 3,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Medium",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Profile avatar options",
+      "category": "Bio",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26960",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26960",
+      "variantCount": 1,
+      "properties": {
+        "Property 1": {
+          "type": "VARIANT",
+          "values": [
+            "Profile Avatar 4"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+      ]
+    },
+    {
+      "name": "Search Result cards",
+      "category": "Search Results Card",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:26988",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-26988",
+      "variantCount": 45,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        },
+        "Card Type": {
+          "type": "VARIANT",
+          "values": [
+            "File",
+            "Event",
+            "Text"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Focus",
+            "Hover"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Spinner",
+      "category": "Spinner",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:29111",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-29111",
+      "variantCount": 3,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "Large",
+            "Medium",
+            "Small"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    },
+    {
+      "name": "Global message",
+      "category": "Global Message",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:29143",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-29143",
+      "variantCount": 15,
+      "properties": {
+        "Size": {
+          "type": "VARIANT",
+          "values": [
+            "XXL",
+            "XL",
+            "L",
+            "M",
+            "S"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": [
+        "'Size' encodes breakpoints; implement as responsive CSS, not a prop"
+      ]
+    },
+    {
+      "name": "Back to Top",
+      "category": "Back to Top",
+      "figmaPage": "Components",
+      "figmaNodeId": "1:29387",
+      "figmaUrl": "https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy-?node-id=1-29387",
+      "variantCount": 3,
+      "properties": {
+        "State": {
+          "type": "VARIANT",
+          "values": [
+            "Default",
+            "Hover",
+            "Focus"
+          ]
+        }
+      },
+      "status": "extracted",
+      "notes": []
+    }
+  ]
+}

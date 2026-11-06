@@ -1,0 +1,3128 @@
+{
+  "generated": "2026-11-06T09:00:55",
+  "pages": {
+    "1:5387": "Components"
+  },
+  "sets": {
+    "1:5628": {
+      "name": "Button Master",
+      "page": "Components",
+      "variants": {
+        "1:5629": "State=Default, Size=Large, Type=Primary, Variation=Light",
+        "1:5631": "State=Default, Size=Large, Type=Primary, Variation=Dark",
+        "1:5633": "State=Default, Size=Small, Type=Primary, Variation=Dark",
+        "1:5635": "State=Disabled, Size=Large, Type=Primary, Variation=Light",
+        "1:5637": "State=Hover, Size=Large, Type=Primary, Variation=Light",
+        "1:5639": "State=Active, Size=Large, Type=Primary, Variation=Light",
+        "1:5641": "State=Default, Size=Large, Type=Tertiary, Variation=Default",
+        "1:5643": "State=Default, Size=Large, Type=Tertiary, Variation=Dark",
+        "1:5645": "State=Default, Size=Small, Type=Tertiary, Variation=Dark",
+        "1:5647": "State=Default, Size=Large, Type=Tertiary, Variation=Light",
+        "1:5649": "State=Default, Size=Small, Type=Tertiary, Variation=Default",
+        "1:5651": "State=Default, Size=Small, Type=Tertiary, Variation=Light",
+        "1:5653": "State=Hover, Size=Large, Type=Tertiary, Variation=Default",
+        "1:5655": "State=Hover, Size=Small, Type=Tertiary, Variation=Dark",
+        "1:5657": "State=Hover, Size=Large, Type=Tertiary, Variation=Light",
+        "1:5659": "State=Hover, Size=Large, Type=Tertiary, Variation=Dark",
+        "1:5661": "State=Hover, Size=Small, Type=Tertiary, Variation=Default",
+        "1:5663": "State=Hover, Size=Small, Type=Tertiary, Variation=Light",
+        "1:5665": "State=Active, Size=Large, Type=Tertiary, Variation=Default",
+        "1:5667": "State=Active, Size=Large, Type=Tertiary, Variation=Dark",
+        "1:5669": "State=Active, Size=Small, Type=Tertiary, Variation=Dark",
+        "1:5671": "State=Active, Size=Large, Type=Tertiary, Variation=Light",
+        "1:5673": "State=Active, Size=Small, Type=Tertiary, Variation=Default",
+        "1:5675": "State=Active, Size=Small, Type=Tertiary, Variation=Light",
+        "1:5677": "State=Disabled, Size=Large, Type=Tertiary, Variation=Default",
+        "1:5679": "State=Disabled, Size=Large, Type=Tertiary, Variation=Dark",
+        "1:5681": "State=Disabled, Size=Small, Type=Tertiary, Variation=Dark",
+        "1:5683": "State=Disabled, Size=Large, Type=Tertiary, Variation=Light",
+        "1:5685": "State=Disabled, Size=Small, Type=Tertiary, Variation=Default",
+        "1:5687": "State=Disabled, Size=Small, Type=Tertiary, Variation=Light",
+        "1:5689": "State=Default, Size=Large, Type=Secondary, Variation=Default",
+        "1:5691": "State=Default, Size=Large, Type=Primary, Variation=Default",
+        "1:5693": "State=Default, Size=Large, Type=Secondary, Variation=Dark",
+        "1:5695": "State=Default, Size=Small, Type=Secondary, Variation=Dark",
+        "1:5697": "State=Default, Size=Large, Type=Secondary, Variation=Light",
+        "1:5699": "State=Default, Size=Small, Type=Primary, Variation=Default",
+        "1:5701": "State=Default, Size=Small, Type=Primary, Variation=Light",
+        "1:5703": "State=Disabled, Size=Small, Type=Primary, Variation=Light",
+        "1:5705": "State=Hover, Size=Small, Type=Primary, Variation=Light",
+        "1:5707": "State=Active, Size=Small, Type=Primary, Variation=Light",
+        "1:5709": "State=Default, Size=Small, Type=Secondary, Variation=Default",
+        "1:5711": "State=Default, Size=Small, Type=Secondary, Variation=Light",
+        "1:5713": "State=Hover, Size=Large, Type=Primary, Variation=Default",
+        "1:5715": "State=Hover, Size=Large, Type=Primary, Variation=Dark",
+        "1:5717": "State=Hover, Size=Small, Type=Primary, Variation=Dark",
+        "1:5719": "State=Hover, Size=Large, Type=Secondary, Variation=Default",
+        "1:5721": "State=Hover, Size=Large, Type=Secondary, Variation=Dark",
+        "1:5723": "State=Hover, Size=Small, Type=Secondary, Variation=Dark",
+        "1:5725": "State=Hover, Size=Large, Type=Secondary, Variation=Light",
+        "1:5727": "State=Hover, Size=Small, Type=Primary, Variation=Default",
+        "1:5729": "State=Hover, Size=Small, Type=Secondary, Variation=Default",
+        "1:5731": "State=Hover, Size=Small, Type=Secondary, Variation=Light",
+        "1:5733": "State=Active, Size=Large, Type=Primary, Variation=Default",
+        "1:5735": "State=Active, Size=Large, Type=Primary, Variation=Dark",
+        "1:5737": "State=Active, Size=Small, Type=Primary, Variation=Dark",
+        "1:5739": "State=Active, Size=Large, Type=Secondary, Variation=Default",
+        "1:5741": "State=Active, Size=Large, Type=Secondary, Variation=Dark",
+        "1:5743": "State=Active, Size=Small, Type=Secondary, Variation=Dark",
+        "1:5745": "State=Active, Size=Large, Type=Secondary, Variation=Light",
+        "1:5747": "State=Active, Size=Small, Type=Primary, Variation=Default",
+        "1:5749": "State=Active, Size=Small, Type=Secondary, Variation=Default",
+        "1:5751": "State=Active, Size=Small, Type=Secondary, Variation=Light",
+        "1:5753": "State=Disabled, Size=Large, Type=Primary, Variation=Default",
+        "1:5755": "State=Disabled, Size=Large, Type=Primary, Variation=Dark",
+        "1:5757": "State=Disabled, Size=Small, Type=Primary, Variation=Dark",
+        "1:5759": "State=Disabled, Size=Large, Type=Secondary, Variation=Default",
+        "1:5761": "State=Disabled, Size=Large, Type=Secondary, Variation=Dark",
+        "1:5763": "State=Disabled, Size=Small, Type=Secondary, Variation=Dark",
+        "1:5765": "State=Disabled, Size=Large, Type=Secondary, Variation=Light",
+        "1:5767": "State=Disabled, Size=Small, Type=Primary, Variation=Default",
+        "1:5769": "State=Disabled, Size=Small, Type=Secondary, Variation=Default",
+        "1:5771": "State=Disabled, Size=Small, Type=Secondary, Variation=Light",
+        "1:5773": "State=Focus, Size=Large, Type=Primary, Variation=Default",
+        "1:5775": "State=Focus, Size=Large, Type=Primary, Variation=Dark",
+        "1:5777": "State=Focus, Size=Small, Type=Primary, Variation=Dark",
+        "1:5779": "State=Focus, Size=Large, Type=Primary, Variation=Light",
+        "1:5781": "State=Focus, Size=Large, Type=Secondary, Variation=Default",
+        "1:5783": "State=Focus, Size=Large, Type=Secondary, Variation=Dark",
+        "1:5785": "State=Focus, Size=Small, Type=Secondary, Variation=Dark",
+        "1:5787": "State=Focus, Size=Large, Type=Secondary, Variation=Light",
+        "1:5789": "State=Focus, Size=Small, Type=Primary, Variation=Default",
+        "1:5791": "State=Focus, Size=Small, Type=Primary, Variation=Light",
+        "1:5793": "State=Focus, Size=Small, Type=Secondary, Variation=Default",
+        "1:5795": "State=Focus, Size=Small, Type=Secondary, Variation=Light",
+        "1:5797": "State=Focus, Size=Large, Type=Tertiary, Variation=Default",
+        "1:5802": "State=Focus, Size=Large, Type=Tertiary, Variation=Light",
+        "1:5807": "State=Focus, Size=Large, Type=Tertiary, Variation=Dark",
+        "1:5812": "State=Focus, Size=Small, Type=Tertiary, Variation=Dark",
+        "1:5817": "State=Focus, Size=Small, Type=Tertiary, Variation=Light",
+        "1:5822": "State=Focus, Size=Small, Type=Tertiary, Variation=Default"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Disabled",
+          "Hover",
+          "Active",
+          "Focus"
+        ],
+        "Size": [
+          "Large",
+          "Small"
+        ],
+        "Type": [
+          "Primary",
+          "Tertiary",
+          "Secondary"
+        ],
+        "Variation": [
+          "Light",
+          "Dark",
+          "Default"
+        ]
+      },
+      "variantHashes": {
+        "1:5629": "416032823a4cad09",
+        "1:5631": "416032823a4cad09",
+        "1:5633": "9c70257922cad993",
+        "1:5635": "416032823a4cad09",
+        "1:5637": "416032823a4cad09",
+        "1:5639": "416032823a4cad09",
+        "1:5641": "cc9a7bffa7ee03f3",
+        "1:5643": "cc9a7bffa7ee03f3",
+        "1:5645": "08cb86eea000efed",
+        "1:5647": "cc9a7bffa7ee03f3",
+        "1:5649": "08cb86eea000efed",
+        "1:5651": "08cb86eea000efed",
+        "1:5653": "08cb86eea000efed",
+        "1:5655": "08cb86eea000efed",
+        "1:5657": "08cb86eea000efed",
+        "1:5659": "08cb86eea000efed",
+        "1:5661": "08cb86eea000efed",
+        "1:5663": "08cb86eea000efed",
+        "1:5665": "cc9a7bffa7ee03f3",
+        "1:5667": "cc9a7bffa7ee03f3",
+        "1:5669": "08cb86eea000efed",
+        "1:5671": "cc9a7bffa7ee03f3",
+        "1:5673": "08cb86eea000efed",
+        "1:5675": "08cb86eea000efed",
+        "1:5677": "cc9a7bffa7ee03f3",
+        "1:5679": "cc9a7bffa7ee03f3",
+        "1:5681": "08cb86eea000efed",
+        "1:5683": "cc9a7bffa7ee03f3",
+        "1:5685": "08cb86eea000efed",
+        "1:5687": "08cb86eea000efed",
+        "1:5689": "416032823a4cad09",
+        "1:5691": "416032823a4cad09",
+        "1:5693": "416032823a4cad09",
+        "1:5695": "9c70257922cad993",
+        "1:5697": "416032823a4cad09",
+        "1:5699": "9ee95e4b282663ee",
+        "1:5701": "9ee95e4b282663ee",
+        "1:5703": "9ee95e4b282663ee",
+        "1:5705": "9ee95e4b282663ee",
+        "1:5707": "9ee95e4b282663ee",
+        "1:5709": "9ee95e4b282663ee",
+        "1:5711": "9ee95e4b282663ee",
+        "1:5713": "416032823a4cad09",
+        "1:5715": "416032823a4cad09",
+        "1:5717": "9c70257922cad993",
+        "1:5719": "416032823a4cad09",
+        "1:5721": "416032823a4cad09",
+        "1:5723": "9c70257922cad993",
+        "1:5725": "416032823a4cad09",
+        "1:5727": "9ee95e4b282663ee",
+        "1:5729": "9ee95e4b282663ee",
+        "1:5731": "9ee95e4b282663ee",
+        "1:5733": "416032823a4cad09",
+        "1:5735": "416032823a4cad09",
+        "1:5737": "9c70257922cad993",
+        "1:5739": "416032823a4cad09",
+        "1:5741": "416032823a4cad09",
+        "1:5743": "9c70257922cad993",
+        "1:5745": "416032823a4cad09",
+        "1:5747": "9ee95e4b282663ee",
+        "1:5749": "9ee95e4b282663ee",
+        "1:5751": "9ee95e4b282663ee",
+        "1:5753": "416032823a4cad09",
+        "1:5755": "416032823a4cad09",
+        "1:5757": "9c70257922cad993",
+        "1:5759": "416032823a4cad09",
+        "1:5761": "416032823a4cad09",
+        "1:5763": "9c70257922cad993",
+        "1:5765": "416032823a4cad09",
+        "1:5767": "9ee95e4b282663ee",
+        "1:5769": "9ee95e4b282663ee",
+        "1:5771": "9c70257922cad993",
+        "1:5773": "416032823a4cad09",
+        "1:5775": "416032823a4cad09",
+        "1:5777": "9c70257922cad993",
+        "1:5779": "416032823a4cad09",
+        "1:5781": "416032823a4cad09",
+        "1:5783": "416032823a4cad09",
+        "1:5785": "9c70257922cad993",
+        "1:5787": "416032823a4cad09",
+        "1:5789": "9ee95e4b282663ee",
+        "1:5791": "9ee95e4b282663ee",
+        "1:5793": "6ad27deed004a8f5",
+        "1:5795": "9ee95e4b282663ee",
+        "1:5797": "cc9a7bffa7ee03f3",
+        "1:5802": "cc9a7bffa7ee03f3",
+        "1:5807": "db5ac8cd3b0e221a",
+        "1:5812": "1717d5932e466fa7",
+        "1:5817": "6514f1dfa9090078",
+        "1:5822": "6514f1dfa9090078"
+      },
+      "structureHash": "93b06bda86caeeef"
+    },
+    "1:5877": {
+      "name": "Buttons Icons",
+      "page": "Components",
+      "variants": {
+        "1:5878": "State=Default, Type=Primary, Style=Standard",
+        "1:5881": "State=Default, Type=Dark, Style=Standard",
+        "1:5884": "State=Default, Type=Light, Style=Standard",
+        "1:5887": "State=Focus, Type=Primary, Style=Standard",
+        "1:5890": "State=Focus, Type=Dark, Style=Standard",
+        "1:5893": "State=Focus, Type=Light, Style=Standard",
+        "1:5896": "State=Disabled, Type=Primary, Style=Standard",
+        "1:5899": "State=Disabled, Type=Dark, Style=Standard",
+        "1:5902": "State=Disabled, Type=Light, Style=Standard",
+        "1:5905": "State=Hover, Type=Primary, Style=Standard",
+        "1:5908": "State=Hover, Type=Dark, Style=Standard",
+        "1:5911": "State=Active, Type=Primary, Style=Standard",
+        "1:5914": "State=Active, Type=Dark, Style=Standard",
+        "1:5917": "State=Hover, Type=Light, Style=Standard",
+        "1:5920": "State=Active, Type=Light, Style=Standard"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Focus",
+          "Disabled",
+          "Hover",
+          "Active"
+        ],
+        "Type": [
+          "Primary",
+          "Dark",
+          "Light"
+        ],
+        "Style": [
+          "Standard"
+        ]
+      },
+      "variantHashes": {
+        "1:5878": "9f4fd8cd2015b5ea",
+        "1:5881": "9f4fd8cd2015b5ea",
+        "1:5884": "9f4fd8cd2015b5ea",
+        "1:5887": "9f4fd8cd2015b5ea",
+        "1:5890": "9f4fd8cd2015b5ea",
+        "1:5893": "9f4fd8cd2015b5ea",
+        "1:5896": "9f4fd8cd2015b5ea",
+        "1:5899": "9f4fd8cd2015b5ea",
+        "1:5902": "9f4fd8cd2015b5ea",
+        "1:5905": "9f4fd8cd2015b5ea",
+        "1:5908": "9f4fd8cd2015b5ea",
+        "1:5911": "9f4fd8cd2015b5ea",
+        "1:5914": "9f4fd8cd2015b5ea",
+        "1:5917": "9f4fd8cd2015b5ea",
+        "1:5920": "9f4fd8cd2015b5ea"
+      },
+      "structureHash": "1a285fb0373034b8"
+    },
+    "1:5923": {
+      "name": "Btn",
+      "page": "Components",
+      "variants": {
+        "1:5924": "State=Default, Size=Large, Type=Primary, Variation=Default",
+        "1:5928": "State=Default, Size=Large, Type=Secondary, Variation=Default",
+        "1:5932": "State=Default, Size=Large, Type=Tertiary, Variation=Default"
+      },
+      "properties": {
+        "State": [
+          "Default"
+        ],
+        "Size": [
+          "Large"
+        ],
+        "Type": [
+          "Primary",
+          "Secondary",
+          "Tertiary"
+        ],
+        "Variation": [
+          "Default"
+        ]
+      },
+      "variantHashes": {
+        "1:5924": "4160efc3618b8676",
+        "1:5928": "6693b6b837e46dff",
+        "1:5932": "6f4ea08379004d7e"
+      },
+      "structureHash": "75690e62cb02762d"
+    },
+    "1:6451": {
+      "name": "Text Links",
+      "page": "Components",
+      "variants": {
+        "1:6452": "State=Default, Variation=Default",
+        "1:6454": "State=Default, Variation=Light",
+        "1:6456": "State=Default, Variation=Dark",
+        "1:6458": "State=Disabled, Variation=Default",
+        "1:6460": "State=Disabled, Variation=Light",
+        "1:6462": "State=Disabled, Variation=Dark",
+        "1:6464": "State=Hover, Variation=Default",
+        "1:6466": "State=Active, Variation=Default",
+        "1:6468": "State=Focus, Variation=Default",
+        "1:6470": "State=Focus, Variation=Light",
+        "1:6472": "State=Focus, Variation=Dark",
+        "1:6474": "State=Hover, Variation=Light",
+        "1:6476": "State=Active, Variation=Light",
+        "1:6478": "State=Hover, Variation=Dark",
+        "1:6480": "State=Active, Variation=Dark"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Disabled",
+          "Hover",
+          "Active",
+          "Focus"
+        ],
+        "Variation": [
+          "Default",
+          "Light",
+          "Dark"
+        ]
+      },
+      "variantHashes": {
+        "1:6452": "8cea8e6334d358d0",
+        "1:6454": "8cea8e6334d358d0",
+        "1:6456": "8cea8e6334d358d0",
+        "1:6458": "8cea8e6334d358d0",
+        "1:6460": "8cea8e6334d358d0",
+        "1:6462": "8cea8e6334d358d0",
+        "1:6464": "0cbf2cbf2cac7d37",
+        "1:6466": "0cbf2cbf2cac7d37",
+        "1:6468": "d85e2d29661edaca",
+        "1:6470": "d85e2d29661edaca",
+        "1:6472": "d85e2d29661edaca",
+        "1:6474": "0cbf2cbf2cac7d37",
+        "1:6476": "0cbf2cbf2cac7d37",
+        "1:6478": "0cbf2cbf2cac7d37",
+        "1:6480": "0cbf2cbf2cac7d37"
+      },
+      "structureHash": "86d79cc79f1e6218"
+    },
+    "1:7565": {
+      "name": "Search",
+      "page": "Components",
+      "variants": {
+        "1:7566": "Navbar=S - Search (Active)",
+        "1:7599": "Navbar=S - Search",
+        "1:7625": "Navbar=M - Search",
+        "1:7651": "Navbar=L - Search",
+        "1:7677": "Navbar=XL - Search",
+        "1:7686": "Navbar=XXL - Search (Active)",
+        "1:7702": "Navbar=XXL - Search"
+      },
+      "properties": {
+        "Navbar": [
+          "S - Search (Active)",
+          "S - Search",
+          "M - Search",
+          "L - Search",
+          "XL - Search",
+          "XXL - Search (Active)",
+          "XXL - Search"
+        ]
+      },
+      "variantHashes": {
+        "1:7566": "f065247450edc26a",
+        "1:7599": "f77db3efce235ad2",
+        "1:7625": "4093f2ac9d84f3ac",
+        "1:7651": "aad1b5c27e81ff2a",
+        "1:7677": "1e1d76d6887a73bc",
+        "1:7686": "116ebf1ac971ad98",
+        "1:7702": "116ebf1ac971ad98"
+      },
+      "structureHash": "b0942d2ca5482ea7"
+    },
+    "1:7732": {
+      "name": "Image",
+      "page": "Components",
+      "variants": {
+        "1:7733": "Property 1=Full Width, Size=Large",
+        "1:7737": "Property 1=Full Width, Size=Small",
+        "1:7741": "Property 1=Logos, Size = XXL",
+        "1:7747": "Property 1=Logos, Size=XL",
+        "1:7753": "Property 1=Logos, Size=L",
+        "1:7759": "Property 1=Logos, Size=M",
+        "1:7765": "Property 1=Logos, Size=S"
+      },
+      "properties": {
+        "Property 1": [
+          "Full Width",
+          "Logos"
+        ],
+        "Size": [
+          "Large",
+          "Small",
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:7733": "2825c3d8c97dc73e",
+        "1:7737": "8816cb69f4278759",
+        "1:7741": "3abdb5f99ee49283",
+        "1:7747": "4ab8a33ec1766bb8",
+        "1:7753": "203e19372ca039f3",
+        "1:7759": "cd7aeef0b85b2a9e",
+        "1:7765": "deb71502acae61c6"
+      },
+      "structureHash": "9a210a917064d84c"
+    },
+    "1:8341": {
+      "name": "Nav Links",
+      "page": "Components",
+      "variants": {
+        "1:8342": "State=Default, Screen Size=L, Mode=Dark, Type=Text",
+        "1:8344": "State=Default, Screen Size=L, Mode=Light, Type=Combo",
+        "1:8349": "State=Focus, Screen Size=L, Mode=Light, Type=Combo",
+        "1:8354": "State=Default, Screen Size=L, Mode=Light, Type=Text",
+        "1:8356": "State=Hover, Screen Size=L, Mode=Dark, Type=Text",
+        "1:8358": "State=Hover, Screen Size=L, Mode=Light, Type=Combo",
+        "1:8363": "State=Active, Screen Size=L, Mode=Light, Type=Combo",
+        "1:8368": "State=Dropdown, Screen Size=L, Mode=Light, Type=Combo",
+        "1:8379": "State=Hover, Screen Size=L, Mode=Light, Type=Text",
+        "1:8381": "State=Active, Screen Size=L, Mode=Light, Type=Text",
+        "1:8383": "State=Focus, Screen Size=L, Mode=Light, Type=Text",
+        "1:8385": "State=Active, Screen Size=L, Mode=Dark, Type=Text",
+        "1:8387": "State=Active, Screen Size=S, Mode=Dark, Type=Text",
+        "1:8389": "State=Focus, Screen Size=S, Mode=Dark, Type=Text",
+        "1:8391": "State=Focus, Screen Size=L, Mode=Dark, Type=Text",
+        "1:8394": "State=Default, Screen Size=S, Mode=Dark, Type=Text",
+        "1:8396": "State=Hover, Screen Size=S, Mode=Dark, Type=Text"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Focus",
+          "Hover",
+          "Active",
+          "Dropdown"
+        ],
+        "Screen Size": [
+          "L",
+          "S"
+        ],
+        "Mode": [
+          "Dark",
+          "Light"
+        ],
+        "Type": [
+          "Text",
+          "Combo"
+        ]
+      },
+      "variantHashes": {
+        "1:8342": "b30897efe62960fe",
+        "1:8344": "eb1e680dfedeeb0f",
+        "1:8349": "eb1e680dfedeeb0f",
+        "1:8354": "2697fe8c72bb8ae4",
+        "1:8356": "b30897efe62960fe",
+        "1:8358": "eb1e680dfedeeb0f",
+        "1:8363": "eb1e680dfedeeb0f",
+        "1:8368": "be3191b79c4d3656",
+        "1:8379": "2697fe8c72bb8ae4",
+        "1:8381": "2697fe8c72bb8ae4",
+        "1:8383": "2697fe8c72bb8ae4",
+        "1:8385": "b30897efe62960fe",
+        "1:8387": "2697fe8c72bb8ae4",
+        "1:8389": "2697fe8c72bb8ae4",
+        "1:8391": "b30897efe62960fe",
+        "1:8394": "2697fe8c72bb8ae4",
+        "1:8396": "2697fe8c72bb8ae4"
+      },
+      "structureHash": "f8ac4da8997f0372"
+    },
+    "1:8415": {
+      "name": "Navbar",
+      "page": "Components",
+      "variants": {
+        "1:8416": "Navbar=S",
+        "1:8436": "Navbar=M",
+        "1:8456": "Navbar=L",
+        "1:8476": "Navbar=XL",
+        "1:8507": "Navbar=XXL",
+        "1:8538": "Navbar=Dropdown"
+      },
+      "properties": {
+        "Navbar": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+          "Dropdown"
+        ]
+      },
+      "variantHashes": {
+        "1:8416": "a29f994d834a0688",
+        "1:8436": "a0bddedc01f64536",
+        "1:8456": "85eeebf735909ff6",
+        "1:8476": "1e1d76d6887a73bc",
+        "1:8507": "116ebf1ac971ad98",
+        "1:8538": "116ebf1ac971ad98"
+      },
+      "structureHash": "7c3cec16c2f86184"
+    },
+    "1:8592": {
+      "name": "Breadcrumbs",
+      "page": "Components",
+      "variants": {
+        "1:8593": "Layout=S, Type=Default",
+        "1:8595": "Layout=S, Type=Light",
+        "1:8597": "Layout=M, Type=Default",
+        "1:8599": "Layout=L, Type=Default",
+        "1:8601": "Layout=M, Type=Light",
+        "1:8603": "Layout=L, Type=Light",
+        "1:8605": "Layout=XL, Type=Default",
+        "1:8607": "Layout=XL, Type=Light",
+        "1:8609": "Layout=XXL, Type=Default",
+        "1:8622": "Layout=XXL, Type=Light",
+        "1:8635": "Layout=XXL, Type=Dark",
+        "1:8648": "Layout=XL, Type=Dark",
+        "1:8650": "Layout=M, Type=Dark",
+        "1:8652": "Layout=L, Type=Dark",
+        "1:8654": "Layout=S, Type=Dark"
+      },
+      "properties": {
+        "Layout": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "Type": [
+          "Default",
+          "Light",
+          "Dark"
+        ]
+      },
+      "variantHashes": {
+        "1:8593": "9a469153ac321585",
+        "1:8595": "9a469153ac321585",
+        "1:8597": "e93b6f0daeee93f9",
+        "1:8599": "1a1741dccfee9845",
+        "1:8601": "e93b6f0daeee93f9",
+        "1:8603": "1a1741dccfee9845",
+        "1:8605": "01973e95110afd97",
+        "1:8607": "01973e95110afd97",
+        "1:8609": "26b7756784731ebd",
+        "1:8622": "26b7756784731ebd",
+        "1:8635": "26b7756784731ebd",
+        "1:8648": "01973e95110afd97",
+        "1:8650": "e93b6f0daeee93f9",
+        "1:8652": "1a1741dccfee9845",
+        "1:8654": "9a469153ac321585"
+      },
+      "structureHash": "05c68418d973398f"
+    },
+    "1:10735": {
+      "name": "Text block",
+      "page": "Components",
+      "variants": {
+        "1:10736": "Property 1=XXLText Block",
+        "1:10753": "Property 1=XLText Block",
+        "1:10770": "Property 1=L Text Block",
+        "1:10787": "Property 1=M Text Block",
+        "1:10804": "Property 1=S Text Block"
+      },
+      "properties": {
+        "Property 1": [
+          "XXLText Block",
+          "XLText Block",
+          "L Text Block",
+          "M Text Block",
+          "S Text Block"
+        ]
+      },
+      "variantHashes": {
+        "1:10736": "a8777edb067c3ec7",
+        "1:10753": "76b722aa94e3e34d",
+        "1:10770": "5b3c4a326825a940",
+        "1:10787": "eff8ea5891907499",
+        "1:10804": "2664b4308e5486a4"
+      },
+      "structureHash": "152f432ade5e4a6d"
+    },
+    "1:10822": {
+      "name": "Paragraph",
+      "page": "Components",
+      "variants": {
+        "1:10823": "Large=Large screen, Font size = 18px",
+        "1:10825": "Large=Large screen, Font size=16px",
+        "1:10827": "Large=Small screen, Font size = 16px",
+        "1:10829": "Large=Small screen, Font size=14px"
+      },
+      "properties": {
+        "Large": [
+          "Large screen",
+          "Small screen"
+        ],
+        "Font size": [
+          "18px",
+          "16px",
+          "14px"
+        ]
+      },
+      "variantHashes": {
+        "1:10823": "da6d997707dc95cd",
+        "1:10825": "18f75dbae4e14b4a",
+        "1:10827": "e40b7188014793fc",
+        "1:10829": "2e1264baf916eada"
+      },
+      "structureHash": "2e6787feb9d27bbf"
+    },
+    "1:10834": {
+      "name": "List Block",
+      "page": "Components",
+      "variants": {
+        "1:10835": "Property 1=S",
+        "1:10849": "Property 1=M ",
+        "1:10865": "Property 1=L",
+        "1:10880": "Property 1=XL",
+        "1:10895": "Property 1=XXL "
+      },
+      "properties": {
+        "Property 1": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "variantHashes": {
+        "1:10835": "3ab0dc2780ebf9e5",
+        "1:10849": "be70df20e2e5e4ee",
+        "1:10865": "70ea658ae80ae9ec",
+        "1:10880": "06622bb1ff494887",
+        "1:10895": "5d4def512cea3ae1"
+      },
+      "structureHash": "8fa51774dc7d8049"
+    },
+    "1:10910": {
+      "name": "Column",
+      "page": "Components",
+      "variants": {
+        "1:10911": "Property 1=Large",
+        "1:10918": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:10911": "1ff5df32306dde00",
+        "1:10918": "1ff5df32306dde00"
+      },
+      "structureHash": "77cc58a56b50b008"
+    },
+    "1:10946": {
+      "name": "Full Page Gallery",
+      "page": "Components",
+      "variants": {
+        "1:10947": "Gallery Type=Active - Lightbox",
+        "1:10960": "Gallery Type=Gallery Max Mobile",
+        "1:10979": "Gallery Type=Mobile",
+        "1:10992": "Gallery Type=Default",
+        "1:11004": "Gallery Type=Hover",
+        "1:11021": "Gallery Type=Focus",
+        "1:11033": "Gallery Type=Image within Set Ratio",
+        "1:11045": "Gallery Type=Gallery Max"
+      },
+      "properties": {
+        "Gallery Type": [
+          "Active - Lightbox",
+          "Gallery Max Mobile",
+          "Mobile",
+          "Default",
+          "Hover",
+          "Focus",
+          "Image within Set Ratio",
+          "Gallery Max"
+        ]
+      },
+      "variantHashes": {
+        "1:10947": "069390a79051b119",
+        "1:10960": "6efc1d823e37dbfd",
+        "1:10979": "6efc1d823e37dbfd",
+        "1:10992": "3b6d337e677ed8cb",
+        "1:11004": "abefe02ec421116c",
+        "1:11021": "abefe02ec421116c",
+        "1:11033": "abefe02ec421116c",
+        "1:11045": "3b6d337e677ed8cb"
+      },
+      "structureHash": "0124db902c2cb06d"
+    },
+    "1:11086": {
+      "name": "Small Screen Accordions",
+      "page": "Components",
+      "variants": {
+        "1:11087": "Tier=Secondary, Type=Active",
+        "1:11127": "Tier=Secondary, Type=Default",
+        "1:11130": "Tier=Secondary, Type=Beginner",
+        "1:11138": "Tier=Secondary, Type=Hover",
+        "1:11141": "Tier=Secondary, Type=Focus",
+        "1:11144": "Tier=Primary, Type=Active",
+        "1:11185": "Tier=Primary, Type=Default",
+        "1:11188": "Tier=Primary, Type=Hover",
+        "1:11191": "Tier=Primary, Type=Focus"
+      },
+      "properties": {
+        "Tier": [
+          "Secondary",
+          "Primary"
+        ],
+        "Type": [
+          "Active",
+          "Default",
+          "Beginner",
+          "Hover",
+          "Focus"
+        ]
+      },
+      "variantHashes": {
+        "1:11087": "fe0f212cf0f0cffb",
+        "1:11127": "9dda3f79d9ad3a9e",
+        "1:11130": "29befd31ee75cebf",
+        "1:11138": "9dda3f79d9ad3a9e",
+        "1:11141": "9dda3f79d9ad3a9e",
+        "1:11144": "a1bb1403e84e9d79",
+        "1:11185": "54a778d0e1f4b7cb",
+        "1:11188": "54a778d0e1f4b7cb",
+        "1:11191": "54a778d0e1f4b7cb"
+      },
+      "structureHash": "2f9f26a768e128ca"
+    },
+    "1:11194": {
+      "name": "Large Screen Accordions",
+      "page": "Components",
+      "variants": {
+        "1:11195": "Tier=Primary, Type=Default",
+        "1:11199": "Tier=Primary, Type=Hover",
+        "1:11203": "Tier=Primary, Type=Focus",
+        "1:11207": "Tier=Primary, Type=Active",
+        "1:11248": "Tier=Secondary, Type=Active",
+        "1:11288": "Tier=Secondary, Type=Default",
+        "1:11292": "Tier=Secondary, Type=Hover",
+        "1:11296": "Tier=Secondary, Type=Focus",
+        "1:11300": "Tier=Secondary, Type=Beginner"
+      },
+      "properties": {
+        "Tier": [
+          "Primary",
+          "Secondary"
+        ],
+        "Type": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Active",
+          "Beginner"
+        ]
+      },
+      "variantHashes": {
+        "1:11195": "275b5ab461a20065",
+        "1:11199": "275b5ab461a20065",
+        "1:11203": "275b5ab461a20065",
+        "1:11207": "a707ac8830f8de5d",
+        "1:11248": "129e21e16b2611fc",
+        "1:11288": "811486ef08a100b4",
+        "1:11292": "811486ef08a100b4",
+        "1:11296": "811486ef08a100b4",
+        "1:11300": "c025840e61233228"
+      },
+      "structureHash": "a58cdb98fffd4ae9"
+    },
+    "1:11342": {
+      "name": "Icon + Text_Icon",
+      "page": "Components",
+      "variants": {
+        "1:11343": "Property 1=Icon, Size=XXL XL",
+        "1:11369": "Property 1=Icon, Size=L",
+        "1:11395": "Property 1=Icon, Size=M",
+        "1:11421": "Property 1=Icon, Size=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Icon"
+        ],
+        "Size": [
+          "XXL XL",
+          "L",
+          "M",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:11343": "66cd9220d3ad768a",
+        "1:11369": "bcf51df21fbcf183",
+        "1:11395": "8e63e31f3f5263b9",
+        "1:11421": "edff1ed1f0bccc64"
+      },
+      "structureHash": "f279c09aaed5adf7"
+    },
+    "1:11474": {
+      "name": "Small Card Collections",
+      "page": "Components",
+      "variants": {
+        "1:11475": "Size=XXL, Card Type=Subject, Layout=Full Screen",
+        "1:11498": "Size=XL, Card Type=Subject, Layout=Full Screen",
+        "1:11521": "Size=L, Card Type=Subject, Layout=Full Screen",
+        "1:11544": "Size=M, Card Type=Subject, Layout=Full Screen",
+        "1:11567": "Size=XXL, Card Type=Event, Layout=Full Screen",
+        "1:11590": "Size=XL, Card Type=Event, Layout=Full Screen",
+        "1:11613": "Size=L, Card Type=Event, Layout=Full Screen",
+        "1:11636": "Size=M, Card Type=Event, Layout=Full Screen",
+        "1:11659": "Size=S, Card Type=Event, Layout=Full Screen",
+        "1:11673": "Size=S, Card Type=Subject, Layout=Full Screen",
+        "1:11689": "Size=XXL, Card Type=Event, Layout=Right Rail",
+        "1:11702": "Size=Large, Card Type=League/Lesson, Layout=Right Rail"
+      },
+      "properties": {
+        "Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S",
+          "Large"
+        ],
+        "Card Type": [
+          "Subject",
+          "Event",
+          "League/Lesson"
+        ],
+        "Layout": [
+          "Full Screen",
+          "Right Rail"
+        ]
+      },
+      "variantHashes": {
+        "1:11475": "ffadf2257ac81678",
+        "1:11498": "57d47122919bb583",
+        "1:11521": "3a4b16cbdd64b1e2",
+        "1:11544": "5fb7e9e2bb3d6512",
+        "1:11567": "1cb1fb614adaa279",
+        "1:11590": "95f27c86eddbb958",
+        "1:11613": "47ca79679c1930ed",
+        "1:11636": "f1503609cb1e74ac",
+        "1:11659": "a85ba3b99bcdd7f8",
+        "1:11673": "79ff7b571cbd27cf",
+        "1:11689": "52d583d756e4631f",
+        "1:11702": "589cfb9a9769a6a1"
+      },
+      "structureHash": "a5f002464d785701"
+    },
+    "1:11750": {
+      "name": "Contact Information",
+      "page": "Components",
+      "variants": {
+        "1:11751": "Property 1=Large",
+        "1:11873": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:11751": "e724266d2f468ac1",
+        "1:11873": "78480e73ea2d3b52"
+      },
+      "structureHash": "b23588181cb94886"
+    },
+    "1:12014": {
+      "name": "Article Contact",
+      "page": "Components",
+      "variants": {
+        "1:12015": "Property 1=XXL-L",
+        "1:12081": "Property 1=Medium",
+        "1:12146": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "XXL-L",
+          "Medium",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12015": "62c5c7a6794620eb",
+        "1:12081": "b78e54cafad3113f",
+        "1:12146": "fb22236fa1cd0d9f"
+      },
+      "structureHash": "cbd3947c6601493c"
+    },
+    "1:12233": {
+      "name": "Location",
+      "page": "Components",
+      "variants": {
+        "1:12234": "Property 1=Large",
+        "1:12273": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12234": "1c572a37a3599ad0",
+        "1:12273": "d157fee38f860e5c"
+      },
+      "structureHash": "a32f04ce91f95406"
+    },
+    "1:12342": {
+      "name": "CTA",
+      "page": "Components",
+      "variants": {
+        "1:12343": "Property 1=L-XXL",
+        "1:12357": "Property 1=Medium",
+        "1:12371": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "L-XXL",
+          "Medium",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12343": "5f2bcbffff25098f",
+        "1:12357": "a5b0803dcf6cade3",
+        "1:12371": "2adea579b517a78d"
+      },
+      "structureHash": "2f685272ffa334ac"
+    },
+    "1:12413": {
+      "name": "Right Rail / Contact Container",
+      "page": "Components",
+      "variants": {
+        "1:12414": "Property 1=Right Rail, Size=Large",
+        "1:12419": "Property 1=Right Rail, Size=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Right Rail"
+        ],
+        "Size": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12414": "870111c0bedeaba9",
+        "1:12419": "64c945bcbbb907a8"
+      },
+      "structureHash": "ee8ef1dcff2b938d"
+    },
+    "1:12457": {
+      "name": "Schedule",
+      "page": "Components",
+      "variants": {
+        "1:12458": "Property 1=Default, Size=D XXL",
+        "1:12485": "Property 1=Default, Size=D XL L",
+        "1:12512": "Property 1=Default, Size=D Sm",
+        "1:12539": "Property 1=Default, Size=D Medium",
+        "1:12566": "Property 1=Right Rail, Size=RR XXL XL L",
+        "1:12593": "Property 1=Right Rail, Size=RR Small",
+        "1:12620": "Property 1=Right Rail, Size=RR Medium"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Right Rail"
+        ],
+        "Size": [
+          "D XXL",
+          "D XL L",
+          "D Sm",
+          "D Medium",
+          "RR XXL XL L",
+          "RR Small",
+          "RR Medium"
+        ]
+      },
+      "variantHashes": {
+        "1:12458": "77a62c792dc963bf",
+        "1:12485": "fda9baa87beb9035",
+        "1:12512": "b8eb7e0dcfd396ba",
+        "1:12539": "50ab7075526ea4f8",
+        "1:12566": "7a1f4d1ddd78c98a",
+        "1:12593": "c865a5ae1d74f21a",
+        "1:12620": "4158c9e4c7ad20fa"
+      },
+      "structureHash": "467bdaca293f0192"
+    },
+    "1:12671": {
+      "name": "Anchor Group",
+      "page": "Components",
+      "variants": {
+        "1:12672": "Property 1=Large",
+        "1:12683": "Property 1=Medium",
+        "1:12694": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Medium",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12672": "470058669ed4a401",
+        "1:12683": "af72bcce01d572fa",
+        "1:12694": "606aaaf915110f4b"
+      },
+      "structureHash": "45e191f7e6833a19"
+    },
+    "1:12750": {
+      "name": "Message with Title",
+      "page": "Components",
+      "variants": {
+        "1:12751": "Property 1=Success, Size=Large",
+        "1:12765": "Property 1=Success, Size=Small",
+        "1:12779": "Property 1=Error, Size=Large",
+        "1:12793": "Property 1=Error, Size=Small",
+        "1:12807": "Property 1=Infromation, Size=Large",
+        "1:12821": "Property 1=Information, Size=Small",
+        "1:12835": "Property 1=Alert, Size=Large",
+        "1:12849": "Property 1=Alert, Size=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Success",
+          "Error",
+          "Infromation",
+          "Information",
+          "Alert"
+        ],
+        "Size": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12751": "a1616c902525a860",
+        "1:12765": "8cc478d799b907e0",
+        "1:12779": "2c59fd9fc8c07da4",
+        "1:12793": "8cc478d799b907e0",
+        "1:12807": "a1616c902525a860",
+        "1:12821": "8cc478d799b907e0",
+        "1:12835": "a1616c902525a860",
+        "1:12849": "8cc478d799b907e0"
+      },
+      "structureHash": "38ae8daf71e12fad"
+    },
+    "1:12863": {
+      "name": "Simple Message",
+      "page": "Components",
+      "variants": {
+        "1:12864": "Property 1=Success, Size=Large",
+        "1:12878": "Property 1=Success, Size=Small",
+        "1:12892": "Property 1=Error, Size=Large",
+        "1:12906": "Property 1=Error, Size=Small",
+        "1:12920": "Property 1=Infromation, Size=Large",
+        "1:12934": "Property 1=Information, Size=Small",
+        "1:12948": "Property 1=Alert, Size=Large",
+        "1:12962": "Property 1=Alert, Size=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Success",
+          "Error",
+          "Infromation",
+          "Information",
+          "Alert"
+        ],
+        "Size": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12864": "a1616c902525a860",
+        "1:12878": "4f619105267bd091",
+        "1:12892": "0967615cd89859da",
+        "1:12906": "4f619105267bd091",
+        "1:12920": "0967615cd89859da",
+        "1:12934": "4f619105267bd091",
+        "1:12948": "0967615cd89859da",
+        "1:12962": "8cc478d799b907e0"
+      },
+      "structureHash": "ba8bf7b75c4d64e7"
+    },
+    "1:12976": {
+      "name": "Dismiss Message",
+      "page": "Components",
+      "variants": {
+        "1:12977": "Property 1=Success, Size=Large",
+        "1:12991": "Property 1=Success, Size=Small",
+        "1:13005": "Property 1=Error, Size=Large",
+        "1:13019": "Property 1=Error, Size=Small",
+        "1:13033": "Property 1=Information, Size=Large",
+        "1:13047": "Property 1=Information, Size=Small",
+        "1:13061": "Property 1=Alert, Size=Large",
+        "1:13075": "Property 1=Alert, Size=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Success",
+          "Error",
+          "Information",
+          "Alert"
+        ],
+        "Size": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:12977": "564b9365ea9c8ba7",
+        "1:12991": "9fcb2af2c905ba9b",
+        "1:13005": "564b9365ea9c8ba7",
+        "1:13019": "9fcb2af2c905ba9b",
+        "1:13033": "564b9365ea9c8ba7",
+        "1:13047": "9fcb2af2c905ba9b",
+        "1:13061": "564b9365ea9c8ba7",
+        "1:13075": "9fcb2af2c905ba9b"
+      },
+      "structureHash": "75201dba32f2d4cf"
+    },
+    "1:13156": {
+      "name": "Modal",
+      "page": "Components",
+      "variants": {
+        "1:13157": "Property 1=Default, Size=Large",
+        "1:13164": "Property 1=Default, Size=Small",
+        "1:13171": "Property 1=Default, Size=Medium",
+        "1:13178": "Property 1=Bio, Size=Large",
+        "1:13220": "Property 1=Bio, Size=Small",
+        "1:13262": "Property 1=Bio, Size=Medium"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Bio"
+        ],
+        "Size": [
+          "Large",
+          "Small",
+          "Medium"
+        ]
+      },
+      "variantHashes": {
+        "1:13157": "5e37d1137a15b04a",
+        "1:13164": "068f022724d58ab9",
+        "1:13171": "d02ed121391e33f4",
+        "1:13178": "0fcfcce8c039a3a4",
+        "1:13220": "9c3883cf2dee0f4b",
+        "1:13262": "d144969dee08638a"
+      },
+      "structureHash": "df1ed269f22675dd"
+    },
+    "1:13333": {
+      "name": "311 Banners",
+      "page": "Components",
+      "variants": {
+        "1:13334": "Property 1=Right Rail, Size=XXL",
+        "1:13382": "Property 1=Right Rail, Size=XL",
+        "1:13430": "Property 1=Right Rail, Size=L",
+        "1:13478": "Property 1=Right Rail, Size=M",
+        "1:13526": "Property 1=Full Width, Size=M",
+        "1:13576": "Property 1=Right Rail, Size=S",
+        "1:13624": "Property 1=Full Width, Size=S",
+        "1:13673": "Property 1=Full Width, Size=XXL",
+        "1:13722": "Property 1=Full Width, Size=XL",
+        "1:13771": "Property 1=Full Width, Size=L"
+      },
+      "properties": {
+        "Property 1": [
+          "Right Rail",
+          "Full Width"
+        ],
+        "Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:13334": "26cf973bacb1fed5",
+        "1:13382": "692d51d3714fcd83",
+        "1:13430": "d2ee9a9f002ca5a6",
+        "1:13478": "3d72651bf32b1135",
+        "1:13526": "792e8b16576bb4bf",
+        "1:13576": "6fd58640ca5be28c",
+        "1:13624": "0ffba14f8cf4a9da",
+        "1:13673": "17d7804d931a310e",
+        "1:13722": "50fc6ccec714209d",
+        "1:13771": "d1e803a5b152a162"
+      },
+      "structureHash": "298c2a7df70dd829"
+    },
+    "1:13836": {
+      "name": "911 Emergency",
+      "page": "Components",
+      "variants": {
+        "1:13837": "Property 1=XXL XL",
+        "1:13853": "Property 1=L",
+        "1:13870": "Property 1=M",
+        "1:13886": "Property 1=S"
+      },
+      "properties": {
+        "Property 1": [
+          "XXL XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:13837": "ac954ab315060478",
+        "1:13853": "6331facc44c107ea",
+        "1:13870": "4128b954729a2488",
+        "1:13886": "c07ffc73bb3cd125"
+      },
+      "structureHash": "48b338d1e0190ed7"
+    },
+    "1:13909": {
+      "name": "ChattaData Banners",
+      "page": "Components",
+      "variants": {
+        "1:13910": "Property 1=XXL",
+        "1:13963": "Property 1=XL",
+        "1:14017": "Property 1=L",
+        "1:14070": "Property 1=M",
+        "1:14123": "Property 1=S",
+        "1:14176": "Property 1=Variant6"
+      },
+      "properties": {
+        "Property 1": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S",
+          "Variant6"
+        ]
+      },
+      "variantHashes": {
+        "1:13910": "b5947d13aca52853",
+        "1:13963": "71f5fe99df1ece88",
+        "1:14017": "922225c62f1a7ce9",
+        "1:14070": "4ee46681e00d0053",
+        "1:14123": "884bc5ee12551634",
+        "1:14176": "ce7c8008c04a9bcc"
+      },
+      "structureHash": "533cec8bf4c00302"
+    },
+    "1:14343": {
+      "name": "Footer",
+      "page": "Components",
+      "variants": {
+        "1:14344": "Type=XXL",
+        "1:14427": "Type=XL",
+        "1:14510": "Type=L",
+        "1:14593": "Type=M",
+        "1:14676": "Type=S"
+      },
+      "properties": {
+        "Type": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:14344": "b78bc236ff2b07a8",
+        "1:14427": "a09c54f7d436702f",
+        "1:14510": "06c4087ff202a57b",
+        "1:14593": "44f0d2e6c1ad26b2",
+        "1:14676": "775b565f41c345fe"
+      },
+      "structureHash": "3e5de88d67c91988"
+    },
+    "1:14793": {
+      "name": "Tertiary Heros - SM",
+      "page": "Components",
+      "variants": {
+        "1:14794": "Property 1=Default",
+        "1:14800": "Property 1=Amenities",
+        "1:14816": "Property 1=Split (Amenities)"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Amenities",
+          "Split (Amenities)"
+        ]
+      },
+      "variantHashes": {
+        "1:14794": "503516fc06f36e2b",
+        "1:14800": "e3b7018b22b687aa",
+        "1:14816": "872dbb8354ae366a"
+      },
+      "structureHash": "e73e9ee30cb1298d"
+    },
+    "1:14842": {
+      "name": "Tertiary Heros - LG",
+      "page": "Components",
+      "variants": {
+        "1:14843": "Property 1=Default",
+        "1:14850": "Property 1=Project/Intiative",
+        "1:14857": "Property 1=Amenities",
+        "1:14874": "Property 1=Wrapped amenities"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Project/Intiative",
+          "Amenities",
+          "Wrapped amenities"
+        ]
+      },
+      "variantHashes": {
+        "1:14843": "24edc7d5fc122726",
+        "1:14850": "590378113917f6f0",
+        "1:14857": "6b20ae54826b9298",
+        "1:14874": "6d873265c8516572"
+      },
+      "structureHash": "25138ab21f9d244b"
+    },
+    "1:14904": {
+      "name": "Landing Page Heros",
+      "page": "Components",
+      "variants": {
+        "1:14905": "Screen Size=Wrapping",
+        "1:14912": "Screen Size=S Screen",
+        "1:14918": "Screen Size=M Screen",
+        "1:14925": "Screen Size=L Screen",
+        "1:14932": "Screen Size=XL Screen",
+        "1:14939": "Screen Size=XXL Screen"
+      },
+      "properties": {
+        "Screen Size": [
+          "Wrapping",
+          "S Screen",
+          "M Screen",
+          "L Screen",
+          "XL Screen",
+          "XXL Screen"
+        ]
+      },
+      "variantHashes": {
+        "1:14905": "4b2c56835da490cd",
+        "1:14912": "f6bf9b32200967b9",
+        "1:14918": "223860dd778ca0bc",
+        "1:14925": "4ada5f8dbb452f54",
+        "1:14932": "5bdbc047a90ea7e6",
+        "1:14939": "4b2c56835da490cd"
+      },
+      "structureHash": "23b15bc7712edde0"
+    },
+    "1:14947": {
+      "name": "Secondary Heros - Desktop",
+      "page": "Components",
+      "variants": {
+        "1:14948": "Type=Title + Blurb",
+        "1:14953": "Type=Type4",
+        "1:14959": "Type=Title + Blurb + Button",
+        "1:14965": "Type=Only Title"
+      },
+      "properties": {
+        "Type": [
+          "Title + Blurb",
+          "Type4",
+          "Title + Blurb + Button",
+          "Only Title"
+        ]
+      },
+      "variantHashes": {
+        "1:14948": "8a7888c9d0656342",
+        "1:14953": "8a7888c9d0656342",
+        "1:14959": "8a7888c9d0656342",
+        "1:14965": "8a7888c9d0656342"
+      },
+      "structureHash": "bcc4dc8e3dbd64b2"
+    },
+    "1:14968": {
+      "name": "Secondary Heros - Mobile",
+      "page": "Components",
+      "variants": {
+        "1:14969": "Type=Title + Blurb + Button",
+        "1:14975": "Type=Type4",
+        "1:14981": "Type=Type4",
+        "1:14986": "Type=Only Title"
+      },
+      "properties": {
+        "Type": [
+          "Title + Blurb + Button",
+          "Type4",
+          "Only Title"
+        ]
+      },
+      "variantHashes": {
+        "1:14969": "a7c1bcd561591615",
+        "1:14975": "a7c1bcd561591615",
+        "1:14981": "a7c1bcd561591615",
+        "1:14986": "a7c1bcd561591615"
+      },
+      "structureHash": "1f04fc22812e291f"
+    },
+    "1:14989": {
+      "name": "Secondary Heros - LG",
+      "page": "Components",
+      "variants": {
+        "1:14990": "Type=Title + Blurb + Button"
+      },
+      "properties": {
+        "Type": [
+          "Title + Blurb + Button"
+        ]
+      },
+      "variantHashes": {
+        "1:14990": "452d8088e4fba789"
+      },
+      "structureHash": "452d8088e4fba789"
+    },
+    "1:15008": {
+      "name": "Homepage Hero",
+      "page": "Components",
+      "variants": {
+        "1:15009": "Screen Size=M",
+        "1:15027": "Screen Size=S",
+        "1:15045": "Screen Size=L",
+        "1:15063": "Screen Size=XL",
+        "1:15088": "Screen Size=XXL"
+      },
+      "properties": {
+        "Screen Size": [
+          "M",
+          "S",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "variantHashes": {
+        "1:15009": "29e5fa3f32f64ee4",
+        "1:15027": "82a50ed6cbf36cc3",
+        "1:15045": "ef0ee03b8dbb9da3",
+        "1:15063": "033e6f7588199c0b",
+        "1:15088": "9534a96c487592c3"
+      },
+      "structureHash": "2a278d3c1067561d"
+    },
+    "1:15111": {
+      "name": "Article Heros",
+      "page": "Components",
+      "variants": {
+        "1:15112": "Screen Size=XXL",
+        "1:15120": "Screen Size=XL",
+        "1:15129": "Screen Size=L",
+        "1:15137": "Screen Size=M",
+        "1:15145": "Screen Size=S"
+      },
+      "properties": {
+        "Screen Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:15112": "8186e79603653219",
+        "1:15120": "4857f2d1ed257dbd",
+        "1:15129": "f1346ec6ee01ae78",
+        "1:15137": "6c07fb085f075bf8",
+        "1:15145": "e294cb040cc632cb"
+      },
+      "structureHash": "7a24350e96a8d1d2"
+    },
+    "1:15154": {
+      "name": "Desktop Mega Menu",
+      "page": "Components",
+      "variants": {
+        "1:15155": "Navbar=XXL Desktop, Columns=4, Tab=Explore Services",
+        "1:15195": "Navbar=XL Desktop, Columns=4, Tab=Explore Services",
+        "1:15234": "Navbar=XXL Desktop, Columns=2, Tab=Pay & Apply",
+        "1:15257": "Navbar=XL Desktop, Columns=2, Tab=Pay & Apply"
+      },
+      "properties": {
+        "Navbar": [
+          "XXL Desktop",
+          "XL Desktop"
+        ],
+        "Columns": [
+          "4",
+          "2"
+        ],
+        "Tab": [
+          "Explore Services",
+          "Pay & Apply"
+        ]
+      },
+      "variantHashes": {
+        "1:15155": "5980484696545ebc",
+        "1:15195": "4e5bd8149fff8ae3",
+        "1:15234": "bd14e4e51fb17c39",
+        "1:15257": "fa05e1972acb2c1a"
+      },
+      "structureHash": "943876c15c2aa702"
+    },
+    "1:15300": {
+      "name": "S Mobile Mega Menu",
+      "page": "Components",
+      "variants": {
+        "1:15301": "Menu=Menu6",
+        "1:15333": "Menu=Menu5"
+      },
+      "properties": {
+        "Menu": [
+          "Menu6",
+          "Menu5"
+        ]
+      },
+      "variantHashes": {
+        "1:15301": "c3b31ecbddffefe5",
+        "1:15333": "c3b31ecbddffefe5"
+      },
+      "structureHash": "7b0d27c002f0b14e"
+    },
+    "1:15359": {
+      "name": "L Mobile Mega Menu",
+      "page": "Components",
+      "variants": {
+        "1:15360": "Menu=Menu6",
+        "1:15414": "Menu=Menu5"
+      },
+      "properties": {
+        "Menu": [
+          "Menu6",
+          "Menu5"
+        ]
+      },
+      "variantHashes": {
+        "1:15360": "2ba64d3b711df6a9",
+        "1:15414": "2ba64d3b711df6a9"
+      },
+      "structureHash": "9c3d9c86fa24079f"
+    },
+    "1:20767": {
+      "name": "textarea",
+      "page": "Components",
+      "variants": {
+        "1:20768": "State=Default, Screen=Desktop",
+        "1:20773": "State=Error, Screen=Desktop",
+        "1:20780": "State=Default, Screen=Mobile",
+        "1:20785": "State=Error, Screen=Mobile",
+        "1:20792": "State=Hover-active, Screen=Desktop",
+        "1:20797": "State=Hover-active, Screen=Mobile",
+        "1:20802": "State=Disabled, Screen=Desktop",
+        "1:20807": "State=Disabled, Screen=Mobile",
+        "1:20812": "State=Focus, Screen=Desktop",
+        "1:20818": "State=Focus, Screen=Mobile"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Error",
+          "Hover-active",
+          "Disabled",
+          "Focus"
+        ],
+        "Screen": [
+          "Desktop",
+          "Mobile"
+        ]
+      },
+      "variantHashes": {
+        "1:20768": "483b1dbc800db729",
+        "1:20773": "cac1cc74807ddb69",
+        "1:20780": "61df479506b8f9d7",
+        "1:20785": "e2c914103be4135b",
+        "1:20792": "483b1dbc800db729",
+        "1:20797": "61df479506b8f9d7",
+        "1:20802": "483b1dbc800db729",
+        "1:20807": "61df479506b8f9d7",
+        "1:20812": "d611396f7423f9e2",
+        "1:20818": "d82fe48902fa3f94"
+      },
+      "structureHash": "bfd20111a0ab59c2"
+    },
+    "1:20824": {
+      "name": "input fields",
+      "page": "Components",
+      "variants": {
+        "1:20825": "State=Default, Screen=Desktop",
+        "1:20830": "State=Default, Screen=Mobile",
+        "1:20835": "State=Error, Screen=Desktop",
+        "1:20842": "State=Error, Screen=Mobile",
+        "1:20849": "State=Disabled, Screen=Desktop",
+        "1:20854": "State=Disabled, Screen=Mobile",
+        "1:20859": "State=Active, Screen=Desktop",
+        "1:20864": "State=Active, Screen=Mobile",
+        "1:20869": "State=Focus, Screen=Desktop",
+        "1:20875": "State=Focus, Screen=Mobile"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Error",
+          "Disabled",
+          "Active",
+          "Focus"
+        ],
+        "Screen": [
+          "Desktop",
+          "Mobile"
+        ]
+      },
+      "variantHashes": {
+        "1:20825": "500cc37750178e8c",
+        "1:20830": "c5b3d225d443a32a",
+        "1:20835": "9e62716f0a3362b7",
+        "1:20842": "2bbc8ae22ddb4e5a",
+        "1:20849": "500cc37750178e8c",
+        "1:20854": "c5b3d225d443a32a",
+        "1:20859": "500cc37750178e8c",
+        "1:20864": "c5b3d225d443a32a",
+        "1:20869": "1df817bea6143bd9",
+        "1:20875": "3ef8694a7fc9289d"
+      },
+      "structureHash": "454b76ae5473e1cf"
+    },
+    "1:20925": {
+      "name": "radio buttons",
+      "page": "Components",
+      "variants": {
+        "1:20926": "variant=disabled, checked=true, Screen=Desktop",
+        "1:20933": "variant=disabled, checked=true, Screen=Mobile",
+        "1:20940": "variant=disabled, checked=false, Screen=Desktop",
+        "1:20947": "variant=disabled, checked=false, Screen=Mobile",
+        "1:20954": "variant=focus, checked=true, Screen=Desktop",
+        "1:20962": "variant=focus, checked=true, Screen=Mobile",
+        "1:20970": "variant=focus, checked=false, Screen=Desktop",
+        "1:20978": "variant=focus, checked=false, Screen=Mobile",
+        "1:20986": "variant=active, checked=true, Screen=Desktop",
+        "1:20993": "variant=active, checked=true, Screen=Mobile",
+        "1:21000": "variant=hover, checked=false, Screen=Desktop",
+        "1:21007": "variant=hover, checked=false, Screen=Mobile",
+        "1:21014": "variant=default, checked=false, Screen=Desktop",
+        "1:21021": "variant=default, checked=false, Screen=Mobile"
+      },
+      "properties": {
+        "variant": [
+          "disabled",
+          "focus",
+          "active",
+          "hover",
+          "default"
+        ],
+        "checked": [
+          "true",
+          "false"
+        ],
+        "Screen": [
+          "Desktop",
+          "Mobile"
+        ]
+      },
+      "variantHashes": {
+        "1:20926": "b5a1869231737cb0",
+        "1:20933": "b5a1869231737cb0",
+        "1:20940": "b5a1869231737cb0",
+        "1:20947": "b5a1869231737cb0",
+        "1:20954": "a80bb2152e6e6178",
+        "1:20962": "3dce0a1039d14c74",
+        "1:20970": "a80bb2152e6e6178",
+        "1:20978": "a80bb2152e6e6178",
+        "1:20986": "b5a1869231737cb0",
+        "1:20993": "b5a1869231737cb0",
+        "1:21000": "b5a1869231737cb0",
+        "1:21007": "b5a1869231737cb0",
+        "1:21014": "b5a1869231737cb0",
+        "1:21021": "b5a1869231737cb0"
+      },
+      "structureHash": "2238fe70ac15725e"
+    },
+    "1:21039": {
+      "name": "Radio Button Question",
+      "page": "Components",
+      "variants": {
+        "1:21040": "Size=Mobile",
+        "1:21048": "Size=Desktop"
+      },
+      "properties": {
+        "Size": [
+          "Mobile",
+          "Desktop"
+        ]
+      },
+      "variantHashes": {
+        "1:21040": "3e252c587848948c",
+        "1:21048": "eb098dd5f75ad84b"
+      },
+      "structureHash": "5329e356891216c7"
+    },
+    "1:21080": {
+      "name": "Dropdowns",
+      "page": "Components",
+      "variants": {
+        "1:21081": "State=Default, Screen=Desktop, Size=Large",
+        "1:21087": "State=Disabled, Screen=Desktop, Size=Large",
+        "1:21093": "State=Error, Screen=Desktop, Size=Large",
+        "1:21101": "State=Hover, Screen=Desktop, Size=Large",
+        "1:21107": "State=Focus, Screen=Desktop, Size=Large",
+        "1:21114": "State=Focus, Screen=Desktop, Size=Small",
+        "1:21121": "State=Focus, Screen=Mobile, Size=-",
+        "1:21128": "State=Default, Screen=Desktop, Size=Small",
+        "1:21134": "State=Disabled, Screen=Desktop, Size=Small",
+        "1:21140": "State=Error, Screen=Desktop, Size=Small",
+        "1:21148": "State=Hover, Screen=Desktop, Size=Small",
+        "1:21154": "State=Default, Screen=Mobile, Size=-",
+        "1:21160": "State=Disabled, Screen=Mobile, Size=-",
+        "1:21166": "State=Error, Screen=Mobile, Size=-",
+        "1:21174": "State=Hover, Screen=Mobile, Size=-"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Disabled",
+          "Error",
+          "Hover",
+          "Focus"
+        ],
+        "Screen": [
+          "Desktop",
+          "Mobile"
+        ],
+        "Size": [
+          "Large",
+          "Small",
+          "-"
+        ]
+      },
+      "variantHashes": {
+        "1:21081": "2664ccf4c6996a3a",
+        "1:21087": "2664ccf4c6996a3a",
+        "1:21093": "2bb663a672e41a86",
+        "1:21101": "2664ccf4c6996a3a",
+        "1:21107": "32b02ac991c01a2d",
+        "1:21114": "9b97cad1a441db18",
+        "1:21121": "6053ec2828d0c17a",
+        "1:21128": "044c15cee97f138a",
+        "1:21134": "044c15cee97f138a",
+        "1:21140": "a63f82ca56bc76c4",
+        "1:21148": "044c15cee97f138a",
+        "1:21154": "9dda3f79d9ad3a9e",
+        "1:21160": "0fa2faf63e3a2e74",
+        "1:21166": "3ba935417d2a645b",
+        "1:21174": "0fa2faf63e3a2e74"
+      },
+      "structureHash": "562d5a1cea79f079"
+    },
+    "1:21180": {
+      "name": "Primary Buttons Dropdown",
+      "page": "Components",
+      "variants": {
+        "1:21181": "State=Default, Screen=Desktop, Type=Closed",
+        "1:21186": "State=Default, Screen=Mobile, Type=Closed",
+        "1:21191": "State=Disabled, Screen=Desktop, Type=Closed",
+        "1:21196": "State=Disabled, Screen=Mobile, Type=Closed",
+        "1:21201": "State=Focus, Screen=Desktop, Type=Closed",
+        "1:21205": "State=Focus, Screen=Mobile, Type=Closed",
+        "1:21209": "State=Hover, Screen=Desktop, Type=Closed",
+        "1:21214": "State=Hover, Screen=Mobile, Type=Closed",
+        "1:21219": "State=Default, Screen=Desktop, Type=Open",
+        "1:21238": "State=Default, Screen=Mobile, Type=Open",
+        "1:21257": "State=Hover, Screen=Desktop, Type=Open",
+        "1:21276": "State=Hover, Screen=Mobile, Type=Open",
+        "1:21295": "State=Focus, Screen=Desktop, Type=Open",
+        "1:21314": "State=Focus, Screen=Mobile, Type=Open",
+        "1:21333": "State=Disabled, Screen=Desktop, Type=Open",
+        "1:21352": "State=Disabled, Screen=Mobile, Type=Open"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Disabled",
+          "Focus",
+          "Hover"
+        ],
+        "Screen": [
+          "Desktop",
+          "Mobile"
+        ],
+        "Type": [
+          "Closed",
+          "Open"
+        ]
+      },
+      "variantHashes": {
+        "1:21181": "a22d1968a872215d",
+        "1:21186": "e12c9aca7934a3e3",
+        "1:21191": "a22d1968a872215d",
+        "1:21196": "e12c9aca7934a3e3",
+        "1:21201": "72a7b59d7eb9e8d7",
+        "1:21205": "45e1c709752837f7",
+        "1:21209": "a22d1968a872215d",
+        "1:21214": "e12c9aca7934a3e3",
+        "1:21219": "0137b49d482943c5",
+        "1:21238": "e3635dc931d860ef",
+        "1:21257": "0137b49d482943c5",
+        "1:21276": "61e1f3e67fb052d1",
+        "1:21295": "0137b49d482943c5",
+        "1:21314": "61e1f3e67fb052d1",
+        "1:21333": "0137b49d482943c5",
+        "1:21352": "61e1f3e67fb052d1"
+      },
+      "structureHash": "b15829b774bed136"
+    },
+    "1:21399": {
+      "name": "Open Dropdowns",
+      "page": "Components",
+      "variants": {
+        "1:21400": "State=Default, Screen=Desktop, Size=Large",
+        "1:21420": "State=Default, Screen=Desktop, Size=Small",
+        "1:21435": "State=Default, Screen=Mobile, Size=-",
+        "1:21450": "State=Hover, Screen=Mobile, Size=-",
+        "1:21465": "State=Focus, Screen=Mobile, Size=-",
+        "1:21480": "State=Disabled, Screen=Mobile, Size=-",
+        "1:21495": "State=Disabled, Screen=Desktop, Size=Small",
+        "1:21510": "State=Hover, Screen=Desktop, Size=Small",
+        "1:21525": "State=Focu, Screen=Desktop, Size=Small",
+        "1:21540": "State=Disabled, Screen=Desktop, Size=Large",
+        "1:21555": "State=Hover, Screen=Desktop, Size=Large",
+        "1:21570": "State=Focus, Screen=Desktop, Size=Large"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Disabled",
+          "Focu"
+        ],
+        "Screen": [
+          "Desktop",
+          "Mobile"
+        ],
+        "Size": [
+          "Large",
+          "Small",
+          "-"
+        ]
+      },
+      "variantHashes": {
+        "1:21400": "319f729257ee0936",
+        "1:21420": "ba295397b8d7bd61",
+        "1:21435": "e12e20c5671543b5",
+        "1:21450": "e12e20c5671543b5",
+        "1:21465": "e12e20c5671543b5",
+        "1:21480": "e12e20c5671543b5",
+        "1:21495": "ba295397b8d7bd61",
+        "1:21510": "ba295397b8d7bd61",
+        "1:21525": "ba295397b8d7bd61",
+        "1:21540": "319f729257ee0936",
+        "1:21555": "319f729257ee0936",
+        "1:21570": "319f729257ee0936"
+      },
+      "structureHash": "d3aad386ce3af744"
+    },
+    "1:21636": {
+      "name": "check boxes",
+      "page": "Components",
+      "variants": {
+        "1:21637": "variant=Disabled, Checked=True, Screen=Desktop",
+        "1:21644": "variant=Disabled, Checked=True, Screen=Mobile",
+        "1:21651": "variant=Disabled, Checked=False, Screen=Desktop",
+        "1:21658": "variant=Disabled, Checked=False, Screen=Mobile",
+        "1:21665": "variant=Focus, Checked=True, Screen=Desktop",
+        "1:21673": "variant=Focus, Checked=True, Screen=Mobile",
+        "1:21681": "variant=Focus, Checked=False, Screen=Desktop",
+        "1:21689": "variant=Focus, Checked=False, Screen=Mobile",
+        "1:21697": "variant=Active, Checked=True, Screen=Desktop",
+        "1:21704": "variant=Active, Checked=True, Screen=Mobile",
+        "1:21711": "variant=Hover, Checked=False, Screen=Desktop",
+        "1:21718": "variant=Hover, Checked=False, Screen=Mobile",
+        "1:21725": "variant=default, Checked=False, Screen=Desktop",
+        "1:21733": "variant=default, Checked=False, Screen=Mobile"
+      },
+      "properties": {
+        "variant": [
+          "Disabled",
+          "Focus",
+          "Active",
+          "Hover",
+          "default"
+        ],
+        "Checked": [
+          "True",
+          "False"
+        ],
+        "Screen": [
+          "Desktop",
+          "Mobile"
+        ]
+      },
+      "variantHashes": {
+        "1:21637": "b5a1869231737cb0",
+        "1:21644": "030a2faa320fc5c5",
+        "1:21651": "b5a1869231737cb0",
+        "1:21658": "b5a1869231737cb0",
+        "1:21665": "b5a1869231737cb0",
+        "1:21673": "b5a1869231737cb0",
+        "1:21681": "b5a1869231737cb0",
+        "1:21689": "b5a1869231737cb0",
+        "1:21697": "b5a1869231737cb0",
+        "1:21704": "b5a1869231737cb0",
+        "1:21711": "b5a1869231737cb0",
+        "1:21718": "030a2faa320fc5c5",
+        "1:21725": "b5a1869231737cb0",
+        "1:21733": "b5a1869231737cb0"
+      },
+      "structureHash": "eca0d632d1fe4743"
+    },
+    "1:22356": {
+      "name": "Event Card",
+      "page": "Components",
+      "variants": {
+        "1:22357": "State=Default, Size=XXL",
+        "1:22374": "State=Focus, Size=XXL",
+        "1:22390": "State=Hover, Size=XXL",
+        "1:22406": "State=Default, Size=XL",
+        "1:22422": "State=Focus, Size=XL",
+        "1:22438": "State=Hover, Size=XL",
+        "1:22454": "State=Default, Size=L",
+        "1:22470": "State=Focus, Size=L",
+        "1:22486": "State=Hover, Size=L",
+        "1:22502": "State=Default, Size=M",
+        "1:22518": "State=Focus, Size=M",
+        "1:22534": "State=Hover, Size=M",
+        "1:22550": "State=Default, Size=S",
+        "1:22567": "State=Focus, Size=S",
+        "1:22583": "State=Hover, Size=S"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Focus",
+          "Hover"
+        ],
+        "Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:22357": "a30a967cd7423afc",
+        "1:22374": "a30a967cd7423afc",
+        "1:22390": "a30a967cd7423afc",
+        "1:22406": "7ddc72882544f616",
+        "1:22422": "7ddc72882544f616",
+        "1:22438": "7ddc72882544f616",
+        "1:22454": "dcbfbb8ff6f3cc48",
+        "1:22470": "dcbfbb8ff6f3cc48",
+        "1:22486": "dcbfbb8ff6f3cc48",
+        "1:22502": "d2e2988fa8bba20e",
+        "1:22518": "c5859a70ccf52af1",
+        "1:22534": "c5859a70ccf52af1",
+        "1:22550": "cd0cdb6f145a32ec",
+        "1:22567": "cd0cdb6f145a32ec",
+        "1:22583": "cd0cdb6f145a32ec"
+      },
+      "structureHash": "bf268c8cce0590c3"
+    },
+    "1:22610": {
+      "name": "Subject Cards",
+      "page": "Components",
+      "variants": {
+        "1:22611": "Card type=Icon, State=Default, Screen Size=XXL",
+        "1:22621": "Card type=Simple, State=Default, Screen Size=XXL",
+        "1:22630": "Card type=Icon, State=Focus, Screen Size=XXL",
+        "1:22640": "Card type=Simple, State=Focus, Screen Size=XXL",
+        "1:22649": "Card type=Icon, State=Hover, Screen Size=XXL",
+        "1:22659": "Card type=Simple, State=Hover, Screen Size=XXL",
+        "1:22668": "Card type=Icon, State=Default, Screen Size=XL",
+        "1:22678": "Card type=Simple, State=Default, Screen Size=XL",
+        "1:22687": "Card type=Icon, State=Focus, Screen Size=XL",
+        "1:22697": "Card type=Simple, State=Focus, Screen Size=XL",
+        "1:22706": "Card type=Icon, State=Hover, Screen Size=XL",
+        "1:22716": "Card type=Simple, State=Hover, Screen Size=XL",
+        "1:22725": "Card type=Icon, State=Default, Screen Size=L",
+        "1:22735": "Card type=Icon, State=Focu, Screen Size=L",
+        "1:22745": "Card type=Icon, State=Hover, Screen Size=L",
+        "1:22755": "Card type=Simple, State=Default, Screen Size=L",
+        "1:22764": "Card type=Simple, State=Focus, Screen Size=L",
+        "1:22773": "Card type=Simple, State=Hover, Screen Size=L",
+        "1:22782": "Card type=Icon, State=Default, Screen Size=M",
+        "1:22792": "Card type=Simple, State=Default, Screen Size=M",
+        "1:22801": "Card type=Icon, State=Focus, Screen Size=M",
+        "1:22811": "Card type=Simple, State=Focus, Screen Size=M",
+        "1:22820": "Card type=Icon, State=Hover, Screen Size=M",
+        "1:22830": "Card type=Simple, State=Hover, Screen Size=M",
+        "1:22839": "Card type=Icon, State=Default, Screen Size=S",
+        "1:22849": "Card type=Simple, State=Default, Screen Size=S",
+        "1:22858": "Card type=Icon, State=Focus, Screen Size=S",
+        "1:22868": "Card type=Simple, State=Focus, Screen Size=S",
+        "1:22877": "Card type=Icon, State=Hover, Screen Size=S",
+        "1:22887": "Card type=Simple, State=Hover, Screen Size=S"
+      },
+      "properties": {
+        "Card type": [
+          "Icon",
+          "Simple"
+        ],
+        "State": [
+          "Default",
+          "Focus",
+          "Hover",
+          "Focu"
+        ],
+        "Screen Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:22611": "5000a344bd7e45db",
+        "1:22621": "5000a344bd7e45db",
+        "1:22630": "5000a344bd7e45db",
+        "1:22640": "5000a344bd7e45db",
+        "1:22649": "5000a344bd7e45db",
+        "1:22659": "5000a344bd7e45db",
+        "1:22668": "b98c6971ec3ec14e",
+        "1:22678": "b98c6971ec3ec14e",
+        "1:22687": "b98c6971ec3ec14e",
+        "1:22697": "b98c6971ec3ec14e",
+        "1:22706": "b98c6971ec3ec14e",
+        "1:22716": "b98c6971ec3ec14e",
+        "1:22725": "f439dd9ddf7f5dbf",
+        "1:22735": "f439dd9ddf7f5dbf",
+        "1:22745": "f439dd9ddf7f5dbf",
+        "1:22755": "2bd03a679b8fbe88",
+        "1:22764": "2bd03a679b8fbe88",
+        "1:22773": "2bd03a679b8fbe88",
+        "1:22782": "957905e9e4e45d10",
+        "1:22792": "957905e9e4e45d10",
+        "1:22801": "957905e9e4e45d10",
+        "1:22811": "957905e9e4e45d10",
+        "1:22820": "957905e9e4e45d10",
+        "1:22830": "957905e9e4e45d10",
+        "1:22839": "5dcb2ceeed2a5458",
+        "1:22849": "5dcb2ceeed2a5458",
+        "1:22858": "5dcb2ceeed2a5458",
+        "1:22868": "5dcb2ceeed2a5458",
+        "1:22877": "5dcb2ceeed2a5458",
+        "1:22887": "5dcb2ceeed2a5458"
+      },
+      "structureHash": "014a0c41c7e1ab95"
+    },
+    "1:22907": {
+      "name": "Large Cards",
+      "page": "Components",
+      "variants": {
+        "1:22908": "Card type=Image, State=Default, Screen Size=XXL",
+        "1:22921": "Card type=Image, State=Focus, Screen Size=XXL",
+        "1:22936": "Card type=Image, State=Hover, Screen Size=XXL",
+        "1:22949": "Card type=Image, State=Default, Screen Size=XL",
+        "1:22962": "Card type=Image, State=Focus, Screen Size=XL",
+        "1:22977": "Card type=Image, State=Hover, Screen Size=XL",
+        "1:22990": "Card type=Image, State=Default, Screen Size=L",
+        "1:23003": "Card type=Image, State=Focus, Screen Size=L",
+        "1:23018": "Card type=Image, State=Hover, Screen Size=L",
+        "1:23031": "Card type=Image, State=Default, Screen Size=M",
+        "1:23044": "Card type=Image, State=Focus, Screen Size=M",
+        "1:23059": "Card type=Image, State=Hover, Screen Size=M",
+        "1:23072": "Card type=Image, State=Default, Screen Size=S",
+        "1:23085": "Card type=Image, State=Focus, Screen Size=S",
+        "1:23100": "Card type=Image, State=Hover, Screen Size=S"
+      },
+      "properties": {
+        "Card type": [
+          "Image"
+        ],
+        "State": [
+          "Default",
+          "Focus",
+          "Hover"
+        ],
+        "Screen Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:22908": "36362494858c22a2",
+        "1:22921": "36362494858c22a2",
+        "1:22936": "36362494858c22a2",
+        "1:22949": "74ee54ea73cb66f4",
+        "1:22962": "74ee54ea73cb66f4",
+        "1:22977": "74ee54ea73cb66f4",
+        "1:22990": "806c8628ea8e0bc9",
+        "1:23003": "65cbfd550713b40d",
+        "1:23018": "65cbfd550713b40d",
+        "1:23031": "c3e36344897902cf",
+        "1:23044": "c3e36344897902cf",
+        "1:23059": "c3e36344897902cf",
+        "1:23072": "241beebe02f2f6ab",
+        "1:23085": "ec5f877ad1d23d98",
+        "1:23100": "ec5f877ad1d23d98"
+      },
+      "structureHash": "28bfb653405549c9"
+    },
+    "1:23120": {
+      "name": "League/Lesson Cards",
+      "page": "Components",
+      "variants": {
+        "1:23121": "State=Default, Screen Size=XXL",
+        "1:23150": "State=Focus, Screen Size=XXL",
+        "1:23179": "State=Hover, Screen Size=XXL",
+        "1:23208": "State=Default, Screen Size=XL",
+        "1:23237": "State=Focus, Screen Size=XL",
+        "1:23266": "State=Hover, Screen Size=XL",
+        "1:23295": "State=Default, Screen Size=L",
+        "1:23324": "State=Focus, Screen Size=L",
+        "1:23353": "State=Hover, Screen Size=L",
+        "1:23382": "State=Default, Screen Size=M",
+        "1:23411": "State=Focus, Screen Size=M",
+        "1:23440": "State=Hover, Screen Size=M",
+        "1:23469": "State=Default, Screen Size=S",
+        "1:23498": "State=Focus, Screen Size=S",
+        "1:23527": "State=Hover, Screen Size=S"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Focus",
+          "Hover"
+        ],
+        "Screen Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:23121": "e21a03518f38691d",
+        "1:23150": "731d781f7f7c92b8",
+        "1:23179": "10c6a8a38acd0128",
+        "1:23208": "bc1da39ee77fde35",
+        "1:23237": "bc1da39ee77fde35",
+        "1:23266": "bc1da39ee77fde35",
+        "1:23295": "409b8682613420b7",
+        "1:23324": "409b8682613420b7",
+        "1:23353": "409b8682613420b7",
+        "1:23382": "3ccb3212913f22ef",
+        "1:23411": "3ccb3212913f22ef",
+        "1:23440": "e3c56e8791621c33",
+        "1:23469": "241beebe02f2f6ab",
+        "1:23498": "241beebe02f2f6ab",
+        "1:23527": "0ffba14f8cf4a9da"
+      },
+      "structureHash": "8feb7a93d410a0df"
+    },
+    "1:23584": {
+      "name": "Form Layouts",
+      "page": "Components",
+      "variants": {
+        "1:23585": "Size=Small, Form Type=Basic",
+        "1:23603": "Size=Large, Form Type=Basic",
+        "1:23621": "Size=Large, Form Type=Text",
+        "1:23649": "Size=Large, Form Type=Multi-step",
+        "1:23715": "Size=Smal, Form Type=Multi-step",
+        "1:23777": "Size=Small, Form Type=Text"
+      },
+      "properties": {
+        "Size": [
+          "Small",
+          "Large",
+          "Smal"
+        ],
+        "Form Type": [
+          "Basic",
+          "Text",
+          "Multi-step"
+        ]
+      },
+      "variantHashes": {
+        "1:23585": "c9deca53d45ab138",
+        "1:23603": "87641a6827e4ae9f",
+        "1:23621": "25c5fea974f5ef25",
+        "1:23649": "d3cb739b237b8fb3",
+        "1:23715": "01d084c7fbb35e91",
+        "1:23777": "a3425868d59ba18a"
+      },
+      "structureHash": "3a935f13ce381bd5"
+    },
+    "1:23806": {
+      "name": "Feedback Form",
+      "page": "Components",
+      "variants": {
+        "1:23807": "Property 1=Default, Size=Medium",
+        "1:23812": "Property 1=Default, Size=Large",
+        "1:23817": "Property 1=Default, Size=Small",
+        "1:23822": "Property 1=No, Size=Large",
+        "1:23832": "Property 1=No, Size=Medium",
+        "1:23842": "Property 1=No, Size=Small",
+        "1:23852": "Property 1=Yes, Size=Large",
+        "1:23854": "Property 1=Yes, Size=Medium",
+        "1:23856": "Property 1=Yes, Size=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "No",
+          "Yes"
+        ],
+        "Size": [
+          "Medium",
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:23807": "221088e616d57b8f",
+        "1:23812": "38f691808ca42e47",
+        "1:23817": "6ddc167f3f11b164",
+        "1:23822": "8fc7df692c17a8e7",
+        "1:23832": "5be79f116cd09a3d",
+        "1:23842": "8d0111a61c1ae0a3",
+        "1:23852": "38f691808ca42e47",
+        "1:23854": "221088e616d57b8f",
+        "1:23856": "6ddc167f3f11b164"
+      },
+      "structureHash": "7f032636361cf18b"
+    },
+    "1:23884": {
+      "name": "Procedures",
+      "page": "Components",
+      "variants": {
+        "1:23885": "Property 1=Large, Type=Guideline",
+        "1:23916": "Property 1=Small, Type=Guideline",
+        "1:23945": "Property 1=Small, Type=Instructions",
+        "1:23974": "Property 1=Large, Type=Instructions"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Small"
+        ],
+        "Type": [
+          "Guideline",
+          "Instructions"
+        ]
+      },
+      "variantHashes": {
+        "1:23885": "c2e381a6291ab1e8",
+        "1:23916": "77b7a7ad854354de",
+        "1:23945": "77b7a7ad854354de",
+        "1:23974": "c2e381a6291ab1e8"
+      },
+      "structureHash": "c81a8bedea841cdc"
+    },
+    "1:24032": {
+      "name": "Facility",
+      "page": "Components",
+      "variants": {
+        "1:24033": "Property 1=Large",
+        "1:24042": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:24033": "c1c4777d75ce1c52",
+        "1:24042": "8284c8ee4367e5a4"
+      },
+      "structureHash": "cc01b388459697e1"
+    },
+    "1:25445": {
+      "name": "Pagination_Buttons",
+      "page": "Components",
+      "variants": {
+        "1:25446": "Property 1=Default, Property 2=L",
+        "1:25448": "Property 1=Default, Property 2=S",
+        "1:25450": "Property 1=Overflow, Property 2=L",
+        "1:25452": "Property 1=Overflow, Property 2=S",
+        "1:25454": "Property 1=Hover, Property 2=L",
+        "1:25456": "Property 1=Hover, Property 2=S",
+        "1:25458": "Property 1=Active, Property 2=L",
+        "1:25460": "Property 1=Active, Property 2=S",
+        "1:25462": "Property 1=Disabled, Property 2=L",
+        "1:25464": "Property 1=Disabled, Property 2=S",
+        "1:25466": "Property 1=Focus, Property 2=L",
+        "1:25468": "Property 1=Focus, Property 2=S"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Overflow",
+          "Hover",
+          "Active",
+          "Disabled",
+          "Focus"
+        ],
+        "Property 2": [
+          "L",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:25446": "1e8ecd7e447eb0c1",
+        "1:25448": "9f4fd8cd2015b5ea",
+        "1:25450": "591c0600951f7f95",
+        "1:25452": "dde3f25d7a108516",
+        "1:25454": "1e8ecd7e447eb0c1",
+        "1:25456": "9f4fd8cd2015b5ea",
+        "1:25458": "1e8ecd7e447eb0c1",
+        "1:25460": "9f4fd8cd2015b5ea",
+        "1:25462": "1bd2f86c518e3073",
+        "1:25464": "7ecab5f153b882bd",
+        "1:25466": "1e8ecd7e447eb0c1",
+        "1:25468": "9f4fd8cd2015b5ea"
+      },
+      "structureHash": "274472198215e421"
+    },
+    "1:25470": {
+      "name": "Pagination_Prev_Button",
+      "page": "Components",
+      "variants": {
+        "1:25471": "Property 1=Default, Property 2=L",
+        "1:25473": "Property 1=Default, Property 2=S",
+        "1:25475": "Property 1=Hover, Property 2=L",
+        "1:25477": "Property 1=Hover, Property 2=S",
+        "1:25479": "Property 1=Active, Property 2=L",
+        "1:25481": "Property 1=Active, Property 2=S",
+        "1:25483": "Property 1=Disabled, Property 2=L",
+        "1:25485": "Property 1=Disabled, Property 2=S",
+        "1:25487": "Property 1=Focus, Property 2=L",
+        "1:25489": "Property 1=Focus, Property 2=S"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Hover",
+          "Active",
+          "Disabled",
+          "Focus"
+        ],
+        "Property 2": [
+          "L",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:25471": "b0c4bddad80d9448",
+        "1:25473": "7ee4b73891ed347e",
+        "1:25475": "b0c4bddad80d9448",
+        "1:25477": "7ee4b73891ed347e",
+        "1:25479": "b0c4bddad80d9448",
+        "1:25481": "7ee4b73891ed347e",
+        "1:25483": "f21e047de5f3b7bf",
+        "1:25485": "d2f40943804b27cc",
+        "1:25487": "b0c4bddad80d9448",
+        "1:25489": "7ee4b73891ed347e"
+      },
+      "structureHash": "0cbbffcbb7902f14"
+    },
+    "1:25491": {
+      "name": "Pagination_Next_Button",
+      "page": "Components",
+      "variants": {
+        "1:25492": "Property 1=Default, Property 2=L",
+        "1:25494": "Property 1=Default, Property 2=S",
+        "1:25496": "Property 1=Hover, Property 2=L",
+        "1:25498": "Property 1=Hover, Property 2=S",
+        "1:25500": "Property 1=Active, Property 2=L",
+        "1:25502": "Property 1=Active, Property 2=S",
+        "1:25504": "Property 1=Disabled, Property 2=L",
+        "1:25506": "Property 1=Disabled, Property 2=S",
+        "1:25508": "Property 1=Focus, Property 2=L",
+        "1:25510": "Property 1=Focus, Property 2=S"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Hover",
+          "Active",
+          "Disabled",
+          "Focus"
+        ],
+        "Property 2": [
+          "L",
+          "S"
+        ]
+      },
+      "variantHashes": {
+        "1:25492": "395a779d7b06d214",
+        "1:25494": "2bf1948e1f178b18",
+        "1:25496": "395a779d7b06d214",
+        "1:25498": "2bf1948e1f178b18",
+        "1:25500": "395a779d7b06d214",
+        "1:25502": "2bf1948e1f178b18",
+        "1:25504": "254ce5034370dc04",
+        "1:25506": "0a3ebab90cece6bc",
+        "1:25508": "395a779d7b06d214",
+        "1:25510": "2bf1948e1f178b18"
+      },
+      "structureHash": "463f78fe2282ba0e"
+    },
+    "1:25517": {
+      "name": "Pagination",
+      "page": "Components",
+      "variants": {
+        "1:25518": "Property 1=Large",
+        "1:25528": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:25518": "62cfee42d1688863",
+        "1:25528": "f9ad99d3abb2805d"
+      },
+      "structureHash": "f09469eec3856c87"
+    },
+    "1:25559": {
+      "name": "Badges",
+      "page": "Components",
+      "variants": {
+        "1:25560": "Size=Large, Color=Dark Blue, State=Default",
+        "1:25563": "Size=Small, Color=Dark Blue, State=Default",
+        "1:25566": "Size=Small, Color=Dark Blue, State=Hover",
+        "1:25569": "Size=Small, Color=Dark Blue, State=Active",
+        "1:25572": "Size=Small, Color=Dark Blue, State=Focu",
+        "1:25575": "Size=Large, Color=Dark Blue, State=Hover",
+        "1:25578": "Size=Large, Color=Dark Blue, State=Active",
+        "1:25581": "Size=Large, Color=Dark Blue, State=Focus"
+      },
+      "properties": {
+        "Size": [
+          "Large",
+          "Small"
+        ],
+        "Color": [
+          "Dark Blue"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Active",
+          "Focu",
+          "Focus"
+        ]
+      },
+      "variantHashes": {
+        "1:25560": "4ed9df09f4869f45",
+        "1:25563": "c1ff478c6d5fe2cc",
+        "1:25566": "c1ff478c6d5fe2cc",
+        "1:25569": "c1ff478c6d5fe2cc",
+        "1:25572": "c1ff478c6d5fe2cc",
+        "1:25575": "4ed9df09f4869f45",
+        "1:25578": "4ed9df09f4869f45",
+        "1:25581": "4ed9df09f4869f45"
+      },
+      "structureHash": "64546f9ee9ac3b37"
+    },
+    "1:26080": {
+      "name": "Share",
+      "page": "Components",
+      "variants": {
+        "1:26081": "Property 1=Small",
+        "1:26086": "Property 1=Large"
+      },
+      "properties": {
+        "Property 1": [
+          "Small",
+          "Large"
+        ]
+      },
+      "variantHashes": {
+        "1:26081": "cf5e17f4bb7d6f59",
+        "1:26086": "ea16b2848ce02b6b"
+      },
+      "structureHash": "f536303eabbfbfd7"
+    },
+    "1:26091": {
+      "name": "Facebook",
+      "page": "Components",
+      "variants": {
+        "1:26092": "Property 1=Default",
+        "1:26095": "Property 1=Hover",
+        "1:26098": "Property 1=Active",
+        "1:26101": "Property 1=Focus"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Hover",
+          "Active",
+          "Focus"
+        ]
+      },
+      "variantHashes": {
+        "1:26092": "9f4fd8cd2015b5ea",
+        "1:26095": "9f4fd8cd2015b5ea",
+        "1:26098": "9f4fd8cd2015b5ea",
+        "1:26101": "9f4fd8cd2015b5ea"
+      },
+      "structureHash": "0952517d420d38b9"
+    },
+    "1:26104": {
+      "name": "X",
+      "page": "Components",
+      "variants": {
+        "1:26105": "Property 1=Default",
+        "1:26108": "Property 1=Active",
+        "1:26111": "Property 1=Hover",
+        "1:26114": "Property 1=Focus"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Active",
+          "Hover",
+          "Focus"
+        ]
+      },
+      "variantHashes": {
+        "1:26105": "9f4fd8cd2015b5ea",
+        "1:26108": "9f4fd8cd2015b5ea",
+        "1:26111": "9f4fd8cd2015b5ea",
+        "1:26114": "9f4fd8cd2015b5ea"
+      },
+      "structureHash": "0952517d420d38b9"
+    },
+    "1:26138": {
+      "name": "Latest News",
+      "page": "Components",
+      "variants": {
+        "1:26139": "Size=S",
+        "1:26189": "Size=M",
+        "1:26249": "Size=L",
+        "1:26308": "Size=XL",
+        "1:26363": "Size=XXL"
+      },
+      "properties": {
+        "Size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "variantHashes": {
+        "1:26139": "11dcdb08c67134f2",
+        "1:26189": "37008aade497c2c9",
+        "1:26249": "80d6e516a82c3720",
+        "1:26308": "57d47122919bb583",
+        "1:26363": "3b18c80454481ff3"
+      },
+      "structureHash": "ea053c7c13cb63bc"
+    },
+    "1:26475": {
+      "name": "Table_Row",
+      "page": "Components",
+      "variants": {
+        "1:26476": "Property 1=Default, Property 2=Large",
+        "1:26478": "Property 1=Hover, Property 2=Large",
+        "1:26480": "Property 1=Focus, Property 2=Large",
+        "1:26485": "Property 1=Default, Property 2=Small",
+        "1:26487": "Property 1=Hover, Property 2=Small",
+        "1:26489": "Property 1=Focus, Property 2=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Hover",
+          "Focus"
+        ],
+        "Property 2": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:26476": "889b98956f813eab",
+        "1:26478": "889b98956f813eab",
+        "1:26480": "889b98956f813eab",
+        "1:26485": "412339a09879dc4f",
+        "1:26487": "412339a09879dc4f",
+        "1:26489": "412339a09879dc4f"
+      },
+      "structureHash": "8866c711233119b2"
+    },
+    "1:26494": {
+      "name": "Table_Header",
+      "page": "Components",
+      "variants": {
+        "1:26495": "Property 1=Default, Property 2=Large",
+        "1:26499": "Property 1=Hover, Property 2=Large",
+        "1:26503": "Property 1=AtoZ, Property 2=Large",
+        "1:26507": "Property 1=AtoZ, Property 2=Small",
+        "1:26511": "Property 1=ZtoA, Property 2=Large",
+        "1:26515": "Property 1=ZtoA, Property 2=Small",
+        "1:26519": "Property 1=Focus, Property 2=Large",
+        "1:26523": "Property 1=Default, Property 2=Small",
+        "1:26527": "Property 1=Hover, Property 2=Small",
+        "1:26531": "Property 1=Focus, Property 2=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Default",
+          "Hover",
+          "AtoZ",
+          "ZtoA",
+          "Focus"
+        ],
+        "Property 2": [
+          "Large",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:26495": "037866569b8a055b",
+        "1:26499": "037866569b8a055b",
+        "1:26503": "037866569b8a055b",
+        "1:26507": "72bbb7cb7fe77605",
+        "1:26511": "037866569b8a055b",
+        "1:26515": "72bbb7cb7fe77605",
+        "1:26519": "037866569b8a055b",
+        "1:26523": "72bbb7cb7fe77605",
+        "1:26527": "72bbb7cb7fe77605",
+        "1:26531": "72bbb7cb7fe77605"
+      },
+      "structureHash": "bd9edfc9b0dec5f3"
+    },
+    "1:26535": {
+      "name": "Table",
+      "page": "Components",
+      "variants": {
+        "1:26536": "Large=Default",
+        "1:26632": "Large=Small"
+      },
+      "properties": {
+        "Large": [
+          "Default",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:26536": "77fe1a86d554ff1f",
+        "1:26632": "eb03d914ebf103c1"
+      },
+      "structureHash": "c333e95787dce4ef"
+    },
+    "1:26720": {
+      "name": "Bio wModal Card",
+      "page": "Components",
+      "variants": {
+        "1:26721": "Property 1=XXL, Property 2=Default ",
+        "1:26726": "Property 1=XL, Property 2=Default ",
+        "1:26731": "Property 1=L, Property 2=Default ",
+        "1:26736": "Property 1=XXL, Property 2=Hover",
+        "1:26741": "Property 1=XL, Property 2=Hover",
+        "1:26746": "Property 1=L, Property 2=Hover",
+        "1:26751": "Property 1=M, Property 2=Default",
+        "1:26756": "Property 1=S, Property 2=Default",
+        "1:26761": "Property 1=M, Property 2=Hover",
+        "1:26766": "Property 1=M, Property 2=Focus",
+        "1:26774": "Property 1=S, Property 2=Focus",
+        "1:26782": "Property 1=S, Property 2=Hover",
+        "1:26787": "Property 1=XXL, Property 2=Focus",
+        "1:26795": "Property 1=XL, Property 2=Focus",
+        "1:26803": "Property 1=L, Property 2=Focus"
+      },
+      "properties": {
+        "Property 1": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ],
+        "Property 2": [
+          "Default",
+          "Hover",
+          "Focus"
+        ]
+      },
+      "variantHashes": {
+        "1:26721": "c4dd131b8923cd57",
+        "1:26726": "ba587b1b61d54efd",
+        "1:26731": "9f5e8d2db8db93d5",
+        "1:26736": "c4dd131b8923cd57",
+        "1:26741": "ba587b1b61d54efd",
+        "1:26746": "9f5e8d2db8db93d5",
+        "1:26751": "80b5fbbba12d1b12",
+        "1:26756": "0daa40cd71dd3935",
+        "1:26761": "80b5fbbba12d1b12",
+        "1:26766": "80b5fbbba12d1b12",
+        "1:26774": "0daa40cd71dd3935",
+        "1:26782": "0daa40cd71dd3935",
+        "1:26787": "c4dd131b8923cd57",
+        "1:26795": "ba587b1b61d54efd",
+        "1:26803": "9f5e8d2db8db93d5"
+      },
+      "structureHash": "62282dce31a1f7a9"
+    },
+    "1:26821": {
+      "name": "Bio Simple",
+      "page": "Components",
+      "variants": {
+        "1:26822": "Property 1=XXL, Property 2=Default ",
+        "1:26836": "Property 1=XL, Property 2=Default ",
+        "1:26850": "Property 1=L, Property 2=Default ",
+        "1:26864": "Property 1=M, Property 2=Default",
+        "1:26878": "Property 1=S, Property 2=Default"
+      },
+      "properties": {
+        "Property 1": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ],
+        "Property 2": [
+          "Default"
+        ]
+      },
+      "variantHashes": {
+        "1:26822": "24ba8479bab53aea",
+        "1:26836": "e225a738d1fc6028",
+        "1:26850": "92bd9bca5b879d03",
+        "1:26864": "b16ca61712be2644",
+        "1:26878": "7e7492bab2e47ea7"
+      },
+      "structureHash": "dd3b78a7b2857dd1"
+    },
+    "1:26901": {
+      "name": "Bio Collection",
+      "page": "Components",
+      "variants": {
+        "1:26902": "Property 1=Large",
+        "1:26921": "Property 1=Medium",
+        "1:26941": "Property 1=Small"
+      },
+      "properties": {
+        "Property 1": [
+          "Large",
+          "Medium",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:26902": "3efbffbc4d639847",
+        "1:26921": "04629efa45990a14",
+        "1:26941": "8ceef51580285629"
+      },
+      "structureHash": "6d292570c317e9f8"
+    },
+    "1:26960": {
+      "name": "Profile avatar options",
+      "page": "Components",
+      "variants": {
+        "1:26961": "Property 1=Profile Avatar 4"
+      },
+      "properties": {
+        "Property 1": [
+          "Profile Avatar 4"
+        ]
+      },
+      "variantHashes": {
+        "1:26961": "272cb0b9279fb346"
+      },
+      "structureHash": "272cb0b9279fb346"
+    },
+    "1:26988": {
+      "name": "Search Result cards",
+      "page": "Components",
+      "variants": {
+        "1:26989": "Size=XXL, Card Type=File, State=Default",
+        "1:26993": "Size=XXL, Card Type=File, State=Focus",
+        "1:27001": "Size=XL, Card Type=File, State=Focus",
+        "1:27008": "Size=L, Card Type=File, State=Focus",
+        "1:27015": "Size=M, Card Type=File, State=Focus",
+        "1:27022": "Size=XXL, Card Type=File, State=Hover",
+        "1:27026": "Size=XXL, Card Type=Event, State=Default",
+        "1:27038": "Size=XXL, Card Type=Event, State=Focus",
+        "1:27050": "Size=XXL, Card Type=Event, State=Hover",
+        "1:27062": "Size=XL, Card Type=Event, State=Default",
+        "1:27074": "Size=XL, Card Type=Event, State=Focus",
+        "1:27086": "Size=XL, Card Type=Event, State=Hover",
+        "1:27098": "Size=L, Card Type=Event, State=Default",
+        "1:27110": "Size=L, Card Type=Event, State=Focus",
+        "1:27122": "Size=L, Card Type=Event, State=Hover",
+        "1:27134": "Size=M, Card Type=Event, State=Default",
+        "1:27146": "Size=M, Card Type=Event, State=Focus",
+        "1:27158": "Size=M, Card Type=Event, State=Hover",
+        "1:27170": "Size=S, Card Type=Event, State=Default",
+        "1:27182": "Size=S, Card Type=Event, State=Focus",
+        "1:27194": "Size=S, Card Type=Event, State=Hover",
+        "1:27206": "Size=XL, Card Type=File, State=Default",
+        "1:27210": "Size=XL, Card Type=File, State=Hover",
+        "1:27214": "Size=L, Card Type=File, State=Default",
+        "1:27218": "Size=L, Card Type=File, State=Hover",
+        "1:27222": "Size=M, Card Type=File, State=Default",
+        "1:27226": "Size=M, Card Type=File, State=Hover",
+        "1:27230": "Size=S, Card Type=File, State=Default",
+        "1:27235": "Size=S, Card Type=File, State=Focus",
+        "1:27243": "Size=S, Card Type=File, State=Hover",
+        "1:27248": "Size=XXL, Card Type=Text, State=Default",
+        "1:27255": "Size=XXL, Card Type=Text, State=Focus",
+        "1:27268": "Size=XXL, Card Type=Text, State=Hover",
+        "1:27275": "Size=XL, Card Type=Text, State=Default",
+        "1:27282": "Size=XL, Card Type=Text, State=Focus",
+        "1:27295": "Size=XL, Card Type=Text, State=Hover",
+        "1:27302": "Size=L, Card Type=Text, State=Default",
+        "1:27309": "Size=L, Card Type=Text, State=Focus",
+        "1:27322": "Size=L, Card Type=Text, State=Hover",
+        "1:27329": "Size=M, Card Type=Text, State=Default",
+        "1:27336": "Size=M, Card Type=Text, State=Focus",
+        "1:27347": "Size=M, Card Type=Text, State=Hover",
+        "1:27354": "Size=S, Card Type=Text, State=Default",
+        "1:27361": "Size=S, Card Type=Text, State=Focus",
+        "1:27379": "Size=S, Card Type=Text, State=Hover"
+      },
+      "properties": {
+        "Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ],
+        "Card Type": [
+          "File",
+          "Event",
+          "Text"
+        ],
+        "State": [
+          "Default",
+          "Focus",
+          "Hover"
+        ]
+      },
+      "variantHashes": {
+        "1:26989": "0aa55a6bb21cc894",
+        "1:26993": "0aa55a6bb21cc894",
+        "1:27001": "26390eec39c0c9ef",
+        "1:27008": "de39ee8859c86042",
+        "1:27015": "c0d3f567e3c42345",
+        "1:27022": "0aa55a6bb21cc894",
+        "1:27026": "5a43399d19a563fe",
+        "1:27038": "5a43399d19a563fe",
+        "1:27050": "5a43399d19a563fe",
+        "1:27062": "92b1fb601b0204d0",
+        "1:27074": "92b1fb601b0204d0",
+        "1:27086": "92b1fb601b0204d0",
+        "1:27098": "fea9d7f62bf85779",
+        "1:27110": "fea9d7f62bf85779",
+        "1:27122": "fea9d7f62bf85779",
+        "1:27134": "9eb736c805406c6c",
+        "1:27146": "9eb736c805406c6c",
+        "1:27158": "9eb736c805406c6c",
+        "1:27170": "61df479506b8f9d7",
+        "1:27182": "61df479506b8f9d7",
+        "1:27194": "61df479506b8f9d7",
+        "1:27206": "26390eec39c0c9ef",
+        "1:27210": "26390eec39c0c9ef",
+        "1:27214": "de39ee8859c86042",
+        "1:27218": "de39ee8859c86042",
+        "1:27222": "c0d3f567e3c42345",
+        "1:27226": "c0d3f567e3c42345",
+        "1:27230": "4fd2d1b84876ce92",
+        "1:27235": "4fd2d1b84876ce92",
+        "1:27243": "4fd2d1b84876ce92",
+        "1:27248": "2c04bb5ac90536b8",
+        "1:27255": "2c04bb5ac90536b8",
+        "1:27268": "2c04bb5ac90536b8",
+        "1:27275": "a649a80bfc751685",
+        "1:27282": "a649a80bfc751685",
+        "1:27295": "a649a80bfc751685",
+        "1:27302": "d594445b01722c18",
+        "1:27309": "d594445b01722c18",
+        "1:27322": "d594445b01722c18",
+        "1:27329": "6c07fb085f075bf8",
+        "1:27336": "6c07fb085f075bf8",
+        "1:27347": "6c07fb085f075bf8",
+        "1:27354": "b17b68bab33cded9",
+        "1:27361": "114b22459d53efaf",
+        "1:27379": "b17b68bab33cded9"
+      },
+      "structureHash": "a338ea80d81bf4f6"
+    },
+    "1:29111": {
+      "name": "Spinner",
+      "page": "Components",
+      "variants": {
+        "1:29112": "Size=Large",
+        "1:29115": "Size=Medium",
+        "1:29118": "Size=Small"
+      },
+      "properties": {
+        "Size": [
+          "Large",
+          "Medium",
+          "Small"
+        ]
+      },
+      "variantHashes": {
+        "1:29112": "41ac25e1237212a5",
+        "1:29115": "56a21f195d1bee38",
+        "1:29118": "c20fce383aab86d9"
+      },
+      "structureHash": "52a203ed35414d6e"
+    },
+    "1:29143": {
+      "name": "Global message",
+      "page": "Components",
+      "variants": {
+        "1:29144": "Size=XXL, State=Default",
+        "1:29156": "Size=XL, State=Default",
+        "1:29168": "Size=L, State=Default",
+        "1:29180": "Size=M, State=Default",
+        "1:29192": "Size=S, State=Default",
+        "1:29204": "Size=XXL, State=Hover",
+        "1:29216": "Size=XL, State=Hover",
+        "1:29228": "Size=L, State=Hover",
+        "1:29240": "Size=M, State=Hover",
+        "1:29252": "Size=S, State=Hover",
+        "1:29264": "Size=XXL, State=Focus",
+        "1:29280": "Size=XL, State=Focus",
+        "1:29296": "Size=L, State=Focus",
+        "1:29312": "Size=M, State=Focus",
+        "1:29328": "Size=S, State=Focus"
+      },
+      "properties": {
+        "Size": [
+          "XXL",
+          "XL",
+          "L",
+          "M",
+          "S"
+        ],
+        "State": [
+          "Default",
+          "Hover",
+          "Focus"
+        ]
+      },
+      "variantHashes": {
+        "1:29144": "5167cd8ddc3167fe",
+        "1:29156": "4ddcdb866eaf312c",
+        "1:29168": "78c77cdf5823d1bd",
+        "1:29180": "ee09f2d502048ae4",
+        "1:29192": "459a70b3a000539c",
+        "1:29204": "5167cd8ddc3167fe",
+        "1:29216": "4ddcdb866eaf312c",
+        "1:29228": "78c77cdf5823d1bd",
+        "1:29240": "ee09f2d502048ae4",
+        "1:29252": "459a70b3a000539c",
+        "1:29264": "5167cd8ddc3167fe",
+        "1:29280": "4ddcdb866eaf312c",
+        "1:29296": "78c77cdf5823d1bd",
+        "1:29312": "ee09f2d502048ae4",
+        "1:29328": "459a70b3a000539c"
+      },
+      "structureHash": "144eb616bc0e199d"
+    },
+    "1:29387": {
+      "name": "Back to Top",
+      "page": "Components",
+      "variants": {
+        "1:29388": "State=Default",
+        "1:29390": "State=Hover",
+        "1:29392": "State=Focus"
+      },
+      "properties": {
+        "State": [
+          "Default",
+          "Hover",
+          "Focus"
+        ]
+      },
+      "variantHashes": {
+        "1:29388": "c56214a58b741e34",
+        "1:29390": "c56214a58b741e34",
+        "1:29392": "848af62b6d36e19e"
+      },
+      "structureHash": "7d74e0dd05b947b2"
+    }
+  },
+  "variables": {
+    "ADA": "#075bd2",
+    "Backgrounds/background-primary": "#ffffff",
+    "Backgrounds/background-secondary": "#18546e",
+    "Border/Button/button-primary": "#ffb949",
+    "Border/border-disabled": "#ededed",
+    "Borders/border-primary": "#cccccc",
+    "Brick Red/500": "#db4240",
+    "Buttons/Primary/Fill/Active": "#ffffff",
+    "Buttons/Primary/Fill/Default": "#ffffff",
+    "Buttons/Primary/Fill/Disabled": "#cccccc",
+    "Buttons/Primary/Fill/Focus": "#075bd2",
+    "Buttons/Primary/Stroke/Focus": "#075bd2",
+    "Buttons/Primary/Stroke/Hover": "#ffffff",
+    "Buttons/Primary/Typography/Default": "#000000",
+    "Buttons/Primary/Typography/Disabled": "#5a5a5a",
+    "Buttons/Primary/Typography/Icon_Disabled": "#cccccc",
+    "Buttons/Secondary/Fill/Focus": "#ffffff",
+    "Buttons/Secondary/Fill/Hover": "#ffb949",
+    "Buttons/Secondary/Stroke/Active": "#ffb949",
+    "Buttons/Secondary/Stroke/Default": "#ffb949",
+    "Buttons/Secondary/Stroke/Disabled": "#cccccc",
+    "Buttons/Secondary/Stroke/Focus": "#000000",
+    "Buttons/Secondary/Typography/Active": "#ffffff",
+    "Buttons/Secondary/Typography/Disabled": "#5a5a5a",
+    "Buttons/Tertiary/Typography/Active": "#18546e",
+    "Buttons/Tertiary/Typography/Default": "#18546e",
+    "Buttons/Tertiary/Typography/Focus": "#ffffff",
+    "Buttons/Tertiary/Typography/Hover": "#18546e",
+    "Chattanooga Green": "#127e4a",
+    "Chattanooga Green/800": "#075631",
+    "Colors/Chattanooga Blues/River-70": "#4dc1db",
+    "Colors/Chattanooga Blues/Sky-20": "#ccd9df",
+    "Colors/Chattanooga Blues/Sky-70": "#18546e",
+    "Colors/Chattanooga Greens/Chattanooga Green": "#00874e",
+    "Colors/Chattanooga Greens/Land-20": "#cce8dc",
+    "Colors/Neutral Colors/Black": "#000000",
+    "Colors/Neutral Colors/Dark Grey": "#5a5a5a",
+    "Colors/Neutral Colors/Medium Grey": "#cccccc",
+    "Colors/Neutral Colors/White": "#ffffff",
+    "Colors/Secondary Colors/ADA": "#075bd2",
+    "Colors/Secondary Colors/Alert": "#b35f00",
+    "Colors/Secondary Colors/Error": "#b60000",
+    "Large Screen/Button Text": "Font(family: \"Gabarito\", style: Medium, size: 16, weight: 500, lineHeight: 100, letterSpacing: 0)",
+    "Large Screen/H2 Heading": "Font(family: \"Gabarito\", style: SemiBold, size: 32, weight: 600, lineHeight: 38, letterSpacing: 0)",
+    "Large Screen/H3 Heading": "Font(family: \"Gabarito\", style: Medium, size: 24, weight: 500, lineHeight: 30, letterSpacing: 0)",
+    "Large Screen/H4 Headline": "Font(family: \"Gabarito\", style: Medium, size: 16, weight: 500, lineHeight: 26, letterSpacing: 0)",
+    "Large Screen/Large text link": "Font(family: \"Inter\", style: Semi Bold, size: 20, weight: 600, lineHeight: 32, letterSpacing: 2)",
+    "Large Screen/Medium Body Semibold": "Font(family: \"Inter\", style: Semi Bold, size: 18, weight: 600, lineHeight: 30, letterSpacing: 2)",
+    "Large Screen/Medium Body Text": "Font(family: \"Inter\", style: Regular, size: 18, weight: 400, lineHeight: 30, letterSpacing: 2)",
+    "Large Screen/Small Body Text": "Font(family: \"Inter\", style: Regular, size: 14, weight: 400, lineHeight: 26, letterSpacing: 2)",
+    "Neutral/50": "#ededed",
+    "Neutral/700": "#5a5a5a",
+    "Neutral/800": "#3a3a3a",
+    "Radius/radius-minimal": "4",
+    "Radius/radius-rounded": "48",
+    "Regular Shadow": "Effect(type: DROP_SHADOW, color: #0000001F, offset: (0, 4), radius: 10, spread: 0)",
+    "Scale/Padding/p-lg": "24",
+    "Scale/Padding/p-md": "16",
+    "Scale/Padding/p-sm": "8",
+    "Scale/Padding/p-xs": "4",
+    "Scale/Radius/rad-lg": "48",
+    "Small Screen/Button Link": "Font(family: \"Gabarito\", style: Medium, size: 14, weight: 500, lineHeight: 100, letterSpacing: 0)",
+    "Small Screen/H2 Heading": "Font(family: \"Gabarito\", style: SemiBold, size: 22, weight: 600, lineHeight: 30, letterSpacing: 0)",
+    "Small Screen/H3 Heading": "Font(family: \"Gabarito\", style: Medium, size: 18, weight: 500, lineHeight: 24, letterSpacing: 0)",
+    "Small Screen/H4 Heading": "Font(family: \"Gabarito\", style: Medium, size: 14, weight: 500, lineHeight: 24, letterSpacing: 0)",
+    "Small Screen/Medium Body Text": "Font(family: \"Inter\", style: Regular, size: 16, weight: 400, lineHeight: 26, letterSpacing: 2)",
+    "Small Screen/Medium SemiBold Body Text": "Font(family: \"Inter\", style: Semi Bold, size: 16, weight: 600, lineHeight: 26, letterSpacing: 2)",
+    "Small Screen/Small Body Text": "Font(family: \"Inter\", style: Regular, size: 14, weight: 400, lineHeight: 24, letterSpacing: 2)",
+    "Spacing/spacing-2xs": "8",
+    "Spacing/spacing-3xs": "4",
+    "Spacing/spacing-md": "32",
+    "Spacing/spacing-none": "0",
+    "Spacing/spacing-sm": "24",
+    "Spacing/spacing-xs": "16",
+    "Text/Button Text Color": "#000000",
+    "Text/text-link & H1": "#18546e",
+    "Text/text-onBlueBackground": "#004360",
+    "Text/text-primary": "#000000",
+    "Text/text-secondary": "#ffffff",
+    "Text/text-tertiary": "#5a5a5a",
+    "White": "#ffffff"
+  }
+}
