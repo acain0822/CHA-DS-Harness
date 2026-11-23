@@ -37,6 +37,8 @@ test('finds raw values on one line, named colors and inline styles', () => {
 });
 
 test('allows tokens and documented exceptions', () => {
+  // The saved log may be behind the code, so bring the copy up to date first.
+  run(['check', '--skip-typecheck']);
   const before = log();
   fs.appendFileSync(at(css), '\n.a { color: var(--any-red); gap: 0 }\n/* token audit: no variable */\n.b { padding: 17px }\n');
   run(['check', '--skip-typecheck']);
