@@ -1,0 +1,5 @@
+{
+  "name": "@cha/design-system",
+  "version": "0.1.0",
+  "components": ["Button", "Checkbox", "InputField", "TextLink", "Icon"]
+}

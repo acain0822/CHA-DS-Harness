@@ -7,7 +7,6 @@ const FIGMA =
 const meta = {
   title: 'Components/Forms/Input Field',
   component: InputField,
-  tags: ['autodocs'],
   parameters: {
     design: { type: 'figma', url: FIGMA },
     docs: {

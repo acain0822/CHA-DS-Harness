@@ -15,7 +15,12 @@
     "figma:sync": "python3 scripts/figma_sync.py snapshot --metadata design-system/figma/metadata --variables design-system/tokens.figma.json --set-variables design-system/figma/variables --screens design-system/figma/screens --context design-system/figma/context --carry design-system/figma-snapshot.json --out design-system/figma-snapshot.new.json && python3 scripts/figma_sync.py diff design-system/figma-snapshot.json design-system/figma-snapshot.new.json --manifest design-system/manifest.json --out design-system/reports/figma-changes --apply || test $? -eq 2",
     "figma:audit": "python3 scripts/token_audit.py --context design-system/figma/context --variables design-system/tokens.figma.json --metadata design-system/figma/metadata --file-url https://www.figma.com/design/nMenOGxGYRL0pyDAc0ZmFF/CHA-Design-System--Copy- --manifest design-system/manifest.json --out design-system/reports/token-audit",
     "harness": "node scripts/harness.mjs",
-    "harness:check": "node scripts/harness.mjs check"
+    "harness:check": "node scripts/harness.mjs check",
+    "test:a11y": "npm run build-storybook && playwright test -c playwright.a11y.config.ts",
+    "scan:code": "node scripts/scan_code.mjs",
+    "system:map": "node scripts/system_map.mjs",
+    "test:harness": "node --test scripts/harness.test.mjs scripts/system_map.test.mjs scripts/scan_code.test.mjs && node scripts/usage_v2.test.mjs",
+    "build:package": "node scripts/build_package.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -30,6 +35,8 @@
     "@types/node": "^26.6.6",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "axe-core": "4.14.0",
+    "esbuild": "0.28.2",
     "http-server": "latest",
     "storybook": "^10.4.0",
     "storybook-addon-pseudo-states": "latest",

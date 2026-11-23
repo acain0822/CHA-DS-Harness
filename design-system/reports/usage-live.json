@@ -1,0 +1,1324 @@
+{
+ "live": {
+  "site": "chattanooga.gov",
+  "coverage": "sample",
+  "pagesMeasured": 7,
+  "skipped": [],
+  "unmappedLiveComponents": {
+   "radix:html": 7,
+   "radix:block": 124,
+   "radix:nav": 35,
+   "radix:form": 22,
+   "chattanooga:form-element": 57,
+   "chattanooga:field": 35,
+   "radix:views-view": 19,
+   "radix:media": 9,
+   "radix:image": 9,
+   "radix:node": 7,
+   "chattanooga:fieldset": 7,
+   "chattanooga:radios": 7,
+   "chattanooga:form-element--radiocheckbox": 14
+  }
+ },
+ "figma": {
+  "status": "paused",
+  "files": []
+ },
+ "issues": {
+  "open": 35,
+  "notTiedToOneComponent": 14
+ },
+ "components": [
+  {
+   "name": "Button",
+   "figmaNodeId": "150:10522",
+   "buildStatus": "verified",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 2,
+    "instances": {
+     "content": 13,
+     "chrome": 63,
+     "modal": 0
+    },
+    "tier": "Widespread"
+   },
+   "openIssues": [
+    {
+     "id": "f737121a",
+     "type": "context",
+     "severity": "warn",
+     "message": "Built without full saved design context (missing: designContext, screenshot, variables)."
+    },
+    {
+     "id": "fd2efa06",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Outline on dark has no Focus or Disabled design; code uses an ADA ring and grey stroke, needs design review"
+    },
+    {
+     "id": "c235c762",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Ghost has no Small size in Figma"
+    },
+    {
+     "id": "393d284d",
+     "type": "manual",
+     "severity": "warn",
+     "message": "Button only renders a button element, so a call to action that goes to another page has no link version."
+    }
+   ]
+  },
+  {
+   "name": "FAB Button",
+   "figmaNodeId": "362:96491",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Input Field",
+   "figmaNodeId": "168:10459",
+   "buildStatus": "verified",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 1,
+    "instances": {
+     "content": 1,
+     "chrome": 21,
+     "modal": 0
+    },
+    "tier": "Common"
+   },
+   "openIssues": [
+    {
+     "id": "73a6111d",
+     "type": "context",
+     "severity": "warn",
+     "message": "Built without full saved design context (missing: designContext, screenshot, variables)."
+    },
+    {
+     "id": "9ef71487",
+     "type": "token",
+     "severity": "warn",
+     "message": "Raw value in gap: 2px. Use a token, or add a \"token audit: no variable\" comment if Figma has none."
+    },
+    {
+     "id": "f1bf3393",
+     "type": "token",
+     "severity": "warn",
+     "message": "Raw value in margin: calc(-1 * var(--spacing-spacing-3xs) - 1px). Use a token, or add a \"token audit: no variable\" comment if Figma has none."
+    },
+    {
+     "id": "20dc4a2b",
+     "type": "token",
+     "severity": "warn",
+     "message": "Raw value in padding: 9px 16px. Use a token, or add a \"token audit: no variable\" comment if Figma has none."
+    },
+    {
+     "id": "434f1a3a",
+     "type": "token",
+     "severity": "warn",
+     "message": "Raw value in border-radius: 6px. Use a token, or add a \"token audit: no variable\" comment if Figma has none."
+    },
+    {
+     "id": "6d6d092d",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Field radius is a raw 6px in Figma (Focus state uses 4px radius-minimal); kept as designed, needs a token"
+    },
+    {
+     "id": "92b8cf5a",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Required asterisk uses 'Brick Red/500' #DB4240, a variable outside the documented palette"
+    }
+   ]
+  },
+  {
+   "name": "Textarea",
+   "figmaNodeId": "168:10402",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 7,
+     "modal": 0
+    },
+    "tier": "Site-wide"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Radio Button",
+   "figmaNodeId": "168:10561",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Radio Button Question",
+   "figmaNodeId": "168:10675",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Checkbox",
+   "figmaNodeId": "168:11272",
+   "buildStatus": "verified",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": [
+    {
+     "id": "5bccc219",
+     "type": "context",
+     "severity": "warn",
+     "message": "Built without full saved design context (missing: designContext, screenshot, variables)."
+    },
+    {
+     "id": "c6065716",
+     "type": "token",
+     "severity": "warn",
+     "message": "Raw value in border-radius: 2px. Use a token, or add a \"token audit: no variable\" comment if Figma has none."
+    },
+    {
+     "id": "eb94a9d1",
+     "type": "token",
+     "severity": "warn",
+     "message": "Raw value in line-height: 26px. Use a token, or add a \"token audit: no variable\" comment if Figma has none."
+    },
+    {
+     "id": "3038f4b8",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Figma 'Active' state only exists checked; treated as the pressed state"
+    },
+    {
+     "id": "754c924f",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Hover only designed unchecked"
+    },
+    {
+     "id": "f66465a3",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Label Inter body text switches 18px/16px at the 768px breakpoint (assumed)"
+    }
+   ]
+  },
+  {
+   "name": "Dropdown",
+   "figmaNodeId": "168:10716",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 1,
+    "instances": {
+     "content": 1,
+     "chrome": 28,
+     "modal": 0
+    },
+    "tier": "Common"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Slot Card",
+   "figmaNodeId": "41:11079",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Table Cell",
+   "figmaNodeId": "344:12641",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Buttons Icons",
+   "figmaNodeId": "1:5877",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Btn",
+   "figmaNodeId": "1:5923",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Text Links",
+   "figmaNodeId": "1:6451",
+   "buildStatus": "verified",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": [
+    {
+     "id": "80e8786b",
+     "type": "context",
+     "severity": "warn",
+     "message": "Built without full saved design context (missing: designContext, screenshot, variables)."
+    },
+    {
+     "id": "48a1bc4b",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Only one size (Large text link, 20px) designed; no small-screen size"
+    }
+   ]
+  },
+  {
+   "name": "Search",
+   "figmaNodeId": "1:7565",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Image",
+   "figmaNodeId": "1:7732",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Nav Links",
+   "figmaNodeId": "1:8341",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Navbar",
+   "figmaNodeId": "1:8415",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Breadcrumbs",
+   "figmaNodeId": "1:8592",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Text block",
+   "figmaNodeId": "1:10735",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Paragraph",
+   "figmaNodeId": "1:10822",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "List Block",
+   "figmaNodeId": "1:10834",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Column",
+   "figmaNodeId": "1:10910",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Full Page Gallery",
+   "figmaNodeId": "1:10946",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Small Screen Accordions",
+   "figmaNodeId": "1:11086",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Large Screen Accordions",
+   "figmaNodeId": "1:11194",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Icon + Text_Icon",
+   "figmaNodeId": "1:11342",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Small Card Collections",
+   "figmaNodeId": "1:11474",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Contact Information",
+   "figmaNodeId": "1:11750",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Article Contact",
+   "figmaNodeId": "1:12014",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Location",
+   "figmaNodeId": "1:12233",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "CTA",
+   "figmaNodeId": "1:12342",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Right Rail / Contact Container",
+   "figmaNodeId": "1:12413",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Schedule",
+   "figmaNodeId": "1:12457",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Anchor Group",
+   "figmaNodeId": "1:12671",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Message with Title",
+   "figmaNodeId": "1:12750",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Simple Message",
+   "figmaNodeId": "1:12863",
+   "buildStatus": "blocked",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": [
+    {
+     "id": "caa6995e",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Generic property names ('Property 1/2'); rename in Figma before mapping to props"
+    },
+    {
+     "id": "3297a405",
+     "type": "design-question",
+     "severity": "info",
+     "message": "Typo or placeholder values in 'Property 1': ['Infromation']"
+    }
+   ]
+  },
+  {
+   "name": "Dismiss Message",
+   "figmaNodeId": "1:12976",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Modal",
+   "figmaNodeId": "1:13156",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "311 Banners",
+   "figmaNodeId": "1:13333",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 1,
+    "instances": {
+     "content": 2,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "Common"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "911 Emergency",
+   "figmaNodeId": "1:13836",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "ChattaData Banners",
+   "figmaNodeId": "1:13909",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Footer",
+   "figmaNodeId": "1:14343",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Tertiary Heros - SM",
+   "figmaNodeId": "1:14793",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Tertiary Heros - LG",
+   "figmaNodeId": "1:14842",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Landing Page Heros",
+   "figmaNodeId": "1:14904",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 6,
+    "instances": {
+     "content": 6,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "Widespread"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Secondary Heros - Desktop",
+   "figmaNodeId": "1:14947",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Secondary Heros - Mobile",
+   "figmaNodeId": "1:14968",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Secondary Heros - LG",
+   "figmaNodeId": "1:14989",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Homepage Hero",
+   "figmaNodeId": "1:15008",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 1,
+    "instances": {
+     "content": 1,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "Common"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Article Heros",
+   "figmaNodeId": "1:15111",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Desktop Mega Menu",
+   "figmaNodeId": "1:15154",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 7,
+     "modal": 0
+    },
+    "tier": "Site-wide"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "S Mobile Mega Menu",
+   "figmaNodeId": "1:15300",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "L Mobile Mega Menu",
+   "figmaNodeId": "1:15359",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Primary Buttons Dropdown",
+   "figmaNodeId": "1:21180",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Open Dropdowns",
+   "figmaNodeId": "1:21399",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Event Card",
+   "figmaNodeId": "1:22356",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 1,
+    "instances": {
+     "content": 6,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "Common"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Subject Cards",
+   "figmaNodeId": "1:22610",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 7,
+    "instances": {
+     "content": 133,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "Widespread"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Large Cards",
+   "figmaNodeId": "1:22907",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 2,
+    "instances": {
+     "content": 2,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "Widespread"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "League/Lesson Cards",
+   "figmaNodeId": "1:23120",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Form Layouts",
+   "figmaNodeId": "1:23584",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Feedback Form",
+   "figmaNodeId": "1:23806",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 7,
+     "modal": 0
+    },
+    "tier": "Site-wide"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Procedures",
+   "figmaNodeId": "1:23884",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Facility",
+   "figmaNodeId": "1:24032",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Pagination_Buttons",
+   "figmaNodeId": "1:25445",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Pagination_Prev_Button",
+   "figmaNodeId": "1:25470",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Pagination_Next_Button",
+   "figmaNodeId": "1:25491",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Pagination",
+   "figmaNodeId": "1:25517",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Badges",
+   "figmaNodeId": "1:25559",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Share",
+   "figmaNodeId": "1:26080",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Facebook",
+   "figmaNodeId": "1:26091",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "X",
+   "figmaNodeId": "1:26104",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Latest News",
+   "figmaNodeId": "1:26138",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 1,
+    "instances": {
+     "content": 1,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "Common"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Table_Header",
+   "figmaNodeId": "1:26494",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Table",
+   "figmaNodeId": "1:26535",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "measured",
+    "mapping": "proposed",
+    "pages": 0,
+    "instances": {
+     "content": 0,
+     "chrome": 0,
+     "modal": 0
+    },
+    "tier": "None seen"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Bio wModal Card",
+   "figmaNodeId": "1:26720",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Bio Simple",
+   "figmaNodeId": "1:26821",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Bio Collection",
+   "figmaNodeId": "1:26901",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Profile avatar options",
+   "figmaNodeId": "1:26960",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Search Result cards",
+   "figmaNodeId": "1:26988",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Spinner",
+   "figmaNodeId": "1:29111",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Global message",
+   "figmaNodeId": "1:29143",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  },
+  {
+   "name": "Back to Top",
+   "figmaNodeId": "1:29387",
+   "buildStatus": "extracted",
+   "figma": {
+    "status": "not measured"
+   },
+   "live": {
+    "status": "unmapped"
+   },
+   "openIssues": []
+  }
+ ]
+}

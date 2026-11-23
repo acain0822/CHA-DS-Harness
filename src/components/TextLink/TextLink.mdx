@@ -1,0 +1,59 @@
+import { Canvas, Controls, Description, Meta, Title } from '@storybook/addon-docs/blocks';
+import { ComponentPage, Gallery } from '../../design-qa/SystemMap';
+import * as Stories from './TextLink.stories';
+
+<Meta of={Stories} />
+
+<Title />
+<Description />
+
+## Try it
+
+This is the live component. Hover, click, tab to it, or change its options below.
+
+<Canvas of={Stories.Default} sourceState="hidden" />
+<div className="sm-scroll" tabIndex={0} role="region" aria-label="Options">
+
+<Controls of={Stories.Default} />
+
+</div>
+
+## States
+
+<Gallery>
+  <div>
+    <h3>Default</h3>
+    <Canvas of={Stories.Default} sourceState="none" withToolbar={false} />
+  </div>
+  <div>
+    <h3>Hover</h3>
+    <Canvas of={Stories.Hover} sourceState="none" withToolbar={false} />
+  </div>
+  <div>
+    <h3>Focus</h3>
+    <Canvas of={Stories.Focus} sourceState="none" withToolbar={false} />
+  </div>
+  <div>
+    <h3>Disabled</h3>
+    <Canvas of={Stories.Disabled} sourceState="none" withToolbar={false} />
+  </div>
+</Gallery>
+
+## Variants
+
+<Gallery>
+  <div>
+    <h3>Light</h3>
+    <Canvas of={Stories.Light} sourceState="none" withToolbar={false} />
+  </div>
+  <div>
+    <h3>Dark</h3>
+    <Canvas of={Stories.Dark} sourceState="none" withToolbar={false} />
+  </div>
+</Gallery>
+
+## All variants
+
+<Canvas of={Stories.AllVariants} sourceState="none" />
+
+<ComponentPage name="TextLink" />

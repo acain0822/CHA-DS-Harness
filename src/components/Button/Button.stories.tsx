@@ -7,7 +7,6 @@ const FIGMA =
 const meta = {
   title: 'Components/Actions/Button',
   component: Button,
-  tags: ['autodocs'],
   parameters: {
     design: { type: 'figma', url: FIGMA },
     docs: {

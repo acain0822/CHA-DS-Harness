@@ -7,7 +7,6 @@ const FIGMA =
 const meta = {
   title: 'Components/Forms/Checkbox',
   component: Checkbox,
-  tags: ['autodocs'],
   parameters: {
     design: { type: 'figma', url: FIGMA },
     docs: {

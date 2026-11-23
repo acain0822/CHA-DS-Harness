@@ -8,6 +8,8 @@
  *                         Run the checks, update the log and report
  *   review <id|Component> approved|rejected --by <name> [--note <text>]
  *                         Record a person's decision
+ *   resolve <id> --by <name> [--note <text>]
+ *                         Close something logged by hand that is now fixed
  *   record <type> <Component> <message>
  *                         Log something found by hand or by another tool
  *   hook                  Claude Code PreToolUse hook (reads JSON on stdin)
@@ -128,9 +130,25 @@ function contextFindings(m, cfg) {
 
 const TOKEN_PROPS = /^(padding|margin|gap|row-gap|column-gap|border-radius|font-size|line-height|letter-spacing)/;
 
+const COLOR_PROPS = /(^|-)(color|background|border|outline|fill|stroke|shadow)(-|$)/;
+const NAMED_COLOR = /(^|[\s,(])(black|white|red|green|blue|yellow|orange|purple|pink|gr[ae]y|navy|teal|maroon|brown|silver|gold)\b(?!-)/i;
+
 function tokenFindings(cfg) {
   const out = new Map();
   const base = at('src/components');
+  const exempt = (lines, i) => lines[i].includes('token audit') || lines[i - 1]?.includes('token audit');
+  const add = (dir, where, key, prop, value, kind = '') => {
+    let bare = value;
+    while (/var\([^()]*\)/.test(bare)) bare = bare.replace(/var\([^()]*\)/g, '');
+    const color = /#[0-9a-f]{3,8}\b|rgba?\(|hsla?\(/i.test(bare) || (COLOR_PROPS.test(prop) && NAMED_COLOR.test(bare));
+    const size = TOKEN_PROPS.test(prop) && /(^|[\s(])(?!0(px|rem)?\b)[\d.]+(px|rem)\b/.test(bare);
+    if (!color && !size) return;
+    const id = idFor(key);
+    out.set(id, {
+      id, type: 'token', severity: cfg.severity?.token ?? 'warn', component: dir, file: where,
+      message: `Raw value in ${kind}${prop}: ${value}. Use a token, or add a "token audit: no variable" comment if Figma has none.`,
+    });
+  };
   for (const dir of fs.readdirSync(base)) {
     for (const f of fs.readdirSync(path.join(base, dir)).filter((x) => x.endsWith('.css'))) {
       const file = `src/components/${dir}/${f}`;
@@ -138,20 +156,22 @@ function tokenFindings(cfg) {
       const code = raw.replace(/\/\*[\s\S]*?\*\//g, (s) => s.replace(/[^\n]/g, ' ')).split('\n');
       const lines = raw.split('\n');
       code.forEach((line, i) => {
-        const decl = line.match(/^\s*([a-z-]+)\s*:\s*(.+?);?\s*$/i);
-        if (!decl) return;
-        const [, prop, value] = decl;
-        if (lines[i].includes('token audit') || lines[i - 1]?.includes('token audit')) return;
-        let bare = value;
-        while (/var\([^()]*\)/.test(bare)) bare = bare.replace(/var\([^()]*\)/g, '');
-        const color = /#[0-9a-f]{3,8}\b|rgba?\(|hsla?\(/i.test(bare);
-        const size = TOKEN_PROPS.test(prop) && /(^|[\s(])(?!0(px|rem)?\b)[\d.]+(px|rem)\b/.test(bare);
-        if (!color && !size) return;
-        const id = idFor(`token|${file}|${prop}|${value}`);
-        out.set(id, {
-          id, type: 'token', severity: cfg.severity?.token ?? 'warn', component: dir, file: `${file}:${i + 1}`,
-          message: `Raw value in ${prop}: ${value}. Use a token, or add a "token audit: no variable" comment if Figma has none.`,
-        });
+        if (exempt(lines, i)) return;
+        for (const [, prop, value] of line.matchAll(/(?:^|[{;])\s*([a-z-]+)\s*:\s*([^;{}]+)/gi)) {
+          add(dir, `${file}:${i + 1}`, `token|${file}|${prop}|${value.trim()}`, prop.toLowerCase(), value.trim());
+        }
+      });
+    }
+    for (const f of fs.readdirSync(path.join(base, dir)).filter((x) => /\.tsx$/.test(x) && !/\.(stories|test)\.tsx$/.test(x))) {
+      const file = `src/components/${dir}/${f}`;
+      const lines = fs.readFileSync(at(file), 'utf8').split('\n');
+      lines.forEach((line, i) => {
+        const style = line.match(/style=\{\{(.*?)\}\}/);
+        if (!style || exempt(lines, i)) return;
+        for (const [, key, value] of style[1].matchAll(/(\w+)\s*:\s*['"`]([^'"`]+)['"`]/g)) {
+          const prop = key.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`);
+          add(dir, `${file}:${i + 1}`, `token|${file}|inline|${prop}|${value}`, prop, value, 'inline ');
+        }
       });
     }
   }
@@ -173,14 +193,21 @@ function storyFindings(cfg) {
 
 function typeFindings() {
   const tsc = at('node_modules/typescript/bin/tsc');
+  const notRun = (why) => [{
+    id: idFor('type|not-run'), type: 'typecheck', severity: 'error', component: '-',
+    message: `Type check could not run: ${why}`,
+  }];
+  if (!fs.existsSync(tsc)) return notRun('TypeScript is not installed. Run npm ci.');
   const r = spawnSync(process.execPath, [tsc, '--noEmit', '-p', ROOT], { cwd: ROOT, encoding: 'utf8' });
-  return (r.stdout ?? '').split('\n').flatMap((l) => {
+  if (r.error) return notRun(r.error.message);
+  const found = (r.stdout ?? '').split('\n').flatMap((l) => {
     const e = l.match(/^(.+?)\((\d+),\d+\): error (TS\d+): (.*)$/);
     return e ? [{
       id: idFor(`type|${e[1]}|${e[3]}|${e[4]}`), type: 'typecheck', severity: 'error', component: '-',
       file: `${e[1]}:${e[2]}`, message: `${e[3]}: ${e[4]}`,
     }] : [];
   });
+  return found.length || r.status === 0 ? found : notRun(`tsc exited with ${r.status ?? r.signal}.`);
 }
 
 const QUESTION = /needs|review|assumed|no .*(design|size|state)|only (one|designed|exists)|typo|placeholder|rename|outside the documented/i;
@@ -366,6 +393,29 @@ function review(args) {
   return 0;
 }
 
+function resolve(args) {
+  const i = args.indexOf('--by');
+  const by = i >= 0 ? args[i + 1] : undefined;
+  const n = args.indexOf('--note');
+  if (!args[0] || !by) {
+    console.log('Usage: harness resolve <id> --by <name> [--note <text>]');
+    return 1;
+  }
+  const matches = resolveTarget(args[0]);
+  if (matches.length !== 1) {
+    console.log(matches.length ? `"${args[0]}" matches ${matches.length} items. Use a longer ID.` : `No open log item matches "${args[0]}".`);
+    return 1;
+  }
+  if (!MANUAL_TYPES.has(matches[0].type)) {
+    console.log('The check closes this one itself once the problem is gone. Fix it and run check.');
+    return 1;
+  }
+  append([{ ts: new Date().toISOString(), event: 'resolved', id: matches[0].id, by, note: n >= 0 ? args[n + 1] : undefined }]);
+  writeReport(manifest(), config());
+  console.log(`Resolved: ${matches[0].id} by ${by}.`);
+  return 0;
+}
+
 function record([type, component, ...rest]) {
   const message = rest.join(' ');
   if (!type || !component || !message) {
@@ -385,11 +435,27 @@ function record([type, component, ...rest]) {
   return 0;
 }
 
+function editedFile(input) {
+  if (input.tool_input?.file_path) return input.tool_input.file_path;
+  const found = [];
+  const walk = (x) => {
+    for (const [k, v] of Object.entries(x ?? {})) {
+      if (typeof v === 'string' && /^(target_?file|file_?path|absolute_?path|path)$/i.test(k)) found.push(v);
+      else if (v && typeof v === 'object') walk(v);
+    }
+  };
+  walk(input);
+  return found[0];
+}
+
 function hook() {
   let input = {};
   try { input = JSON.parse(fs.readFileSync(0, 'utf8') || '{}'); } catch { return 0; }
-  const file = input.tool_input?.file_path;
-  if (!file) return 0;
+  const file = editedFile(input);
+  if (!file) {
+    console.error('Design harness: no file path in the hook input, so design context was not checked.');
+    return 0;
+  }
   const inside = rel(path.resolve(ROOT, file)).match(/^src\/components\/([^/]+)\//);
   if (!inside) return 0;
 
@@ -447,10 +513,11 @@ const commands = {
   check: () => check(new Set(args)),
   review: () => review(args),
   record: () => record(args),
+  resolve: () => resolve(args),
   hook,
 };
 if (!commands[cmd]) {
-  console.log('Usage: harness context|check|review|record|hook');
+  console.log('Usage: harness context|check|review|resolve|record|hook');
   process.exit(1);
 }
 process.exit(commands[cmd]());

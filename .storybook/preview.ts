@@ -17,7 +17,7 @@ const preview: Preview = {
       test: 'todo',
     },
     options: {
-      storySort: { order: ['Introduction', 'Foundations', 'Components'] },
+      storySort: { order: ['Introduction', 'Components', 'Design System', 'Foundations', 'Pages', 'Design QA'] },
     },
   },
   initialGlobals: {

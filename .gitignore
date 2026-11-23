@@ -3,3 +3,4 @@ storybook-static/
 test-results/
 playwright-report/
 *.log
+package-dist/

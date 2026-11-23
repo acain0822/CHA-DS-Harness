@@ -29,6 +29,19 @@ If `fetch:figma-assets` reports expired links, export these from the Figma Icons
 
 Every component story links to its Figma node in the **Design** panel. Each component has an **All Variants** story that mirrors the Figma component set, which is the quickest way to compare code with design.
 
+## Using it in a product
+
+`npm run build:package` builds the installable package into `package-dist/` (name and version in `design-system/package.config.json`). It isn't published yet. To try it, run `npm pack` in that folder and install the `.tgz` file. See `package-dist/README.md`.
+
+### Seeing where it's used
+
+```bash
+npm run scan:code -- ../my-product --name "My product" --dry-run   # look first
+npm run scan:code -- ../my-product --name "My product"             # save counts
+```
+
+Reads the product's files without running or changing them. Saves counts, never file names or text, to `design-system/reports/usage-code.json`, which Storybook shows under **Design System > Products**. Use a product name that's fine to share. `--details` prints file names in the terminal only.
+
 ## Updating tokens
 
 1. Replace `design-system/tokens.figma.json` with fresh values from Figma.

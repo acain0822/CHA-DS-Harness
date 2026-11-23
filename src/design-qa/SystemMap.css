@@ -1,0 +1,28 @@
+.sm { font-size: 14px; line-height: 1.5; }
+.sm-scroll { overflow-x: auto; margin: 0 0 24px; }
+.sm .sm-table { display: table; width: 100%; border-collapse: collapse; margin: 0; }
+.sm .sm-table caption { text-align: left; padding: 8px 0; font-weight: 600; }
+.sm .sm-table th, .sm .sm-table td { text-align: left; vertical-align: top; padding: 8px 12px; border: 0; border-bottom: 1px solid #ccc; background: #fff; color: #222; }
+.sm .sm-table thead th { white-space: nowrap; border-bottom: 2px solid #18546e; }
+.sm-muted { color: #5a5a5a; font-weight: 400; font-size: 12px; }
+.sm code { font-size: 12px; white-space: nowrap; }
+.sm-chain { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.sm-chain code + code::before { content: '→ '; }
+.sm-swatch { display: inline-block; width: 14px; height: 14px; border: 1px solid #5a5a5a; border-radius: 3px; vertical-align: -2px; }
+.sm-origin { display: inline-block; padding: 0 8px; border-radius: 4px; font-weight: 600; }
+.sm-origin--base { background: #ededed; color: #222; }
+.sm-origin--variant { background: #ccd9df; color: #12323f; }
+.sm-origin--state { background: #cce8dc; color: #063d24; }
+.sm-raw { color: #b60000; }
+.sm-controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; margin: 16px 0; }
+.sm-controls label { display: grid; gap: 4px; font-weight: 600; }
+.sm-controls .sm-check { display: flex; align-items: center; }
+.sm-controls select, .sm-controls input:not([type='checkbox']) { font: inherit; padding: 6px 8px; min-width: 140px; }
+.sm-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 0; }
+.sm-facts dt { font-weight: 600; }
+.sm-facts dd { margin: 0; }
+.sm-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 0 16px; }
+.sm-gallery > div { min-width: 0; }
+.sm-gallery .sb-anchor, .sm-gallery .sbdocs-preview { margin: 8px 0 16px; }
+.sm-details { margin: 32px 0; border-top: 1px solid #ccc; padding-top: 16px; }
+.sm-details > summary { cursor: pointer; font-size: 18px; font-weight: 600; }

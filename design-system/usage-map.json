@@ -1,0 +1,28 @@
+{
+  "note": "Manifest component -> how it is recognised on chattanooga.gov. All mappings are proposed until a person confirms them. Anything not listed is 'unmapped', never 'unused'.",
+  "figmaRoles": { "Production Website": "production", "Initiative Project": "in-progress", "Exploratory / Concepts": "exploratory" },
+  "live": {
+    "Button": { "anyClass": ["btn"], "tags": ["a", "button", "input"], "exceptClass": ["btn-close", "btn-link", "dropdown-toggle", "btn-tertiary"] },
+    "Input Field": { "id": "radix:input", "types": ["text", "email", "tel", "number", "date", "url", "search", "password"] },
+    "Textarea": { "id": "radix:textarea" },
+    "Dropdown": { "id": "radix:select" },
+    "Desktop Mega Menu": { "id": "chattanooga:mega-menu" },
+    "Feedback Form": { "id": "chattanooga:feedback-form" },
+    "Subject Cards": { "id": "chattanooga:subject-card" },
+    "Large Cards": { "id": "chattanooga:large-card" },
+    "Event Card": { "id": "chattanooga:event-card" },
+    "Table": { "id": "chattanooga:views-view--table" },
+    "Breadcrumbs": { "anyClass": ["block--chattanooga-breadcrumbs"] },
+    "Contact Information": { "anyClass": ["paragraph--type--contact-information"] },
+    "Large Screen Accordions": { "anyClass": ["accordion"] },
+    "CTA": { "anyClass": ["paragraph--type--cta"] },
+    "Procedures": { "anyClass": ["paragraph--type--procedure-instructions"] },
+    "Latest News": { "anyClass": ["paragraph--type--latest-news"] },
+    "Homepage Hero": { "anyClass": ["paragraph--type--homepage-hero"] },
+    "Landing Page Heros": { "anyClass": ["paragraph--type--primary-hero"] },
+    "Secondary Heros - Desktop": { "anyClass": ["paragraph--type--secondary-hero"] },
+    "Tertiary Heros - LG": { "anyClass": ["paragraph--type--tertiary-hero"] },
+    "Article Heros": { "anyClass": ["block--chattanooga-views-block--articles-hero"] },
+    "311 Banners": { "anyClass": ["message-311"] }
+  }
+}

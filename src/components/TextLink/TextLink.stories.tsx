@@ -7,7 +7,6 @@ const FIGMA =
 const meta = {
   title: 'Components/Actions/Text Link',
   component: TextLink,
-  tags: ['autodocs'],
   parameters: {
     design: { type: 'figma', url: FIGMA },
     docs: {
